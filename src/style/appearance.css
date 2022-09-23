@@ -1,0 +1,219 @@
+@media (prefers-color-scheme: dark) {
+  body[appearance="default"] {
+    --text: white;
+    --text-contrast: white;
+    --highlight: #004953;
+    --background: #171717;
+    --placeholder: #bdc1c6;
+    --font-main: "Roboto";
+    --font-title: "Open Sans";
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body[appearance="default"] {
+    --text: black;
+    --text-contrast: white;
+    --highlight: #004953;
+    --background: #d8dee9;
+    --placeholder: lightgray;
+    --font-main: "Roboto";
+    --font-title: "Open Sans";
+  }
+}
+
+body[appearance="dark"] {
+  --text: white;
+  --text-contrast: white;
+  --highlight: #004953;
+  --background: #171717;
+  --placeholder: #bdc1c6;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="light"] {
+  --text: black;
+  --text-contrast: white;
+  --highlight: #004953;
+  --background: #d8dee9;
+  --placeholder: lightgray;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="lime"] {
+  --text: white;
+  --text-contrast: black;
+  --highlight: lime;
+  --background: #181c19;
+  --placeholder: #666666;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="space"] {
+  --text: white;
+  --text-contrast: white;
+  --highlight: #7f00ff;
+  --background: black;
+  --placeholder: white;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="molten"] {
+  --text: white;
+  --text-contrast: white;
+  --highlight: #ff6868;
+  --background: black;
+  --placeholder: darkslategray;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="retro"] {
+  --text: white;
+  --text-contrast: black;
+  --highlight: #009600;
+  --background: black;
+  --placeholder: darkslategray;
+  --font-main: "Ubuntu Mono";
+  --font-title: "Ubuntu Mono";
+}
+
+body[appearance="eaglenet"] {
+  --text: white;
+  --text-contrast: white;
+  --highlight: #4d004d;
+  --background: linear-gradient(to right, #665fd2, #9824d3);
+  --placeholder: lightgray;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="midnight"] {
+  --text: white;
+  --text-contrast: white;
+  --highlight: #4b0082;
+  --background: #150025;
+  --placeholder: lightgray;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="honey"] {
+  --text: white;
+  --text-contrast: white;
+  --highlight: #e66102;
+  --background: #ffa15f;
+  --placeholder: lightgrey;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="swamp"] {
+  --text: white;
+  --text-contrast: black;
+  --highlight: #15fc95;
+  --background: #006072;
+  --placeholder: darkslategray;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="banana"] {
+  --text: white;
+  --text-contrast: black;
+  --highlight: #ffb703;
+  --background: #251b12;
+  --placeholder: darkslategray;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="banana"] .homelogo {
+  display: none;
+}
+
+body[appearance="banana"] .bananalogo {
+  display: initial;
+}
+
+body[appearance="flamingo"] {
+  --text: white;
+  --text-contrast: black;
+  --highlight: white;
+  --background: #fcacd0;
+  --placeholder: #bdc1c6;
+  --font-main: "Roboto Slab";
+  --font-title: "Prata";
+}
+
+body[appearance="magma"] {
+  --text: white;
+  --text-contrast: white;
+  --highlight: #ff001f;
+  --background: linear-gradient(to bottom, #10001b, #1d0003);
+  --placeholder: white;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="shadow"] {
+  --text: white;
+  --text-contrast: black;
+  --highlight: white;
+  --background: black;
+  --placeholder: black;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="hacker"] {
+  --text: #7de38d;
+  --text-contrast: #7de38d;
+  --highlight: #232323;
+  --background: #090909;
+  --placeholder: #7de38d;
+  --font-main: "JetBrains Mono";
+  --font-title: "JetBrains Mono";
+}
+
+body[appearance="nord"] {
+  --text: #eceff4;
+  --text-contrast: #eceff4;
+  --highlight: #3b4252;
+  --background: #242933;
+  --placeholder: #eceff4;
+  --font-main: "Rubik";
+  --font-title: "Rubik";
+}
+
+body[appearance="simple"] {
+  --text: white;
+  --text-contrast: white;
+  --highlight: #202225;
+  --background: #18191c;
+  --placeholder: #b9bbbe;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="tsunami"] {
+  --text: white;
+  --text-contrast: black;
+  --highlight: #2493ff;
+  --background: #121212;
+  --placeholder: #666666;
+  --font-main: "Roboto";
+  --font-title: "Quicksand";
+}
+
+body[appearance="tsunami"] .homelogo {
+  display: none;
+}
+
+body[appearance="tsunami"] .tsunamilogo {
+  display: initial;
+}

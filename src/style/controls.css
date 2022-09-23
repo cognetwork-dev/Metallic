@@ -1,0 +1,33 @@
+body[controls="classic"] .controlsTitle {
+  display: none;
+}
+
+body[controls="classic"] .controlsIcon {
+  display: none;
+}
+
+body[controls="classic"] .controls {
+  justify-content: flex-end;
+}
+
+body[controls="classic"] .controlsButton:nth-child(3) {
+  display: none;
+}
+
+body[controls="classic"] .controlsButton {
+  background: var(--highlight);
+  border-radius: 2.5px;
+}
+
+body[controls="classic"] .controls {
+  background: none;
+}
+
+body[controls="classic"] .web {
+  height: 100%;
+  top: 0;
+}
+
+body[controls="classic"] .controlsButton:last-child {
+  margin-right: 10px;
+}
