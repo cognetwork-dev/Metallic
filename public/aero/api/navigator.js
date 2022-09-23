@@ -1,0 +1,3 @@
+// Incomplete
+
+navigator.registerProtocolHandler = null;

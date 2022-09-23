@@ -1,0 +1,1 @@
+(()=>{"use strict";Error,self.__osana$config={bare:`${location.origin}/bare/`,prefix:"/osana/",codec:{encode:o=>o,decode:o=>o},files:{config:"/osana/config.js",client:"/osana/client.js"}},self.__osana$config})();

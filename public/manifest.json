@@ -1,0 +1,23 @@
+{
+  "name": "Metallic",
+  "short_name": "Metallic",
+  "description": "Coming soon!",
+  "icons": [
+    {
+      "src": "/images/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logo.png",
+      "sizes": "300x300",
+      "type": "image/png"
+    }
+  ],
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "black",
+  "theme_color": "black"
+}
