@@ -30,7 +30,7 @@
   },
   "scripts": {
     "dev": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && node build.mjs",
     "start": "node start.mjs"
   },
   "eslintConfig": {
