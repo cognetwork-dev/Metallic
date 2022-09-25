@@ -16,12 +16,16 @@ function Apps() {
   });
 
   function goApp(config) {
-    setProxyConfig({
-      open: true,
-      url: getLink(config.url),
-      title: null,
-      icon: null,
-    });
+    try {
+      setProxyConfig({
+        open: true,
+        url: getLink(config.url),
+        title: null,
+        icon: null,
+      });
+    } catch (err) {
+      alert(err.toString());
+    }
   }
 
   var [appsSearchTerm, setAppsSearchTerm] = React.useState("");
