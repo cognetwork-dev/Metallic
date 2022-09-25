@@ -7,15 +7,15 @@
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.6",
     "@mui/styled-engine": "^5.10.6",
-    "@tomphttp/bare-client": "^1.0.5",
+    "@tomphttp/bare-client": "^1.1.0",
+    "@tomphttp/bare-server-node": "^1.1.0",
     "clsx": "^1.2.1",
     "http-server": "^14.1.1",
     "random-seed": "^0.3.0",
     "react-router-dom": "^6.4.1",
     "react-tsparticles": "^2.3.2",
     "serve-static": "^1.15.0",
-    "tsparticles": "^2.3.2",
-    "@tomphttp/bare-server-node": "^1.1.0"
+    "tsparticles": "^2.3.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
