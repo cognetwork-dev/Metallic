@@ -1,5 +1,5 @@
 /*global __DIP,__uv$config,__osana$config*/
-import { stomp } from "./proxy.js";
+import { stomp, swSupported } from "./proxy.js";
 
 export function getSearchEngine() {
   var engine = localStorage.getItem("engine");
@@ -28,6 +28,9 @@ function searchURL(url) {
 }
 
 export function getLink(url) {
+  if (!swSupported)
+    throw new Error("Your browser doesn't support service workers.");
+
   url = searchURL(url);
   var type = localStorage.getItem("type") || "Ultraviolet";
 

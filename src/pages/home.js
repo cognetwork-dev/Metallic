@@ -71,25 +71,29 @@ function Home() {
   var [localWindow] = useLocalWindow();
 
   function submit(value) {
-    switch (localWindow) {
-      case "simple":
-        window.location.href = getLink(value);
-        break;
-      case "ab":
-        var page = window.open();
-        page.document.body.innerHTML =
-          `<iframe style="height:100%; width: 100%; border: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; border: none" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="` +
-          new URL(getLink(value), window.location) +
-          `"></iframe>`;
-        break;
-      default:
-      case "default":
-        setProxyConfig({
-          open: true,
-          url: getLink(value),
-          title: null,
-          icon: null,
-        });
+    try {
+      switch (localWindow) {
+        case "simple":
+          window.location.href = getLink(value);
+          break;
+        case "ab":
+          var page = window.open();
+          page.document.body.innerHTML =
+            `<iframe style="height:100%; width: 100%; border: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; border: none" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="` +
+            new URL(getLink(value), window.location) +
+            `"></iframe>`;
+          break;
+        default:
+        case "default":
+          setProxyConfig({
+            open: true,
+            url: getLink(value),
+            title: null,
+            icon: null,
+          });
+      }
+    } catch (err) {
+      alert(err.toString());
     }
   }
 
