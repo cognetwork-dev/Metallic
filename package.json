@@ -13,6 +13,7 @@
     "random-seed": "^0.3.0",
     "react-router-dom": "^6.4.1",
     "react-tsparticles": "^2.3.2",
+    "serve-static": "^1.15.0",
     "tsparticles": "^2.3.2"
   },
   "devDependencies": {
@@ -30,7 +31,7 @@
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",
-    "start": "http-server build"
+    "start": "node start.mjs"
   },
   "eslintConfig": {
     "extends": [

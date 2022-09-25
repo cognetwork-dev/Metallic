@@ -33,7 +33,7 @@ function App() {
           }
         />
         <Route
-          path="/settings/appearance"
+          path="/settings/appearance.html"
           element={
             <SettingsLayout>
               <Suspense fallback={<></>}>
@@ -43,7 +43,7 @@ function App() {
           }
         />
         <Route
-          path="/settings/search"
+          path="/settings/search.html"
           element={
             <SettingsLayout>
               <Suspense fallback={<></>}>
@@ -53,7 +53,7 @@ function App() {
           }
         />
         <Route
-          path="/settings/tab"
+          path="/settings/tab.html"
           element={
             <SettingsLayout>
               <Suspense fallback={<></>}>
@@ -63,7 +63,7 @@ function App() {
           }
         />
         <Route
-          path="/settings/ui"
+          path="/settings/ui.html"
           element={
             <SettingsLayout>
               <Suspense fallback={<></>}>
@@ -73,7 +73,7 @@ function App() {
           }
         />
         <Route
-          path="/apps"
+          path="/apps.html"
           element={
             <Suspense fallback={<></>}>
               <Apps />
@@ -81,7 +81,7 @@ function App() {
           }
         />
         <Route
-          path="/games"
+          path="/games.html"
           element={
             <Suspense fallback={<></>}>
               <Games />
@@ -89,7 +89,7 @@ function App() {
           }
         />
         <Route
-          path="/support"
+          path="/support.html"
           element={
             <Suspense fallback={<></>}>
               <Support />
@@ -97,7 +97,7 @@ function App() {
           }
         />
         <Route
-          path="/credits"
+          path="/credits.html"
           element={
             <Suspense fallback={<></>}>
               <Credits />
@@ -105,7 +105,7 @@ function App() {
           }
         />
         <Route
-          path="/privacy"
+          path="/privacy.html"
           element={
             <Suspense fallback={<></>}>
               <Privacy />
