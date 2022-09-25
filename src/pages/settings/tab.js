@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import Obfuscate from "../../components/obfuscate.js";
 import ClearIcon from "@mui/icons-material/Clear";
 import BareClient from "@tomphttp/bare-client";
@@ -6,7 +6,7 @@ import { useLocalIcon, useLocalTitle } from "../../settings.js";
 import { bareServerURL } from "../../consts.js";
 
 function Tab() {
-  const bare = useMemo(() => new BareClient(bareServerURL), []);
+  const bare = React.useMemo(() => new BareClient(bareServerURL), []);
 
   var url = React.useRef();
   var [localTitle, setLocalTitle] = useLocalTitle();
