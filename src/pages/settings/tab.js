@@ -2,7 +2,6 @@ import React, { useMemo } from "react";
 import Obfuscate from "../../components/obfuscate.js";
 import ClearIcon from "@mui/icons-material/Clear";
 import BareClient from "@tomphttp/bare-client";
-import logoSVG from "../../assets/logo.svg";
 import { useLocalIcon, useLocalTitle } from "../../settings.js";
 import { bareServerURL } from "../../consts.js";
 
@@ -15,7 +14,6 @@ function Tab() {
 
   function tabReset() {
     document.title = "Settings | Metallic";
-    document.querySelector("link[rel*='icon']").href = logoSVG;
     url.current.value = "";
     setLocalTitle(null);
     setLocalIcon(null);
@@ -34,11 +32,11 @@ function Tab() {
     if (doc.getElementsByTagName("title")[0]) {
       title = doc.getElementsByTagName("title")[0].innerText;
     }
-    if (doc.querySelector("link[rel='shortcut icon']")) {
-      favicon = doc.querySelector("link[rel='shortcut icon']").href;
-    }
-    if (doc.querySelector("link[rel*='icon']")) {
-      favicon = doc.querySelector("link[rel*='icon']").href;
+    const iconElement = doc.querySelector(
+      "link[rel='shortcut icon'],link[rel*='icon']"
+    );
+    if (iconElement) {
+      favicon = iconElement.href;
     }
     setLocalTitle(title);
     setLocalIcon(favicon);

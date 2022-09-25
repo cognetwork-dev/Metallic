@@ -1,5 +1,4 @@
 import React from "react";
-import logoSVG from "../assets/logo.svg";
 import {
   useLocalAppearance,
   useLocalControls,
@@ -14,7 +13,7 @@ function Head({ defaultTitle, defaultIcon }) {
   var [localControls] = useLocalControls();
 
   var title = localTitle || defaultTitle || "";
-  var icon = localIcon || defaultIcon || logoSVG;
+  var icon = localIcon || defaultIcon || "/favicon.ico";
 
   document.body.setAttribute("appearance", localAppearance);
   document.body.setAttribute("controls", localControls);

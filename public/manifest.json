@@ -4,13 +4,7 @@
   "description": "Coming soon!",
   "icons": [
     {
-      "src": "/images/logo.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    },
-    {
-      "src": "/images/logo.png",
+      "src": "/logo.png",
       "sizes": "300x300",
       "type": "image/png"
     }
