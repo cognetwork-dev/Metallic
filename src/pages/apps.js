@@ -8,22 +8,17 @@ import gitems from "../apps.js";
 import { getLink } from "../util.js";
 
 function Apps() {
-  var [proxyConfig, setProxyConfig] = React.useState({
-    open: false,
-    url: null,
-    title: null,
-    icon: null,
-  });
+  var proxy = React.useRef();
 
   function goApp(config) {
     try {
-      setProxyConfig({
-        open: true,
+      proxy.current.open({
+        name: config.name,
+        icon: config.icon,
         url: getLink(config.url),
-        title: null,
-        icon: null,
       });
     } catch (err) {
+      console.error(err);
       alert(err.toString());
     }
   }
@@ -45,7 +40,7 @@ function Apps() {
     <>
       <Head defaultTitle="Apps | Metallic"></Head>
       <Nav />
-      <Proxy config={proxyConfig} configChange={(e) => setProxyConfig(e)} />
+      <Proxy ref={proxy} />
       <div className="omniboxcontainersearch omniboxcontainer">
         <div className="omnisearch omnibox">
           <div className="searchicon">

@@ -5,17 +5,11 @@ import Obfuscate from "../components/obfuscate.js";
 import Head from "../components/head.js";
 import Proxy from "../components/proxy.js";
 import BareClient from "@tomphttp/bare-client";
-import { getLink } from "../util.js";
-import { useLocalWindow } from "../settings.js";
 import { bareServerURL } from "../consts.js";
+import { getLink } from "../util.js";
 
 function Home() {
-  var [proxyConfig, setProxyConfig] = React.useState({
-    open: false,
-    url: null,
-    title: null,
-    icon: null,
-  });
+  var proxy = React.useRef();
 
   var [suggestions, setSuggestions] = React.useState([]);
 
@@ -68,31 +62,11 @@ function Home() {
     }
   }
 
-  var [localWindow] = useLocalWindow();
-
   function submit(value) {
     try {
-      switch (localWindow) {
-        case "simple":
-          window.location.href = getLink(value);
-          break;
-        case "ab":
-          var page = window.open();
-          page.document.body.innerHTML =
-            `<iframe style="height:100%; width: 100%; border: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; border: none" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="` +
-            new URL(getLink(value), window.location) +
-            `"></iframe>`;
-          break;
-        default:
-        case "default":
-          setProxyConfig({
-            open: true,
-            url: getLink(value),
-            title: null,
-            icon: null,
-          });
-      }
+      proxy.current.open({ url: getLink(value) });
     } catch (err) {
+      console.error(err);
       alert(err.toString());
     }
   }
@@ -137,7 +111,7 @@ function Home() {
   return (
     <>
       <Head defaultTitle="Metallic"></Head>
-      <Proxy config={proxyConfig} configChange={(e) => setProxyConfig(e)} />
+      <Proxy ref={proxy} />
       <Nav />
       <div className="hometitle">
         <Obfuscate>Metallic</Obfuscate>

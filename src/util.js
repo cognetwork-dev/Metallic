@@ -35,18 +35,29 @@ export function getLink(url) {
   var type = localStorage.getItem("type") || "Ultraviolet";
 
   switch (type) {
-    case "Ultraviolet":
-      return "." + __uv$config.prefix + __uv$config.encodeUrl(url);
     case "Stomp":
-      return "." + stomp.html(url);
+      return new URL(stomp.html(url), global.location).toString();
     case "DIP":
-      return "." + __DIP.config.prefix + __uv$config.encodeUrl(url);
+      return new URL(
+        __uv$config.encodeUrl(url),
+        new URL(__DIP.config.prefix, global.location)
+      ).toString();
     case "Osana":
-      return "." + __osana$config.prefix + __osana$config.codec.encode(url);
+      return new URL(
+        __osana$config.codec.encode(url),
+        new URL(__osana$config.prefix, global.location)
+      ).toString();
     case "Aero":
-      return "./go/" + url;
+      return new URL(
+        `/go/${__osana$config.prefix}`,
+        global.location
+      ).toString();
     default:
-      return "." + __uv$config.prefix + __uv$config.encodeUrl(url);
+    case "Ultraviolet":
+      return new URL(
+        __uv$config.encodeUrl(url),
+        new URL(__uv$config.prefix, global.location)
+      ).toString();
   }
 }
 
