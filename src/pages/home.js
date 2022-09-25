@@ -136,9 +136,9 @@ function Home() {
           />
         </div>
         <div ref={suggestionsChildren} className="suggestions">
-          {suggestions.map((item) => (
+          {suggestions.map((item, i) => (
             <div
-              key={item}
+              key={i}
               className="sugg"
               onClick={(e) => submit(e.target.textContent)}
               dangerouslySetInnerHTML={{ __html: item }}

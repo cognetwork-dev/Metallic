@@ -67,7 +67,7 @@ function Apps() {
         ""
       )}
       <div className="gitems">
-        {gitemssearched.map((item, key) => {
+        {gitemssearched.map((item, i) => {
           return (
             <div
               onClick={() => goApp(item)}
@@ -79,7 +79,7 @@ function Apps() {
                 backgroundPosition: "0% 0%",
               }}
               className="gitem"
-              key={key}
+              key={i}
             >
               <div className="gtext">
                 <Obfuscate>{item.name}</Obfuscate>
