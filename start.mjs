@@ -23,15 +23,26 @@ const serve = serveStatic(fileURLToPath(new URL("./build/", import.meta.url)), {
   fallthrough: false,
 });
 
+const fail = (req, res, err) => {
+  res.writeHead(err?.statusCode || 500, {
+    "Content-Type": "text/plain",
+  });
+  res.end(err?.stack);
+};
+
 httpServer.on("request", (req, res) => {
   if (bareServer.shouldRoute(req)) {
     bareServer.routeRequest(req, res);
   } else {
     serve(req, res, (err) => {
-      res.writeHead(err?.statusCode || 500, {
-        "Content-Type": "text/plain",
-      });
-      res.end(err?.stack);
+      if (err?.code === "ENOENT") {
+        req.url = "/404.html";
+        res.statusCode = 404;
+
+        serve(req, res, (err) => fail(req, res, err));
+      } else {
+        fail(req, res, err);
+      }
     });
   }
 });
