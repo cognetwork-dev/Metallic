@@ -5,15 +5,15 @@ import Head from "./components/head.js";
 import Obfuscate from "./components/obfuscate.js";
 import clsx from "clsx";
 
-function Tab({ path, children }) {
+function Tab({ to, children }) {
   const location = useLocation();
 
   return (
-    <Link to={path}>
+    <Link to={to}>
       <div
         className={clsx(
           "settingssidecard",
-          location.pathname === path && "settingssidecardsel"
+          location.pathname === to && "settingssidecardsel"
         )}
       >
         <Obfuscate>{children}</Obfuscate>
@@ -31,16 +31,16 @@ export default function SettingsLayout({ children }) {
         <div className="settingssidetitle">
           <Obfuscate>Settings</Obfuscate>
         </div>
-        <Tab path="/settings/search">
+        <Tab to="/settings/search.html">
           <Obfuscate>Search</Obfuscate>
         </Tab>
-        <Tab path="/settings/tab">
+        <Tab to="/settings/tab.html">
           <Obfuscate>Tab</Obfuscate>
         </Tab>
-        <Tab path="/settings/appearance">
+        <Tab to="/settings/appearance.html">
           <Obfuscate>Appearance</Obfuscate>
         </Tab>
-        <Tab path="/settings/ui">
+        <Tab to="/settings/ui.html">
           <Obfuscate>UI</Obfuscate>
         </Tab>
       </div>
