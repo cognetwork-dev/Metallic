@@ -41,7 +41,7 @@ function Privacy() {
         </div>
         <div className="itemtext">
           <Obfuscate>Contact information can be found on the </Obfuscate>
-          <Link className="link" to="/support">
+          <Link className="link" to="/support.html">
             <Obfuscate>support page</Obfuscate>
           </Link>
         </div>

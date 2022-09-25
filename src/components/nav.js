@@ -23,13 +23,13 @@ function Nav() {
         )}
       </Link>
       <div className="navitems">
-        <Link className="navitem" to="/apps">
+        <Link className="navitem" to="/apps.html">
           <AppsIcon />
         </Link>
-        <Link className="navitem" to="/games">
+        <Link className="navitem" to="/games.html">
           <VideogameAssetIcon />
         </Link>
-        <Link className="navitem" to="/settings/search">
+        <Link className="navitem" to="/settings/search.html">
           <SettingsIcon />
         </Link>
       </div>

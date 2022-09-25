@@ -174,10 +174,10 @@ function Home() {
       </div>
       <div className="footer">
         <div>
-          <Link className="footersides link" to="/privacy">
+          <Link className="footersides link" to="/privacy.html">
             Privacy
           </Link>
-          <Link className="footersides link" to="/credits">
+          <Link className="footersides link" to="/credits.html">
             Credits
           </Link>
         </div>

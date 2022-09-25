@@ -18,7 +18,7 @@ function Error() {
         </Obfuscate>
         <br />
         <Obfuscate>Visit the </Obfuscate>
-        <Link className="link" to="/support">
+        <Link className="link" to="/support.html">
           <Obfuscate>support</Obfuscate>
         </Link>
         <Obfuscate> page for help.</Obfuscate>
