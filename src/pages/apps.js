@@ -13,7 +13,7 @@ function Apps() {
   function goApp(config) {
     try {
       proxy.current.open({
-        name: config.name,
+        title: config.name,
         icon: config.icon,
         url: getLink(config.url),
       });

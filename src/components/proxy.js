@@ -1,16 +1,55 @@
+import { bareServerURL } from "../consts.js";
 import { useLocalWindow } from "../settings.js";
-import React from "react";
+import React, { useEffect } from "react";
 import PublicIcon from "@mui/icons-material/Public";
 import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import CloseIcon from "@mui/icons-material/Close";
 import { getWindowLocation } from "../util.js";
 import "../style/controls.css";
+import BareClient from "@tomphttp/bare-client";
+import { useSearchParams } from "react-router-dom";
+
+/**
+ * Return a blob URL to a working icon. Returns undefined if none work.
+ * @param {BareClient} bare
+ * @param {string[]} list List of absolute URLs to icons
+ * @returns {string|undefined}
+ */
+async function workingIcon(bare, list) {
+  for (var url of list)
+    try {
+      var res = await bare.fetch(url);
+      if (!res.ok) continue;
+      return URL.createObjectURL(await res.blob());
+    } catch (err) {
+      console.error(err);
+    }
+}
+
+/**
+ * Loads an image. If the image src is a blob, the blob will be revoked upon dismount.
+ */
+function BareIcon({ src, ...attributes }) {
+  React.useEffect(() => {
+    return () => {
+      if (src.startsWith("blob:")) {
+        URL.revokeObjectURL(src);
+        console.log("revoked", src);
+      }
+    };
+  }, [src]);
+
+  // eslint-disable-next-line jsx-a11y/alt-text
+  return <img src={src} {...attributes} />;
+}
 
 var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
+  var bare = React.useMemo(() => new BareClient(bareServerURL), []);
   var web = React.createRef();
   var [config, setConfig] = React.useState();
   var [localWindow] = useLocalWindow();
+  var [searchParams, setSearchParams] = useSearchParams();
 
   React.useImperativeHandle(
     ref,
@@ -29,6 +68,9 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
             break;
           default:
           case "default":
+            document.body.style.overflow = "hidden";
+            searchParams.set("fr", "");
+            setSearchParams(searchParams);
             setConfig({
               url: config.url,
               title: null,
@@ -38,14 +80,18 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
         setConfig(config);
       },
     }),
-    [localWindow, overrideWindow]
+    [localWindow, overrideWindow, searchParams, setSearchParams]
   );
 
-  React.useEffect(() => {
-    document.body.style.overflow = config ? "hidden" : "initial";
+  function close() {
+    document.body.style.overflow = "";
+    setConfig();
+  }
 
-    return () => delete document.body.style.overflow;
-  }, [config]);
+  // close frame when ?frame removed (user went back in history)
+  useEffect(() => {
+    if (!searchParams.has("fr")) close();
+  }, [searchParams]);
 
   if (!config) return;
 
@@ -54,7 +100,7 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
       <div className="controls">
         <div className="controlsIcon">
           {config.icon ? (
-            <img src={config.icon} alt="Website" />
+            <BareIcon src={config.icon} alt="Website" />
           ) : (
             <PublicIcon fontSize="large" />
           )}
@@ -80,12 +126,12 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
         >
           <RefreshIcon />
         </div>
-        <div className="controlsButton" onClick={() => setConfig()}>
+        <div className="controlsButton" onClick={close}>
           <CloseIcon />
         </div>
       </div>
       <iframe
-        onLoad={() => {
+        onLoad={async () => {
           var updatedConfig = {
             url: config.url,
           };
@@ -98,12 +144,16 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
             "link[rel*='icon'],link[rel='shortcut icon']"
           );
 
-          updatedConfig.icon = icon
-            ? icon.href
-            : new URL(
+          updatedConfig.icon = await workingIcon(
+            bare,
+            [
+              icon && icon.href,
+              new URL(
                 "/favicon.ico",
                 web.current.contentWindow.document.baseURI
-              );
+              ).toString(),
+            ].filter(Boolean)
+          );
 
           setConfig(updatedConfig);
         }}
