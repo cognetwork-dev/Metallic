@@ -225,7 +225,7 @@ body {
   right: 0;
   top: 60px;
   height: calc(100% - 60px);
-  overflow: scroll;
+  overflow: auto;
 }
 
 .settingssidecard {
