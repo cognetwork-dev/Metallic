@@ -13,7 +13,7 @@ function Head({ defaultTitle, defaultIcon }) {
   var [localControls] = useLocalControls();
 
   var title = localTitle || defaultTitle || "";
-  var icon = localIcon || defaultIcon || "/favicon.ico";
+  var icon = localIcon || defaultIcon || "/logo.png";
 
   document.body.setAttribute("appearance", localAppearance);
   document.body.setAttribute("controls", localControls);
