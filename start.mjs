@@ -8,6 +8,7 @@ import serveStatic from "serve-static";
 import { fileURLToPath } from "url";
 
 const httpServer = http.createServer();
+const port = process.env.PORT || 8080;
 
 // Run the Bare server in the /bare/ namespace. This will prevent conflicts between the static files and the bare server.
 const bareServer = createBareServer("/bare/", {
@@ -66,5 +67,5 @@ httpServer.on("listening", () => {
 });
 
 httpServer.listen({
-  port: 8080,
+  port: port,
 });
