@@ -165,7 +165,7 @@ body {
   width: 100%;
   background: transparent;
   height: 60px;
-  z-index: 60;
+  z-index: 9;
 }
 
 .title {
