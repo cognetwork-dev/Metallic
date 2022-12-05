@@ -5,8 +5,8 @@ const useLocalFallback = (key, fallback) => {
   return [local === null ? fallback : local, setLocal];
 };
 
-export var useLocalEngine = () => useLocalFallback("engine", "default");
-export var useLocalBackground = () => useLocalFallback("engine", "default");
+export var useLocalEngine = () => useLocalFallback("engine", "Google");
+export var useLocalBackground = () => useLocalFallback("background", "none");
 export var useLocalAppearance = () => useLocalFallback("appearance", "default");
 export var useLocalControls = () => useLocalFallback("controls", "default");
 export var useLocalWindow = () => useLocalFallback("window", "default");
