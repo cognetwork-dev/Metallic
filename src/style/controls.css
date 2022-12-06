@@ -17,6 +17,7 @@ body[controls="classic"] .controlsButton:nth-child(3) {
 body[controls="classic"] .controlsButton {
   background: var(--highlight);
   border-radius: 2.5px;
+  color: var(--text-contrast);
 }
 
 body[controls="classic"] .controls {
