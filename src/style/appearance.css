@@ -190,6 +190,26 @@ body[appearance="nord"] {
   --font-title: "Rubik";
 }
 
+body[appearance="violet"] {
+    --text: white;
+    --text-contrast: white;
+    --highlight: black;
+    --background: #592f7f;
+    --placeholder: white;
+    --font-main: "Roboto";
+    --font-title: "Open Sans";
+}
+
+body[appearance="jungle"] {
+    --text: white;
+    --text-contrast: black;
+    --highlight: #38b000;
+    --background: #006400;
+    --placeholder: black;
+    --font-main: "Roboto";
+    --font-title: "Open Sans";
+}
+
 body[appearance="simple"] {
   --text: white;
   --text-contrast: white;
