@@ -1,13 +1,19 @@
-body[controls="classic"] .controlsTitle {
+body[controls="classic"] .controlsTitle, body[controls="modern"] .controlsTitle {
   display: none;
 }
 
-body[controls="classic"] .controlsIcon {
+body[controls="classic"] .controlsIcon, body[controls="modern"] .controlsIcon {
   display: none;
 }
 
 body[controls="classic"] .controls {
   justify-content: flex-end;
+}
+
+body[controls="modern"] .controls {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
 
 body[controls="classic"] .controlsButton:nth-child(3) {
@@ -20,11 +26,17 @@ body[controls="classic"] .controlsButton {
   color: var(--text-contrast);
 }
 
-body[controls="classic"] .controls {
+body[controls="modern"] .controlsButton {
+  background: var(--highlight);
+  border-radius: 100%;
+  color: var(--text-contrast);
+}
+
+body[controls="classic"] .controls, body[controls="modern"] .controls {
   background: none;
 }
 
-body[controls="classic"] .web {
+body[controls="classic"] .web, body[controls="modern"] .web {
   height: 100%;
   top: 0;
 }
