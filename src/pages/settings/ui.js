@@ -57,6 +57,9 @@ function UI() {
         <ControlsOption type="default">
           <Obfuscate>Default</Obfuscate>
         </ControlsOption>
+        <ControlsOption type="modern">
+          <Obfuscate>Modern</Obfuscate>
+        </ControlsOption>
         <ControlsOption type="classic">
           <Obfuscate>Classic</Obfuscate>
         </ControlsOption>
