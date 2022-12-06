@@ -16,7 +16,10 @@ function Support() {
           <Obfuscate>Developers</Obfuscate>
         </div>
         <div className="itemtext">
-          <Obfuscate>Nebeung - Owner and solo developer</Obfuscate>
+          <Obfuscate>Nebeung - Owner and main developer</Obfuscate>
+        </div>
+        <div className="itemtext">
+          <Obfuscate>Divide - Developer</Obfuscate>
         </div>
         <div className="itemtitle">
           <Obfuscate>Proxies</Obfuscate>
