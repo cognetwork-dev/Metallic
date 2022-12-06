@@ -97,6 +97,12 @@ function Appearance() {
         <ThemeOption type="nord">
           <Obfuscate>Nord</Obfuscate>
         </ThemeOption>
+        <ThemeOption type="violet">
+          <Obfuscate>Violet</Obfuscate>
+        </ThemeOption>
+        <ThemeOption type="jungle">
+          <Obfuscate>Jungle</Obfuscate>
+        </ThemeOption>
         <ThemeOption type="simple">
           <Obfuscate>Simple</Obfuscate>
         </ThemeOption>
