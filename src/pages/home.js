@@ -164,7 +164,7 @@ function Home() {
           </a>
           <a
             className="footersides link"
-            href="https://github.com/FogNetwork/Metallic"
+            href="https://github.com/Nebelung-Dev/Metallic"
           >
             Github
           </a>
