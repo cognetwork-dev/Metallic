@@ -1,4 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="#004953">
-	<title>Metallic</title>
-	<polygon points="300,150 225,280 75,280 0,150 75,20 225,20" />
+<svg style="transform: scale(1.189886); transform-origin: center;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+    <title>Metallic</title>
+    <defs>
+        <mask id="mask">
+            <rect width="100%" height="100%" fill="white"></rect>
+            <path style="transform: scale(0.5); transform-origin: center;" width="10" height="10" fill="black" d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"></path>
+        </mask>
+    </defs>
+    <path mask="url(#mask)" fill="#004953" d="M16.05 3h-8.1c-.71 0-1.37.38-1.73 1l-4.04 7c-.36.62-.36 1.38 0 2l4.04 7c.36.62 1.02 1 1.73 1h8.09c.71 0 1.37-.38 1.73-1l4.04-7c.36-.62.36-1.38 0-2l-4.04-7c-.35-.62-1.01-1-1.72-1z"></path>
 </svg>
