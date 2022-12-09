@@ -37,5 +37,8 @@ Click a button at the top of this page and follow the directions for an easy way
 ### Bare Server
 Change the bare server in [`/src/consts.js`](https://github.com/Metallic-Web/Metallic/blob/main/src/consts.js)
 
+## Changelog
+View the changelog/roadmap [here](https://github.com/Metallic-Web/Metallic/blob/main/CHANGELOG.md)
+
 ## License
 Metallic uses the MIT license.
