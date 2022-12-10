@@ -3,7 +3,7 @@
  - [x] Proxathon version
 
 ### Version 1.0
- - [x] Initial release it help from Divide
+ - [x] Initial release with Divide's help
 
 ### Version 1.1
  - [x] New logo
