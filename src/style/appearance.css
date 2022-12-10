@@ -64,10 +64,10 @@ body[appearance="space"] {
 
 body[appearance="molten"] {
   --text: white;
-  --text-contrast: white;
+  --text-contrast: black;
   --highlight: #ff6868;
   --background: black;
-  --placeholder: darkslategray;
+  --placeholder: black;
   --font-main: "Roboto";
   --font-title: "Open Sans";
 }
