@@ -103,6 +103,9 @@ function Appearance() {
         <ThemeOption type="jungle">
           <Obfuscate>Jungle</Obfuscate>
         </ThemeOption>
+        <ThemeOption type="connection">
+          <Obfuscate>Connection</Obfuscate>
+        </ThemeOption>
         <ThemeOption type="simple">
           <Obfuscate>Simple</Obfuscate>
         </ThemeOption>
