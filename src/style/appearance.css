@@ -210,6 +210,16 @@ body[appearance="jungle"] {
     --font-title: "Open Sans";
 }
 
+body[appearance="connection"] {
+    --text: #43b581;
+    --text-contrast: #1c1b29;
+    --highlight: #43b581;
+    --background: #1c1b29;
+    --placeholder: #1c1b29;
+    --font-main: "Roboto";
+    --font-title: "Open Sans";
+}
+
 body[appearance="simple"] {
   --text: white;
   --text-contrast: white;
