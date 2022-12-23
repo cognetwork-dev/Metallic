@@ -123,6 +123,8 @@ function Appearance() {
         <BackgroundOption type="blocks">Blocks</BackgroundOption>
         <BackgroundOption type="triangles">Triangles</BackgroundOption>
         <BackgroundOption type="balls">Balls</BackgroundOption>
+        <BackgroundOption type="bubbles">Bubbles</BackgroundOption>
+        <BackgroundOption type="sus">Sus</BackgroundOption>
       </div>
     </>
   );
