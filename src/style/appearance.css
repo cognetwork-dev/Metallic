@@ -247,3 +247,17 @@ body[appearance="tsunami"] .homelogo {
 body[appearance="tsunami"] .tsunamilogo {
   display: initial;
 }
+
+body[appearance="hub"] {
+  --text: white;
+  --text-contrast: black;
+  --highlight: #ff9000;
+  --background: black;
+  --placeholder: black;
+  --font-main: Arial, Helvetica, sans-serif;
+  --font-title: Arial, Helvetica, sans-serif;
+}
+
+body[appearance="hub"] .homenav {
+  justify-content: flex-start;
+}
