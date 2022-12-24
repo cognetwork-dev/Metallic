@@ -112,6 +112,12 @@ function Appearance() {
         <ThemeOption type="tsunami">
           <Obfuscate>Tsunami</Obfuscate>
         </ThemeOption>
+        { localStorage.getItem("hub") === "true"  ? (
+        <ThemeOption type="hub">
+          <Obfuscate>Hub</Obfuscate>
+        </ThemeOption>
+        ) : ""
+        }
       </div>
       <div className="optiontitle">
         <Obfuscate>Background</Obfuscate>
