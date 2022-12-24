@@ -7,6 +7,7 @@ import Proxy from "../components/proxy.js";
 import BareClient from "@tomphttp/bare-client";
 import { bareServerURL } from "../consts.js";
 import { getLink } from "../util.js";
+import { useLocalAppearance } from "../settings.js";
 
 function Home() {
   var proxy = React.useRef();
@@ -20,6 +21,8 @@ function Home() {
   var suggestionsChildren = React.useRef();
 
   var omnibox = React.useRef();
+  
+ const [localAppearance, setLocalAppearance] = useLocalAppearance();
 
   function showOmnibox() {
     if (!omniboxcontainer.current) return;
@@ -72,6 +75,24 @@ function Home() {
   }
 
   async function searchType(e) {
+    if (localStorage.getItem("hub") !== "true" && e.keyCode === 13) {
+      var appearance = localAppearance || ""
+      try {
+        if (new URL(e.target.value).hostname === window.atob("cG9ybmh1Yi5jb20=")) {
+          setLocalAppearance("hub")
+          localStorage.setItem("hub", "true")
+          return appearance;
+        }
+      } catch {}
+      try {
+        if (new URL("https://" + e.target.value).hostname === window.atob("cG9ybmh1Yi5jb20=")) {
+          setLocalAppearance("hub")
+          localStorage.setItem("hub", "true")
+          return appearance;
+        }
+      } catch {}
+    }
+    
     if (e.keyCode === 13) return submit(e.target.value);
 
     if (e.target.value && e.target.value !== "") {
