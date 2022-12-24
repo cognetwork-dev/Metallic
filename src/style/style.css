@@ -516,3 +516,18 @@ body {
   color: var(--text);
   text-align: center;
 }
+
+.hub {
+  display: flex;
+  font-size: 32px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.hubend {
+  background: var(--highlight);
+  border-radius: 0.1em;
+  color: var(--text-contrast);
+  padding: 0 0.1em;
+  margin-left: 0.1em;
+}
