@@ -53,7 +53,7 @@ body {
   border: none;
   width: 584px;
   height: 44px;
-  border-radius: 6px;
+  border-radius: var(--border-radius);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,7 +107,7 @@ body {
   cursor: pointer;
   color: var(--text-contrast);
   text-decoration: none;
-  border-radius: 50%;
+  border-radius: var(--border-radius-round);
   background: var(--highlight);
   display: flex;
   align-items: center;
@@ -132,7 +132,7 @@ body {
   left: 10px;
   color: var(--text);
   text-decoration: none;
-  border-radius: 50%;
+  border-radius: var(--border-radius-round);
   background: transparent;
   display: flex;
   align-items: center;
@@ -155,7 +155,7 @@ body {
   background: var(--highlight);
   border: none;
   font-size: large;
-  border-radius: 6px;
+  border-radius: var(--border-radius);
   margin: 10px 10px;
   padding: 0 16px;
   white-space: nowrap;
@@ -233,8 +233,8 @@ body {
   display: flex;
   align-items: center;
   padding-left: 18px;
-  border-end-end-radius: 100px;
-  border-start-end-radius: 100px;
+  border-end-end-radius: var(--border-radius-secondary);
+  border-start-end-radius: var(--border-radius-secondary);
   color: var(--text);
   cursor: pointer;
   border: 1px solid transparent;
@@ -262,7 +262,7 @@ body {
   width: 584px;
   height: auto;
   background: var(--highlight);
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
   font-size: large;
   margin: 0 10px;
   z-index: 1;
@@ -295,7 +295,7 @@ body {
 }
 
 .optionchoose {
-  border-radius: 30px;
+  border-radius: var(--border-radius-secondary);
   color: var(--text);
   margin: 10px;
   padding: 14px 18px;
@@ -310,7 +310,7 @@ body {
 }
 
 .optionchoosecircle {
-  border-radius: 50%;
+  border-radius: var(--border-radius-round);
   color: var(--text-contrast);
   margin: 10px;
   padding: 20px;
@@ -325,15 +325,16 @@ body {
 }
 
 .optionchooseinput {
-  font-size: 18px;
   color: var(--text-contrast);
   margin: 10px;
   background: var(--highlight);
-  border-radius: 2.5px;
+  border-radius: var(--border-radius);
   padding: 10px;
   outline: none;
   width: 450px;
   border: none;
+  padding: 14px 18px;
+  font-size: initial;
 }
 
 .controls {
@@ -369,7 +370,7 @@ body {
   margin: 0 5px 0 10px;
   height: 38px;
   width: 38px;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -416,7 +417,7 @@ body {
 
 .choosecolorpicker {
   background: none;
-  border-radius: 30px;
+  border-radius: var(--border-radius-secondary);
   height: 43.2px;
   width: inherit;
   outline: none;
@@ -430,7 +431,7 @@ body {
 }
 .choosecolorpicker::-webkit-color-swatch {
   border: none;
-  border-radius: 30px;
+  border-radius: var(--border-radius-secondary);
 }
 
 .tsunamilogo,
@@ -456,7 +457,7 @@ body {
 }
 
 .omniboxcontainer[open] .omnibox {
-  border-radius: 6px 6px 0 0;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
 .itemscontainer {
@@ -500,7 +501,7 @@ body {
   height: 166px;
   width: 166px;
   background: var(--highlight);
-  border-radius: 6px;
+  border-radius: var(--border-radius);
   box-shadow: 0 2px 6px 0 #00000050;
   cursor: pointer;
   position: relative;
