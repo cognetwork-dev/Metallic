@@ -47,7 +47,7 @@ body[appearance="lime"] {
   --text-contrast: black;
   --highlight: lime;
   --background: #181c19;
-  --placeholder: #666666;
+  --placeholder: black;
   --font-main: "Roboto";
   --font-title: "Open Sans";
 }
@@ -77,7 +77,7 @@ body[appearance="retro"] {
   --text-contrast: black;
   --highlight: #009600;
   --background: black;
-  --placeholder: darkslategray;
+  --placeholder: black;
   --font-main: "Ubuntu Mono";
   --font-title: "Ubuntu Mono";
 }
@@ -87,7 +87,7 @@ body[appearance="eaglenet"] {
   --text-contrast: white;
   --highlight: #4d004d;
   --background: linear-gradient(to right, #665fd2, #9824d3);
-  --placeholder: lightgray;
+  --placeholder: white;
   --font-main: "Roboto";
   --font-title: "Open Sans";
 }
@@ -124,10 +124,10 @@ body[appearance="swamp"] {
 
 body[appearance="banana"] {
   --text: white;
-  --text-contrast: black;
+  --text-contrast: #161616;
   --highlight: #ffb703;
-  --background: #251b12;
-  --placeholder: darkslategray;
+  --background: #161616;
+  --placeholder: #161616;
   --font-main: "Roboto";
   --font-title: "Open Sans";
 }
@@ -220,14 +220,111 @@ body[appearance="connection"] {
     --font-title: "Open Sans";
 }
 
+body[appearance="dune"] {
+  --text: #282425;
+  --text-contrast: var(--background);
+  --highlight: #7d7259;
+  --background: #d2c59d;
+  --placeholder: var(--background);
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="dracula"] {
+  --text: #50fa7b;
+  --text-contrast: #50fa7b;
+  --highlight: #383a59;
+  --background: #282a36;
+  --placeholder: #50fa7b;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
 body[appearance="simple"] {
   --text: white;
   --text-contrast: white;
-  --highlight: #202225;
+  --highlight: #292b2f;
   --background: #18191c;
-  --placeholder: #b9bbbe;
+  --placeholder: white;
   --font-main: "Roboto";
   --font-title: "Open Sans";
+}
+
+body[appearance="fracital"] {
+  --text: #f971e4;
+  --text-contrast: #f971e4;
+  --highlight: #333;
+  --background: #222;
+  --placeholder: #f971e4;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+}
+
+body[appearance="nebula"] {
+  --text: #e0def4;
+  --text-contrast: var(--background);
+  --highlight: #7967dd;
+  --background: #191724;
+  --nav: #26233a;
+  --placeholder: var(--highlight);
+  --font-main: "Roboto";
+  --font-title: "Roboto";
+}
+
+body[appearance="nebula"] .optionchoose {
+  background: transparent;
+  color: var(--text);
+}
+
+body[appearance="nebula"] .chooseactive {
+  border: 1px solid var(--highlight);
+}
+
+body[appearance="nebula"] .omnibox {
+  background: transparent;
+  border: 1px solid var(--highlight);
+}
+
+body[appearance="nebula"] .search {
+  color: var(--text);
+}
+
+body[appearance="nebula"] .navitem {
+  background: transparent;
+  color: var(--highlight);
+  border-radius: 0;
+}
+
+body[appearance="nebula"] .settingssidecard {
+  background: transparent;
+  color: var(--text);
+}
+
+body[appearance="nebula"] .settingssidecardsel {
+  border: 1px solid var(--highlight);
+  border-left: none;
+}
+
+body[appearance="nebula"] .optionchoosecircle {
+  background: transparent;
+  border: 1px solid var(--highlight);
+  color: var(--highlight);
+}
+
+body[appearance="nebula"] .optionchooseinput {
+  background: transparent;
+  border: 1px solid var(--highlight);
+  color: var(--text);
+}
+
+body[appearance="nebula"] .suggestions {
+  background: transparent;
+  border: 1px solid var(--highlight);
+  border-top: 0;
+}
+
+body[appearance="nebula"] .sugg {
+  color: var(--text);
 }
 
 body[appearance="tsunami"] {
@@ -235,7 +332,7 @@ body[appearance="tsunami"] {
   --text-contrast: black;
   --highlight: #2493ff;
   --background: #121212;
-  --placeholder: #666666;
+  --placeholder: black;
   --font-main: "Roboto";
   --font-title: "Quicksand";
 }
