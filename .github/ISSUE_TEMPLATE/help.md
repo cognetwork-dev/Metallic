@@ -1,5 +1,5 @@
 ---
 name: Help
-about: Need help with anything regarding Metallic
+about: Get help with anything regarding Metallic
 labels: help
 ---
