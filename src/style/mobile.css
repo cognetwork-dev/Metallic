@@ -51,9 +51,9 @@
   }
 
   .settingssidecard {
-    border-radius: 6px;
+    border-radius: var(--border-radius);
     padding: 14px 18px;
-    height: 28px;
+    height: auto;
     border: 0;
     margin: 10px 0;
   }
@@ -69,7 +69,7 @@
   }
 
   .optionchooseinput {
-    width: calc(100% - 40px);
+    width: calc(100% - 60px);
   }
 
   .suggestions {
