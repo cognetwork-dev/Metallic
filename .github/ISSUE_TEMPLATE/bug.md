@@ -1,5 +1,5 @@
 ---
 name: Bug
-about: Found a bug
+about: Encountered a bug
 labels: bug
 ---
