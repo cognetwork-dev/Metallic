@@ -1,5 +1,5 @@
 # Changelog/Roadmap
-### Version 0.1.0
+### Version Beta
  - [x] Proxathon version
 
 ### Version 1.0
@@ -11,6 +11,7 @@
  - [x] Add LICENSE
  - [x] More themes
  - [x] New controls type
+ - [x] Create CHANGELOG.md (this!)
 
 ### Version 1.2
  - [x] Many more themes
