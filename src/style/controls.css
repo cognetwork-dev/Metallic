@@ -22,13 +22,13 @@ body[controls="classic"] .controlsButton:nth-child(3) {
 
 body[controls="classic"] .controlsButton {
   background: var(--highlight);
-  border-radius: 2.5px;
+  border-radius: var(--border-radius);
   color: var(--text-contrast);
 }
 
 body[controls="modern"] .controlsButton {
   background: var(--highlight);
-  border-radius: 100%;
+  border-radius: var(--border-radius-round);
   color: var(--text-contrast);
 }
 
