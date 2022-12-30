@@ -12,6 +12,15 @@
  - [x] More themes
  - [x] New controls type
 
+### Version 1.2
+ - [x] Many more themes
+ - [x] Change rounding option
+ - [x] Two new backgrounds
+ - [x] Hub mode
+ - [x] Update info
+ - [x] Update themes
+ - [x] Fix settings input height
+
 ### Upcoming
  - [ ] Update proxies
  - [ ] Add games
