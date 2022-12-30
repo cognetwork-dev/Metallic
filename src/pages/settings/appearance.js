@@ -106,8 +106,20 @@ function Appearance() {
         <ThemeOption type="connection">
           <Obfuscate>Connection</Obfuscate>
         </ThemeOption>
+        <ThemeOption type="dune">
+          <Obfuscate>Dune</Obfuscate>
+        </ThemeOption>
+        <ThemeOption type="dracula">
+          <Obfuscate>Dracula</Obfuscate>
+        </ThemeOption>
+        <ThemeOption type="fracital">
+          <Obfuscate>Fracital</Obfuscate>
+        </ThemeOption>
         <ThemeOption type="simple">
           <Obfuscate>Simple</Obfuscate>
+        </ThemeOption>
+        <ThemeOption type="nebula">
+          <Obfuscate>Nebula</Obfuscate>
         </ThemeOption>
         <ThemeOption type="tsunami">
           <Obfuscate>Tsunami</Obfuscate>
