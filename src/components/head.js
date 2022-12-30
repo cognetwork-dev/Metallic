@@ -2,6 +2,7 @@ import React from "react";
 import {
   useLocalAppearance,
   useLocalControls,
+  useLocalRounding,
   useLocalIcon,
   useLocalTitle,
 } from "../settings.js";
@@ -11,12 +12,14 @@ function Head({ defaultTitle, defaultIcon }) {
   var [localIcon] = useLocalIcon();
   var [localAppearance] = useLocalAppearance();
   var [localControls] = useLocalControls();
+  var [localRounding] = useLocalRounding();
 
   var title = localTitle || defaultTitle || "";
   var icon = localIcon || defaultIcon || "/logo.png";
 
   document.body.setAttribute("appearance", localAppearance);
   document.body.setAttribute("controls", localControls);
+  document.body.setAttribute("rounding", localRounding);
 
   document.title = title;
 
