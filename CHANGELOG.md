@@ -1,5 +1,5 @@
 # Changelog/Roadmap
-### Version Beta
+### Version 0.1
  - [x] Proxathon version
 
 ### Version 1.0
@@ -21,6 +21,12 @@
  - [x] Update info
  - [x] Update themes
  - [x] Fix settings input height
+
+### Version 1.3
+- [x] Fix breaking bug
+- [x] Add gitpod config
+- [x] Update console message
+- [x] Add issue templates
 
 ### Upcoming
  - [ ] Update proxies
