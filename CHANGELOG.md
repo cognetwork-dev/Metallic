@@ -29,6 +29,7 @@
 - [x] Add issue templates
 
 ### Upcoming
+ - [x] Update package.json
  - [ ] Update proxies
  - [ ] Add games
  - [ ] Custom themes
