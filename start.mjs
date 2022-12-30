@@ -60,7 +60,7 @@ httpServer.on("listening", () => {
   const address = httpServer.address();
 
   console.log(
-    `HTTP server listening. View live at http://${
+    `Metallic at http://${
       address.family === "IPv6" ? `[${address.address}]` : address.address
     }:${address.port}`
   );
