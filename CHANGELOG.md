@@ -23,13 +23,17 @@
  - [x] Fix settings input height
 
 ### Version 1.3
-- [x] Fix breaking bug
-- [x] Add gitpod config
-- [x] Update console message
-- [x] Add issue templates
+ - [x] Fix breaking bug
+ - [x] Add gitpod config
+ - [x] Update console message
+ - [x] Add issue templates
+
+### Version 1.4
+ - [x] Update package.json
+ - [x] Updated button look
+ - [x] Changed date
 
 ### Upcoming
- - [x] Update package.json
  - [ ] Update proxies
  - [ ] Add games
  - [ ] Custom themes

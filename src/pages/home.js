@@ -177,7 +177,7 @@ function Home() {
           </Link>
         </div>
         <div className="footermiddle">
-          <Obfuscate>© Metallic </Obfuscate>{new Date().getFullYear()}
+          <Obfuscate>© Metallic 2022 - </Obfuscate>{new Date().getFullYear()}
         </div>
         <div>
           <a className="footersides link" href="https://discord.gg/yk33HZSZkU">
