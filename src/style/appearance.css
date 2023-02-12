@@ -415,7 +415,7 @@ body[appearance="hub"] .homenav {
   justify-content: flex-start;
 }
 
-body[appearance="TikTok"] {
+body[appearance="tiktok"] {
   --text: #fff;
   --text-contrast: #fff;
   --highlight: #ff3b5c;
