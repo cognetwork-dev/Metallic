@@ -414,3 +414,15 @@ body[appearance="hub"] {
 body[appearance="hub"] .homenav {
   justify-content: flex-start;
 }
+
+body[appearance="tiktok"] {
+  --text: #fff;
+  --text-contrast: #fff;
+  --highlight: #ff3b5c;
+  --background: #121212;
+  --placeholder: #bdc1c6;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+  --secondary: #ffffff1f;
+  --hover: #ffffff33;
+}
