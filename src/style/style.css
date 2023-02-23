@@ -9,17 +9,17 @@ body {
   color: var(--text);
 }
 
-body::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 60px;
-}
-
 #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+#root::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 60px;
 }
 
 ::-webkit-scrollbar {
