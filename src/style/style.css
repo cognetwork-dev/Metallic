@@ -23,12 +23,14 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  background: var(--background);
+  width: 16px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--highlight);
+  border: 4px solid transparent;
+  background-clip: content-box;
+  border-radius: 8px;
 }
 
 ::placeholder {
