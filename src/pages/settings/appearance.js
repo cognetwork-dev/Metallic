@@ -112,6 +112,15 @@ function Appearance() {
         <ThemeOption type="dracula">
           <Obfuscate>Dracula</Obfuscate>
         </ThemeOption>
+        <ThemeOption type="tiktok">
+          <Obfuscate>TikTok</Obfuscate>
+        </ThemeOption>
+        <ThemeOption type="nebelung">
+          <Obfuscate>Nebelung</Obfuscate>
+        </ThemeOption>
+        <ThemeOption type="echo">
+          <Obfuscate>3kh0</Obfuscate>
+        </ThemeOption>
         <ThemeOption type="fracital">
           <Obfuscate>Fracital</Obfuscate>
         </ThemeOption>

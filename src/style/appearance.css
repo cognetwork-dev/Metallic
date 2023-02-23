@@ -102,7 +102,7 @@ body[appearance="eaglenet"] {
   --text: white;
   --text-contrast: white;
   --highlight: #4d004d;
-  --background: linear-gradient(to right, #665fd2, #9824d3);
+  --background: linear-gradient(to right, #665fd2, #9824d3), #9824d3;
   --placeholder: white;
   --font-main: "Roboto";
   --font-title: "Open Sans";
@@ -182,7 +182,7 @@ body[appearance="magma"] {
   --text: white;
   --text-contrast: white;
   --highlight: #ff001f;
-  --background: linear-gradient(to bottom, #10001b, #1d0003);
+  --background: linear-gradient(to bottom, #10001b, #1d0003), #1d0003;
   --placeholder: white;
   --font-main: "Roboto";
   --font-title: "Open Sans";
@@ -416,8 +416,8 @@ body[appearance="hub"] .homenav {
 }
 
 body[appearance="tiktok"] {
-  --text: #fff;
-  --text-contrast: #fff;
+  --text: white;
+  --text-contrast: white;
   --highlight: #ff3b5c;
   --background: #121212;
   --placeholder: #bdc1c6;
@@ -425,4 +425,32 @@ body[appearance="tiktok"] {
   --font-title: "Open Sans";
   --secondary: #ffffff1f;
   --hover: #ffffff33;
+}
+
+body[appearance="nebelung"] {
+  --text: black;
+  --text-contrast: white;
+  --highlight: linear-gradient(to right, #3d2d1e, #190f05), #190f05;
+  --background: #dabc9a;
+  --placeholder: #bdc1c6;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+  --secondary: #0000001a;
+  --hover: #00000033;
+}
+
+body[appearance="echo"] {
+  --text: white;
+  --text-contrast: black;
+  --highlight: #4caf50;
+  --background: #1c1c1c;
+  --placeholder: #bdc1c6;
+  --font-main: "Roboto";
+  --font-title: "Open Sans";
+  --secondary: #ffffff1a;
+  --hover: #ffffff33;
+}
+
+body[appearance="echo"] .nav {
+  box-shadow: 0 5px 200px var(--highlight);
 }

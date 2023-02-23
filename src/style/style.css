@@ -15,13 +15,22 @@ body {
   flex-direction: column;
 }
 
+#root::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+
 ::-webkit-scrollbar {
-  width: 8px;
-  background: var(--background);
+  width: 16px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--highlight);
+  border: 4px solid transparent;
+  background-clip: content-box;
+  border-radius: 8px;
 }
 
 ::placeholder {
@@ -119,7 +128,7 @@ body {
   position: absolute;
   height: 30px;
   width: 30px;
-  color: var(--placeholder);
+  color: var(--text-contrast);
   left: 7px;
 }
 
@@ -166,6 +175,10 @@ body {
   background: transparent;
   height: 60px;
   z-index: 9;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .title {
