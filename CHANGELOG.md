@@ -34,6 +34,8 @@
  - [x] Changed date
 
 ### Upcoming
+ - [x] New Themes
+ - [x] Updated scrollbar
  - [ ] Update proxies
  - [ ] Add games
  - [ ] Custom themes
