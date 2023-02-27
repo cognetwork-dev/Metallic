@@ -1,0 +1,7 @@
+version: '3'
+services:
+      web:
+              image: metallic
+              build: .
+              ports:
+                      - "8088:8080" # Set first port to whatever you want, linking it with your discord
