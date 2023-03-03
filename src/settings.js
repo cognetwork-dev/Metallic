@@ -5,6 +5,7 @@ const useLocalFallback = (key, fallback) => {
   return [local === null ? fallback : local, setLocal];
 };
 
+export var useLocalLanguage = () => useLocalFallback("language", "en");
 export var useLocalEngine = () => useLocalFallback("engine", "Google");
 export var useLocalBackground = () => useLocalFallback("background", "none");
 export var useLocalAppearance = () => useLocalFallback("appearance", "default");

@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import Nav from "../components/nav.js";
 import Head from "../components/head.js";
 import Obfuscate from "../components/obfuscate.js";
+import { useTranslation } from 'react-i18next';
 
 function Error() {
+  const { t } = useTranslation("error");
+
   return (
     <>
       <Head defaultTitle="Error | Metallic"></Head>
@@ -14,14 +17,14 @@ function Error() {
       </div>
       <div className="desc">
         <Obfuscate>
-          This requested page {window.location.pathname} does not exist.
+          {t("page", {pathname: window.location.pathname})}
         </Obfuscate>
         <br />
-        <Obfuscate>Visit the </Obfuscate>
+        <Obfuscate>{t("support.0")}</Obfuscate>
         <Link className="link" to="/support.html">
-          <Obfuscate>support</Obfuscate>
+          <Obfuscate>{t("support.1")}</Obfuscate>
         </Link>
-        <Obfuscate> page for help.</Obfuscate>
+        <Obfuscate>{t("support.2")}</Obfuscate>
       </div>
     </>
   );

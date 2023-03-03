@@ -2,27 +2,30 @@ import React from "react";
 import Nav from "../components/nav.js";
 import Head from "../components/head.js";
 import Obfuscate from "../components/obfuscate.js";
+import { useTranslation } from 'react-i18next';
 
 function Support() {
+  const { t } = useTranslation("credits");
+
   return (
     <>
       <Head defaultTitle="Credits | Metallic"></Head>
       <Nav />
       <div className="itemscontainer">
         <div className="itemsection">
-          <Obfuscate>Credits</Obfuscate>
+          <Obfuscate>{t("title")}</Obfuscate>
         </div>
         <div className="itemtitle">
-          <Obfuscate>Developers</Obfuscate>
+          <Obfuscate>{t("developers")}</Obfuscate>
         </div>
         <div className="itemtext">
-          <Obfuscate>Nebeung - Owner and main developer</Obfuscate>
+          <Obfuscate>Nebeung - {t("mainDevText")}</Obfuscate>
         </div>
         <div className="itemtext">
-          <Obfuscate>Divide - Developer</Obfuscate>
+          <Obfuscate>Divide - {t("devText")}</Obfuscate>
         </div>
         <div className="itemtitle">
-          <Obfuscate>Proxies</Obfuscate>
+          <Obfuscate>{t("proxies")}</Obfuscate>
         </div>
         <div className="itemtext">
           <Obfuscate>Divide - TOMP</Obfuscate>
@@ -43,7 +46,7 @@ function Support() {
           <Obfuscate>EndlessVortex - Aero</Obfuscate>
         </div>
         <div className="itemtitle">
-          <Obfuscate>Games</Obfuscate>
+          <Obfuscate>{t("games")}</Obfuscate>
         </div>
         <div className="itemtext">
           <Obfuscate>BinBashBanana - gfiles</Obfuscate>
@@ -52,10 +55,10 @@ function Support() {
           <Obfuscate>BinBashBanana - WebRetro</Obfuscate>
         </div>
         <div className="itemtitle">
-          <Obfuscate>Others</Obfuscate>
+          <Obfuscate>{t("others")}</Obfuscate>
         </div>
         <div className="itemtext">
-          <Obfuscate>Everyone else in the TN/Fog community :)</Obfuscate>
+          <Obfuscate>{t("othersMessage")}</Obfuscate>
         </div>
       </div>
     </>

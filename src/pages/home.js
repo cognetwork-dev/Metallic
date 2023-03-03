@@ -8,8 +8,11 @@ import BareClient from "@tomphttp/bare-client";
 import { bareServerURL } from "../consts.js";
 import { getLink } from "../util.js";
 import { useLocalAppearance } from "../settings.js";
+import { useTranslation } from 'react-i18next';
 
 function Home() {
+  const { t } = useTranslation("home");
+
   var proxy = React.useRef();
 
   var [suggestions, setSuggestions] = React.useState([]);
@@ -170,10 +173,10 @@ function Home() {
       <div className="footer">
         <div>
           <Link className="footersides link" to="/privacy.html">
-            Privacy
+            {t("privacy")}
           </Link>
           <Link className="footersides link" to="/credits.html">
-            Credits
+            {t("credits")}
           </Link>
         </div>
         <div className="footermiddle">

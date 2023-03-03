@@ -4,8 +4,11 @@ import ClearIcon from "@mui/icons-material/Clear";
 import BareClient from "@tomphttp/bare-client";
 import { useLocalIcon, useLocalTitle } from "../../settings.js";
 import { bareServerURL } from "../../consts.js";
+import { useTranslation } from 'react-i18next';
 
 function Tab() {
+  const { t } = useTranslation("settings");
+
   const bare = React.useMemo(() => new BareClient(bareServerURL), []);
 
   var url = React.useRef();
@@ -60,7 +63,7 @@ function Tab() {
   return (
     <>
       <div className="optiontitle">
-        <Obfuscate>Tab Cloak</Obfuscate>
+        <Obfuscate>{t("tab.cloak")}</Obfuscate>
       </div>
       <div className="chooseoption">
         <div className="optionchoosecircle" onClick={tabReset}>
@@ -86,17 +89,17 @@ function Tab() {
       </div>
       <input
         autoComplete="off"
-        placeholder="Enter a URL"
+        placeholder={t("tab.urlPlaceholder")}
         className="optionchooseinput"
         ref={url}
         onChange={(e) => setTab(url.current.value)}
       />
       <div className="optiontitle">
-        <Obfuscate>Custom</Obfuscate>
+        <Obfuscate>{t("tab.custom")}</Obfuscate>
       </div>
       <input
         autoComplete="off"
-        placeholder="Enter a title"
+        placeholder={t("tab.titlePlaceholder")}
         className="optionchooseinput"
         onKeyUp={(e) => setLocalTitle(e.target.value)}
         value={localTitle}
@@ -104,7 +107,7 @@ function Tab() {
       />
       <input
         autoComplete="off"
-        placeholder="Enter an icon URL"
+        placeholder={t("tab.iconPlaceholder")}
         className="optionchooseinput"
         onKeyUp={(e) => setLocalIcon(e.target.value)}
         value={localIcon}

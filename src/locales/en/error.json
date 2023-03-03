@@ -1,0 +1,8 @@
+{
+    "page": "This requested page {{pathname}} does not exist.",
+    "support": [
+        "Visit the ",
+        "support",
+        " page for help."
+    ]
+}

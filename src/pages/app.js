@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
+import "../i18n.js";
 import "../style/index.css";
 import "../proxy.js";
 import Background from "../components/background.js";

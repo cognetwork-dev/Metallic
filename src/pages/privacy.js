@@ -3,46 +3,38 @@ import Nav from "../components/nav.js";
 import Head from "../components/head.js";
 import Obfuscate from "../components/obfuscate.js";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 function Privacy() {
+  const { t } = useTranslation("privacy");
+
   return (
     <>
       <Head defaultTitle="Privacy Policy | Metallic"></Head>
       <Nav />
       <div className="itemscontainer">
         <div className="itemsection">
-          <Obfuscate>Privacy Policy</Obfuscate>
+          <Obfuscate>{t("title")}</Obfuscate>
         </div>
         <div className="itemtitle">
-          <Obfuscate>Consent</Obfuscate>
+          <Obfuscate>{t("policy.0.title")}</Obfuscate>
         </div>
         <div className="itemtext">
-          <Obfuscate>
-            By using our service, you agree to our Privacy Policy our use of
-            information.
-          </Obfuscate>
+          <Obfuscate>{t("policy.0.text")}</Obfuscate>
         </div>
         <div className="itemtitle">
-          <Obfuscate>Information Collection</Obfuscate>
+          <Obfuscate>{t("policy.1.title")}</Obfuscate>
         </div>
         <div className="itemtext">
-          <Obfuscate>
-            We do not collect any of your personal data. However, visiting third
-            party websites using our proxy may use you data.
-          </Obfuscate>
-          <br />
-          <Obfuscate>
-            Read the privay policy from each website you visit for more info on
-            how they collect your data.
-          </Obfuscate>
+          <Obfuscate>{t("policy.1.text")}</Obfuscate>
         </div>
         <div className="itemtitle">
-          <Obfuscate>Contact </Obfuscate>
+          <Obfuscate>{t("policy.2.title")}</Obfuscate>
         </div>
         <div className="itemtext">
-          <Obfuscate>Contact information can be found on the </Obfuscate>
+          <Obfuscate>{t("policy.2.text")}</Obfuscate>
           <Link className="link" to="/support.html">
-            <Obfuscate>support page</Obfuscate>
+            <Obfuscate>{t("policy.2.page")}</Obfuscate>
           </Link>
         </div>
       </div>

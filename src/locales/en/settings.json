@@ -1,0 +1,30 @@
+{
+    "title": "Settings",
+    "sidebar": {
+        "search": "Search",
+        "tab": "Tab",
+        "appearance": "Appearance",
+        "ui": "UI"
+    },
+    "search": {
+        "proxy": "Proxy",
+        "engine": "Search Engine"
+    },
+    "tab": {
+        "cloak": "Tab Cloak",
+        "custom": "Custom",
+        "urlPlaceholder": "Enter a URL",
+        "titlePlaceholder": "Enter a title",
+        "iconPlaceholder": "Enter an icon URL"
+    },
+    "appearance": {
+        "language": "Language",
+        "theme": "Theme",
+        "background": "Background"
+    },
+    "ui": {
+        "window": "Window",
+        "controls": "Controls",
+        "rounding": "Rounding"
+    }
+}

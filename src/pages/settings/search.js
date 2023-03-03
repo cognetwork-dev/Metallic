@@ -2,6 +2,7 @@ import clsx from "clsx";
 import React from "react";
 import Obfuscate from "../../components/obfuscate.js";
 import { useLocalEngine, useLocalProxy } from "../../settings.js";
+import { useTranslation } from 'react-i18next';
 
 function EngineOption({ type, children }) {
   var [localEngine, setLocalEngine] = useLocalEngine();
@@ -34,10 +35,12 @@ function ProxyOption({ type, children }) {
 }
 
 function Search() {
+  const { t } = useTranslation("settings");
+
   return (
     <>
       <div className="optiontitle">
-        <Obfuscate>Proxy</Obfuscate>
+        <Obfuscate>{t("search.proxy")}</Obfuscate>
       </div>
       <div className="chooseoption">
         <ProxyOption type="Ultraviolet">
@@ -57,7 +60,7 @@ function Search() {
         </ProxyOption>
       </div>
       <div className="optiontitle">
-        <Obfuscate>Search Engine</Obfuscate>
+        <Obfuscate>{t("search.engine")}</Obfuscate>
       </div>
       <div className="chooseoption">
         <EngineOption type="Google">

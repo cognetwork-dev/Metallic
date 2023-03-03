@@ -1,0 +1,23 @@
+{
+    "faq": "FAQ",
+    "contact": "Contact",
+    "email": "E-mail",
+    "questions": [
+      {
+        "title": "Le proxy ne se charge pas",
+        "answer": "Si vous voyez une page d'erreur, essayez de recharger le site Web. "
+      },
+      {
+        "title": "Où puis-je obtenir plus de liens vers Metallic ?",
+        "answer": "Je ne publie pas beaucoup de liens, mais consultez le serveur proxy TN discord.gg/unblock, je pourrais en publier."
+      },
+      {
+        "title": "Mes informations sont-elles sécurisées ?",
+        "answer": "Nous ne collectons aucune donnée auprès de vous, mais tout site Web que vous visitez peut le faire."
+      },
+      {
+        "title": "Pouvez-vous auto-héberger Metallic ?",
+        "answer": "Consultez le référentiel Github pour le code source et des informations sur l'hébergement."
+      }
+    ]
+}

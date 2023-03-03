@@ -2,6 +2,7 @@ import clsx from "clsx";
 import React from "react";
 import Obfuscate from "../../components/obfuscate.js";
 import { useLocalControls, useLocalWindow, useLocalRounding } from "../../settings.js";
+import { useTranslation } from 'react-i18next';
 
 function WindowOption({ type, children }) {
   const [localWindow, setLocalWindow] = useLocalWindow();
@@ -49,10 +50,12 @@ function RoundingOption({ type, children }) {
 }
 
 function UI() {
+  const { t } = useTranslation("settings");
+
   return (
     <>
       <div className="optiontitle">
-        <Obfuscate>Window</Obfuscate>
+        <Obfuscate>{t("ui.window")}</Obfuscate>
       </div>
       <div className="chooseoption">
         <WindowOption type="default">
@@ -66,7 +69,7 @@ function UI() {
         </WindowOption>
       </div>
       <div className="optiontitle">
-        <Obfuscate>Controls</Obfuscate>
+        <Obfuscate>{t("ui.controls")}</Obfuscate>
       </div>
       <div className="chooseoption">
         <ControlsOption type="default">
@@ -80,7 +83,7 @@ function UI() {
         </ControlsOption>
       </div>
       <div className="optiontitle">
-        <Obfuscate>Rounding</Obfuscate>
+        <Obfuscate>{t("ui.rounding")}</Obfuscate>
       </div>
       <div className="chooseoption">
         <RoundingOption type="default">

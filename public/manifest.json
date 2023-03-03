@@ -3,11 +3,11 @@
   "short_name": "Metallic",
   "description": "A powerful web proxy build for speed and customization.",
   "icons": [
-    {
-      "src": "/logo.png",
-      "sizes": "120x120",
-      "type": "image/png"
-    }
+      {
+          "src": "/logo.png",
+          "sizes": "120x120",
+          "type": "image/png"
+      }
   ],
   "lang": "en-US",
   "start_url": "/",

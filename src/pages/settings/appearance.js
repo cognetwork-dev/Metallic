@@ -1,7 +1,28 @@
 import clsx from "clsx";
 import React from "react";
 import Obfuscate from "../../components/obfuscate.js";
-import { useLocalAppearance, useLocalBackground } from "../../settings.js";
+import { useLocalLanguage, useLocalAppearance, useLocalBackground } from "../../settings.js";
+import { setLanguage } from "../../i18n.js";
+import { useTranslation } from 'react-i18next';
+
+function LanguageOption({ type, children }) {
+  const [localLanguage, setLocalLanguage] = useLocalLanguage();
+
+  return (
+    <div
+      onClick={() => {
+        setLanguage(type)
+        setLocalLanguage(type)
+      }}
+      className={clsx(
+        "optionchoose",
+        type === localLanguage && "chooseactive"
+      )}
+    >
+      {children}
+    </div>
+  );
+}
 
 function ThemeOption({ type, children }) {
   const [localAppearance, setLocalAppearance] = useLocalAppearance();
@@ -40,10 +61,32 @@ function BackgroundOption({ type, children }) {
 }
 
 function Appearance() {
+  const { t } = useTranslation("settings");
+
   return (
     <>
       <div className="optiontitle">
-        <Obfuscate>Theme</Obfuscate>
+        <Obfuscate>{t("appearance.language")}</Obfuscate>
+      </div>
+      <div className="chooseoption">
+        <LanguageOption type="en">
+          <Obfuscate>English</Obfuscate>
+        </LanguageOption>
+        <LanguageOption type="es">
+          <Obfuscate>Spanish</Obfuscate>
+        </LanguageOption>
+        <LanguageOption type="fr">
+          <Obfuscate>French</Obfuscate>
+        </LanguageOption>
+        <LanguageOption type="zh">
+          <Obfuscate>Chinese</Obfuscate>
+        </LanguageOption>
+        <LanguageOption type="de">
+          <Obfuscate>German</Obfuscate>
+        </LanguageOption>
+      </div>
+      <div className="optiontitle">
+        <Obfuscate>{t("appearance.theme")}</Obfuscate>
       </div>
       <div className="chooseoption">
         <ThemeOption type="default">
@@ -141,7 +184,7 @@ function Appearance() {
         }
       </div>
       <div className="optiontitle">
-        <Obfuscate>Background</Obfuscate>
+        <Obfuscate>{t("appearance.background")}</Obfuscate>
       </div>
       <div className="chooseoption">
         <BackgroundOption type="none">None</BackgroundOption>

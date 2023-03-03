@@ -2,56 +2,48 @@ import React from "react";
 import Nav from "../components/nav.js";
 import Head from "../components/head.js";
 import Obfuscate from "../components/obfuscate.js";
+import { useTranslation } from 'react-i18next';
 
 function Support() {
+  const { t } = useTranslation("support");
+
   return (
     <>
       <Head defaultTitle="Support | Metallic"></Head>
       <Nav />
       <div className="itemscontainer">
         <div className="itemsection">
-          <Obfuscate>FAQ</Obfuscate>
+          <Obfuscate>{t("faq")}</Obfuscate>
         </div>
         <div className="itemtitle">
-          <Obfuscate>The proxy is not loading</Obfuscate>
+          <Obfuscate>{t("questions.0.title")}</Obfuscate>
         </div>
         <div className="itemtext">
-          <Obfuscate>
-            If you see an error page try reloading the website. If the website
-            is not supported there is nothing we can do.
-          </Obfuscate>
+          <Obfuscate>{t("questions.0.answer")}</Obfuscate>
         </div>
         <div className="itemtitle">
-          <Obfuscate>Where can I obtain more links to Metallic?</Obfuscate>
+          <Obfuscate>{t("questions.1.title")}</Obfuscate>
         </div>
         <div className="itemtext">
-          <Obfuscate>
-            You can find more link on our discord here. Go to #proxy-bot and
-            choose Metallic for a randomized link.
-          </Obfuscate>
+          <Obfuscate>{t("questions.1.answer")}</Obfuscate>
         </div>
         <div className="itemtitle">
-          <Obfuscate>Is my information secure?</Obfuscate>
+          <Obfuscate>{t("questions.2.title")}</Obfuscate>
         </div>
         <div className="itemtext">
-          <Obfuscate>
-            We do not collect any data from you but any website you visit can.
-          </Obfuscate>
+          <Obfuscate>{t("questions.2.answer")}</Obfuscate>
         </div>
         <div className="itemtitle">
-          <Obfuscate>How to self-host Metallic</Obfuscate>
+          <Obfuscate>{t("questions.3.title")}</Obfuscate>
         </div>
         <div className="itemtext">
-          <Obfuscate>
-            Check out the github repository for source code and info about
-            hosting.
-          </Obfuscate>
+          <Obfuscate>{t("questions.3.answer")}</Obfuscate>
         </div>
         <div className="itemsection">
-          <Obfuscate>Contact</Obfuscate>
+          <Obfuscate>{t("contact")}</Obfuscate>
         </div>
         <div className="itemtitle">
-          <Obfuscate>Email</Obfuscate>
+          <Obfuscate>{t("email")}</Obfuscate>
         </div>
         <a className="link" href="mailto:nebelung@mailfence.com">
           <div className="itemtext">

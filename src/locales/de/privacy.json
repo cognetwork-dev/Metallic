@@ -1,0 +1,18 @@
+{
+    "title": "Datenschutz-Bestimmungen",
+    "policy": [
+      {
+        "title": "Zustimmung",
+        "text": "Durch die Nutzung unseres Dienstes stimmen Sie unserer Datenschutzerklärung unserer Verwendung von Informationen zu."
+      },
+      {
+        "title": "Informationssammlung",
+        "text": "Wir erheben keine Ihrer personenbezogenen Daten. "
+      },
+      {
+        "title": "Kontakt",
+        "text": "Kontaktdaten finden Sie auf der ",
+        "page": "Support-Seite."
+      }
+    ]
+}

@@ -33,9 +33,19 @@
  - [x] Updated button look
  - [x] Changed date
 
-### Upcoming
+### Version 1.5
+ - [x] Added translations (en, es, fr, zh, de)
  - [x] New Themes
  - [x] Updated scrollbar
+ - [x] Docker support
+ - [x] Fixed links style
+ - [x] Fixed links underline when obfuscated
+
+### Upcoming
+ - [ ] Translate page titles
+ - [ ] Obfuscate more text
+ - [ ] Obfuscate links (href)
+ - [ ] No obfuscation option in "/consts.js"
  - [ ] Update proxies
  - [ ] Add games
  - [ ] Custom themes

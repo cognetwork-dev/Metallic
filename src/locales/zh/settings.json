@@ -1,0 +1,30 @@
+{
+    "title": "设置",
+    "sidebar": {
+      "search": "搜索",
+      "tab": "标签",
+      "appearance": "外貌",
+      "ui": "用户界面"
+    },
+    "search": {
+      "proxy": "代理人",
+      "engine": "搜索引擎"
+    },
+    "tab": {
+      "cloak": "标签斗篷",
+      "custom": "风俗",
+      "urlPlaceholder": "输入网址",
+      "titlePlaceholder": "输入标题",
+      "iconPlaceholder": "输入图标 URL"
+    },
+    "appearance": {
+      "language": "语言",
+      "theme": "主题",
+      "background": "背景"
+    },
+    "ui": {
+      "window": "窗户",
+      "controls": "控件",
+      "rounding": "四舍五入"
+    }
+}

@@ -37,6 +37,10 @@ body {
   color: var(--placeholder);
 }
 
+a {
+  text-decoration: none;
+}
+
 .hometitle {
   font-family: var(--font-title) !important;
   font-size: 85px;
@@ -199,6 +203,10 @@ body {
 }
 
 .link:hover {
+  text-decoration: underline;
+}
+
+.link:hover span[class] {
   text-decoration: underline;
 }
 

@@ -4,6 +4,7 @@ import Nav from "./components/nav.js";
 import Head from "./components/head.js";
 import Obfuscate from "./components/obfuscate.js";
 import clsx from "clsx";
+import { useTranslation } from 'react-i18next';
 
 function Tab({ to, children }) {
   const location = useLocation();
@@ -23,25 +24,27 @@ function Tab({ to, children }) {
 }
 
 export default function SettingsLayout({ children }) {
+  const { t } = useTranslation("settings");
+
   return (
     <>
       <Head defaultTitle="Settings | Metallic"></Head>
       <Nav settings />
       <div className="settingssidebar">
         <div className="settingssidetitle">
-          <Obfuscate>Settings</Obfuscate>
+          <Obfuscate>{t("title")}</Obfuscate>
         </div>
         <Tab to="/settings/search.html">
-          <Obfuscate>Search</Obfuscate>
+          <Obfuscate>{t("sidebar.search")}</Obfuscate>
         </Tab>
         <Tab to="/settings/tab.html">
-          <Obfuscate>Tab</Obfuscate>
+          <Obfuscate>{t("sidebar.tab")}</Obfuscate>
         </Tab>
         <Tab to="/settings/appearance.html">
-          <Obfuscate>Appearance</Obfuscate>
+          <Obfuscate>{t("sidebar.appearance")}</Obfuscate>
         </Tab>
         <Tab to="/settings/ui.html">
-          <Obfuscate>UI</Obfuscate>
+          <Obfuscate>{t("sidebar.ui")}</Obfuscate>
         </Tab>
       </div>
       <div className="settingsapp">{children}</div>
