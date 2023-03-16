@@ -34,9 +34,35 @@ Run `npm run dev` to run the app in development mode.
 Click a button at the top of this page and follow the directions for an easy way to host Metallic.
 
 ## Configuration
+
+### Bare Servers
+File: [/src/consts.js](https://github.com/Metallic-Web/Metallic/blob/main/src/consts.js)
+
+`const obfuscation = true | false;` - Choose to obfuscate text
+
 ### Bare Server
-`const obfuscation = true | false;` - Obfuscate text
+File: [/src/consts.js](https://github.com/Metallic-Web/Metallic/blob/main/src/consts.js)
+
 `const bareServerURL = new URL(url);` - Main bare server and Stomp bare server
+
+
+File: [/public/uv/uv.config.js](https://github.com/Metallic-Web/Metallic/blob/main/public/uv/uv.config.js)
+
+`bare: url,` - Ultraviolet bare server
+
+
+File: [/public/dip/dip.config.js](https://github.com/Metallic-Web/Metallic/blob/main/public/dip/dip.config.js)
+
+`bare: {`
+`    version: 1 | 2,` - DIP bare version
+`    path: url,` - DIP bare server
+`}`
+
+
+File: [/public/aero/config.js](https://github.com/Metallic-Web/Metallic/blob/main/public/aero/config.js)
+
+`const backends = [url];` - Aero bare server
+
 
 ## Changelog
 View the changelog/roadmap [here](https://github.com/Metallic-Web/Metallic/blob/main/CHANGELOG.md)
