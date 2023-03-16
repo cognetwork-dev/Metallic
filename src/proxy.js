@@ -1,4 +1,4 @@
-/*global StompBoot,__DIP,__uv$config,__osana$config*/
+/*global StompBoot,__DIP,__uv$config*/
 import { bareServerURL } from "./consts";
 
 export const swSupported = navigator.serviceWorker !== undefined;
@@ -12,11 +12,6 @@ if (swSupported) {
 
   navigator.serviceWorker.register(new URL("/dip-sw.js", global.location), {
     scope: __DIP.config.prefix,
-  });
-
-  navigator.serviceWorker.register(new URL("/osana/sw.js", global.location), {
-    scope: __osana$config.prefix,
-    updateViaCache: "none",
   });
 
   navigator.serviceWorker.register(new URL("/aero-sw.js", global.location), {

@@ -9,7 +9,7 @@ function Support() {
 
   return (
     <>
-      <Head defaultTitle="Credits | Metallic"></Head>
+      <Head defaultTitle="credits"></Head>
       <Nav />
       <div className="itemscontainer">
         <div className="itemsection">
@@ -38,9 +38,6 @@ function Support() {
         </div>
         <div className="itemtext">
           <Obfuscate>Ender - DIP</Obfuscate>
-        </div>
-        <div className="itemtext">
-          <Obfuscate>Cohen - Osana</Obfuscate>
         </div>
         <div className="itemtext">
           <Obfuscate>EndlessVortex - Aero</Obfuscate>

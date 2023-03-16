@@ -5,27 +5,46 @@ import {
   useLocalRounding,
   useLocalIcon,
   useLocalTitle,
+  useLocalLanguage,
 } from "../settings.js";
+import { useTranslation } from 'react-i18next';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { ReactComponent as LogoSVG } from "../assets/logo.svg";
 
-function Head({ defaultTitle, defaultIcon }) {
+function Head({ defaultTitle }) {
   var [localTitle] = useLocalTitle();
   var [localIcon] = useLocalIcon();
   var [localAppearance] = useLocalAppearance();
   var [localControls] = useLocalControls();
   var [localRounding] = useLocalRounding();
+  var [localLanguage] = useLocalLanguage();
 
-  var title = localTitle || defaultTitle || "";
-  var icon = localIcon || defaultIcon || "/logo.png";
+  const { t } = useTranslation("title");
 
   document.body.setAttribute("appearance", localAppearance);
   document.body.setAttribute("controls", localControls);
   document.body.setAttribute("rounding", localRounding);
 
-  document.title = title;
+  React.useEffect(() => {
+    var translatedTitle = defaultTitle ? t(defaultTitle) + " | " + "Metallic" : "Metallic"
+    var title = localTitle || translatedTitle || "";
 
-  for (var link of document.querySelectorAll("link[rel*='icon']")) {
-    link.href = icon;
-  }
+    document.title = title;
+  }, [localLanguage]);
+
+  React.useEffect(() => {
+    document.body.setAttribute("appearance", localAppearance);
+    
+    var logo = renderToStaticMarkup(<LogoSVG/>)
+    logo = logo.replace("var(--highlight, #004953)", getComputedStyle(document.body).getPropertyValue("--highlight") || "var(--highlight, #004953)")
+    var themedLogo = "data:image/svg+xml;base64," + window.btoa(logo)
+
+    var icon = localIcon || themedLogo || "/logos/logo.svg"
+
+    for (var link of document.querySelectorAll("link[rel*='icon']")) {
+      link.href = icon;
+    }
+  }, [localAppearance]);
 
   return <></>;
 }

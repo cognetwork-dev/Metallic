@@ -134,7 +134,7 @@ function Home() {
 
   return (
     <>
-      <Head defaultTitle="Metallic"></Head>
+      <Head></Head>
       <Proxy ref={proxy} />
       <Nav />
       <div className="hometitle">
@@ -173,10 +173,10 @@ function Home() {
       <div className="footer">
         <div>
           <Link className="footersides link" to="/privacy.html">
-            {t("privacy")}
+            <Obfuscate>{t("privacy")}</Obfuscate>
           </Link>
           <Link className="footersides link" to="/credits.html">
-            {t("credits")}
+            <Obfuscate>{t("credits")}</Obfuscate>
           </Link>
         </div>
         <div className="footermiddle">
@@ -184,13 +184,13 @@ function Home() {
         </div>
         <div>
           <a className="footersides link" href="https://discord.gg/yk33HZSZkU">
-            Discord
+            <Obfuscate>Discord</Obfuscate>
           </a>
           <a
             className="footersides link"
             href="https://github.com/Nebelung-Dev/Metallic"
           >
-            Github
+            <Obfuscate>Github</Obfuscate>
           </a>
         </div>
       </div>

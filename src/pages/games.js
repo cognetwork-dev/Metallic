@@ -9,7 +9,7 @@ function Games() {
 
   return (
     <>
-      <Head defaultTitle="Games | Metallic"></Head>
+      <Head defaultTitle="games"></Head>
       <Nav />
       <h1 className="title">
         <Obfuscate>{t("comingSoon")}</Obfuscate>

@@ -38,7 +38,7 @@ function Apps() {
   });
   return (
     <>
-      <Head defaultTitle="Apps | Metallic"></Head>
+      <Head defaultTitle="apps"></Head>
       <Nav />
       <Proxy ref={proxy} />
       <div className="omniboxcontainersearch omniboxcontainer">

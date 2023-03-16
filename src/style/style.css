@@ -1,12 +1,12 @@
-* {
-  font-family: var(--font-main);
-}
-
 body {
   margin: 0;
   padding: 0;
   background: var(--background);
   color: var(--text);
+}
+
+body * {
+  font-family: var(--font-main);
 }
 
 #root {
@@ -42,7 +42,7 @@ a {
 }
 
 .hometitle {
-  font-family: var(--font-title) !important;
+  font-family: var(--font-title);
   font-size: 85px;
   text-align: center;
   font-weight: bold;
@@ -52,6 +52,10 @@ a {
   justify-content: center;
   align-items: flex-end;
   min-height: 92px;
+}
+
+.hometitle span[class] {
+  font-family: var(--font-title);
 }
 
 .omniboxcontainer {
@@ -105,7 +109,7 @@ a {
 }
 
 .navitems {
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 10px;
   display: flex;
@@ -115,8 +119,8 @@ a {
 }
 
 .navitem {
-  height: 40px !important;
-  width: 40px !important;
+  height: 40px;
+  width: 40px;
   cursor: pointer;
   color: var(--text-contrast);
   text-decoration: none;
@@ -137,19 +141,19 @@ a {
 }
 
 .homenav {
-  height: 40px !important;
-  width: 40px !important;
-  cursor: pointer;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  color: var(--text);
-  text-decoration: none;
-  border-radius: var(--border-radius-round);
   background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: var(--border-radius-round);
+  color: var(--text);
+  cursor: pointer;
+  height: 40px;
+  left: 10px;
+  position: absolute;
+  text-decoration: none;
+  width: 40px;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto 0;
 }
 
 .buttons {
@@ -473,7 +477,7 @@ a {
   left: 0px !important;
   bottom: 0 !important;
   right: 0 !important;
-  pointer-events: none;
+  pointer-events: none !important;
   z-index: -100 !important;
 }
 

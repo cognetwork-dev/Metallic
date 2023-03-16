@@ -10,7 +10,7 @@ function Error() {
 
   return (
     <>
-      <Head defaultTitle="Error | Metallic"></Head>
+      <Head defaultTitle="error"></Head>
       <Nav />
       <div className="title">
         <Obfuscate>404 Error</Obfuscate>

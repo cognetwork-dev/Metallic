@@ -28,7 +28,7 @@ export default function SettingsLayout({ children }) {
 
   return (
     <>
-      <Head defaultTitle="Settings | Metallic"></Head>
+      <Head defaultTitle="settings"></Head>
       <Nav settings />
       <div className="settingssidebar">
         <div className="settingssidetitle">

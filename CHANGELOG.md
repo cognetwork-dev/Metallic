@@ -41,11 +41,24 @@
  - [x] Fixed links style
  - [x] Fixed links underline when obfuscated
 
+### Version 1.6
+ - [x] Logo now updates color depending on the theme!
+ - [x] Update Aero
+ - [x] Translate page titles (fix)
+ - [x] Revert to old logo
+ - [x] Rework logo svg
+ - [x] Fix translations
+ - [x] Update css
+ - [x] Update manifest with more logos
+ - [x] Remove Osana
+ - [x] No obfuscation option in "/consts.js"
+ - [x] Obfuscate more text
+
 ### Upcoming
- - [ ] Translate page titles
- - [ ] Obfuscate more text
- - [ ] Obfuscate links (href)
- - [ ] No obfuscation option in "/consts.js"
+ - [ ] Add a blocklist option
+ - [ ] Reset all settings
+ - [ ] Export/import settings
+ - [ ] Update other tabs on settings change
  - [ ] Update proxies
  - [ ] Add games
  - [ ] Custom themes

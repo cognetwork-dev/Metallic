@@ -4,6 +4,7 @@
 import clsx from "clsx";
 import { create } from "random-seed";
 import { memo } from "react";
+import { obfuscation } from "../consts.js";
 
 const rand = create(navigator.userAgent + global.location.origin);
 
@@ -150,6 +151,10 @@ export const ObfuscatePrimitive = memo(function Obfuscate({ text, ellipsis }) {
  * @description An obfuscated text block. This will strip the input of all non-text elements.
  */
 const Obfuscate = memo(function Obfuscate({ ellipsis, children }) {
+  if (!obfuscation) {
+    return children;
+  }
+
   let string = "";
 
   const stack = [

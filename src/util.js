@@ -1,4 +1,4 @@
-/*global __DIP,__uv$config,__osana$config*/
+/*global __DIP,__uv$config*/
 import { stomp, swSupported } from "./proxy.js";
 
 export function getSearchEngine() {
@@ -42,14 +42,9 @@ export function getLink(url) {
         __uv$config.encodeUrl(url),
         new URL(__DIP.config.prefix, global.location)
       ).toString();
-    case "Osana":
-      return new URL(
-        __osana$config.codec.encode(url),
-        new URL(__osana$config.prefix, global.location)
-      ).toString();
     case "Aero":
       return new URL(
-        `/go/${__osana$config.prefix}`,
+        `/go/${url}`,
         global.location
       ).toString();
     default:
@@ -78,11 +73,6 @@ export function getWindowLocation(page) {
         break;
       case "DIP":
         pageURL = page.contentWindow.__DIP.location.toString();
-        break;
-      case "Osana":
-        pageURL = page.contentWindow.location
-          .toString()
-          .split(page.contentWindow.__osana$config.prefix)[1];
         break;
       case "Aero":
         pageURL = page.contentWindow.location.toString().split("/go/")[1];

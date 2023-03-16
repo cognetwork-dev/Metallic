@@ -9,7 +9,7 @@ function Support() {
 
   return (
     <>
-      <Head defaultTitle="Support | Metallic"></Head>
+      <Head defaultTitle="support"></Head>
       <Nav />
       <div className="itemscontainer">
         <div className="itemsection">

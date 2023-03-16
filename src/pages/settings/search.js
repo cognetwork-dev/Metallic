@@ -52,9 +52,6 @@ function Search() {
         <ProxyOption type="DIP">
           <Obfuscate>DIP</Obfuscate>
         </ProxyOption>
-        <ProxyOption type="Osana">
-          <Obfuscate>Osana</Obfuscate>
-        </ProxyOption>
         <ProxyOption type="Aero">
           <Obfuscate>Aero</Obfuscate>
         </ProxyOption>

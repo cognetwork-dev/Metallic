@@ -10,7 +10,7 @@ function Privacy() {
 
   return (
     <>
-      <Head defaultTitle="Privacy Policy | Metallic"></Head>
+      <Head defaultTitle="privacy"></Head>
       <Nav />
       <div className="itemscontainer">
         <div className="itemsection">
