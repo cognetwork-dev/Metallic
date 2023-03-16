@@ -54,8 +54,11 @@ File: [/public/uv/uv.config.js](https://github.com/Metallic-Web/Metallic/blob/ma
 File: [/public/dip/dip.config.js](https://github.com/Metallic-Web/Metallic/blob/main/public/dip/dip.config.js)
 
 `bare: {`
+
 `    version: 1 | 2,` - DIP bare version
+
 `    path: url,` - DIP bare server
+
 `}`
 
 
