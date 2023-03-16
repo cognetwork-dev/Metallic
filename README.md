@@ -35,12 +35,12 @@ Click a button at the top of this page and follow the directions for an easy way
 
 ## Configuration
 
-### Bare Servers
+### Obfuscation
 File: [/src/consts.js](https://github.com/Metallic-Web/Metallic/blob/main/src/consts.js)
 
 `const obfuscation = true | false;` - Choose to obfuscate text
 
-### Bare Server
+### Bare Servers
 File: [/src/consts.js](https://github.com/Metallic-Web/Metallic/blob/main/src/consts.js)
 
 `const bareServerURL = new URL(url);` - Main bare server and Stomp bare server
