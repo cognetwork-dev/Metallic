@@ -55,6 +55,7 @@
  - [x] Obfuscate more text
 
 ### Upcoming
+ - [x] Fix Aero
  - [x] Update docs
  - [ ] Add a blocklist option
  - [ ] Reset all settings
