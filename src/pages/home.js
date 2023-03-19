@@ -188,7 +188,7 @@ function Home() {
           </a>
           <a
             className="footersides link"
-            href="https://github.com/Nebelung-Dev/Metallic"
+            href="https://github.com/Metallic-Web/Metallic"
           >
             <Obfuscate>Github</Obfuscate>
           </a>
