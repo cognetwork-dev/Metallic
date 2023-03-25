@@ -1,4 +1,4 @@
-# Changelog/Roadmap
+# Changelog
 ### Version 0.1
  - [x] Proxathon version
 
@@ -44,7 +44,7 @@
 ### Version 1.6
  - [x] Logo now updates color depending on the theme!
  - [x] Update Aero
- - [x] Translate page titles (fix)
+ - [x] Translate page titles
  - [x] Revert to old logo
  - [x] Rework logo svg
  - [x] Fix translations
@@ -54,16 +54,10 @@
  - [x] No obfuscation option in "/consts.js"
  - [x] Obfuscate more text
 
-### Upcoming
+### Next Update
  - [x] Fix Aero
  - [x] Update docs
- - [ ] Add a blocklist option
- - [ ] Reset all settings
- - [ ] Export/import settings
- - [ ] Update other tabs on settings change
- - [ ] Update proxies
- - [ ] Add games
- - [ ] Custom themes
- - [ ] Change page names to 1, 2, 3 etc.
- - [ ] Fix discord/github links
- - [ ] Local fonts
+ - [x] Move roadmap
+
+### Roadmap
+The roadmap has moved [here](https://github.com/orgs/Metallic-Web/projects/1/views/1).
