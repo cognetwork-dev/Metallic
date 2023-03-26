@@ -60,6 +60,8 @@
  - [x] Move roadmap
  - [x] Update Github and Discord links
  - [x] Footer component
+ - [x] Use DuckDuckGo suggestions
+ - [x] Obfuscate suggestions
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/Metallic-Web/projects/1/views/1).

@@ -9,6 +9,7 @@ import { bareServerURL } from "../consts.js";
 import { getLink } from "../util.js";
 import { useLocalAppearance } from "../settings.js";
 import { useTranslation } from 'react-i18next';
+import { renderToStaticMarkup } from 'react-dom/server';
 
 function Home() {
   const { t } = useTranslation("home");
@@ -48,18 +49,19 @@ function Home() {
 
     try {
       var site = await bare.fetch(
-        "https://www.google.com/complete/search?client=gws-wiz&q=" + query
+        "https://duckduckgo.com/ac/?q=" + query + "&type=list"
       );
-      results = await site.text();
-      results = JSON.parse(
-        results.replaceAll("window.google.ac.h(", "").slice(0, -1)
-      )[0];
-      results.forEach((item, number) => (results[number] = item[0]));
+      results = await site.json();
+      results = results[1];
       results = results.slice(0, 6);
     } catch (err) {
       console.error(err);
       results = [];
     }
+    results = results.map((result) => {
+      return renderToStaticMarkup(<Obfuscate>{result}</Obfuscate>);
+    })
+
     setSuggestions(results);
     if (suggestionsChildren.current.children.length === 0) {
       hideOmnibox();
@@ -115,7 +117,7 @@ function Home() {
       e.target.className !== "search" &&
       e.target.className !== "searchicon" &&
       e.target.className !== "suggestions" &&
-      e.target.className !== "sugg"
+      e.target.className !== "link sugg"
     ) {
       if (omniboxcontainer.current.hasAttribute("open")) {
         hideOmnibox();
@@ -163,7 +165,7 @@ function Home() {
           {suggestions.map((item, i) => (
             <div
               key={i}
-              className="sugg"
+              className="link sugg"
               onClick={(e) => submit(e.target.textContent)}
               dangerouslySetInnerHTML={{ __html: item }}
             ></div>
