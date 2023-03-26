@@ -58,6 +58,8 @@
  - [x] Fix Aero
  - [x] Update docs
  - [x] Move roadmap
+ - [x] Update Github and Discord links
+ - [x] Footer component
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/Metallic-Web/projects/1/views/1).

@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../components/nav.js";
 import Head from "../components/head.js";
+import { discord } from "../consts";
 import Obfuscate from "../components/obfuscate.js";
 import { useTranslation } from 'react-i18next';
 
@@ -53,9 +54,9 @@ function Support() {
         <div className="itemtitle">
           <Obfuscate>Discord</Obfuscate>
         </div>
-        <a className="link" href="https://discord.gg/yk33HZSZkU">
+        <a className="link" href={discord}>
           <div className="itemtext">
-            <Obfuscate>https://discord.gg/yk33HZSZkU</Obfuscate>
+            <Obfuscate>{discord}</Obfuscate>
           </div>
         </a>
       </div>

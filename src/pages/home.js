@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Nav from "../components/nav.js";
+import Footer from "../components/footer.js";
 import Obfuscate from "../components/obfuscate.js";
 import Head from "../components/head.js";
 import Proxy from "../components/proxy.js";
@@ -170,30 +170,7 @@ function Home() {
           ))}
         </div>
       </div>
-      <div className="footer">
-        <div>
-          <Link className="footersides link" to="/privacy.html">
-            <Obfuscate>{t("privacy")}</Obfuscate>
-          </Link>
-          <Link className="footersides link" to="/credits.html">
-            <Obfuscate>{t("credits")}</Obfuscate>
-          </Link>
-        </div>
-        <div className="footermiddle">
-          <Obfuscate>© Metallic 2022 - </Obfuscate>{new Date().getFullYear()}
-        </div>
-        <div>
-          <a className="footersides link" href="https://discord.gg/yk33HZSZkU">
-            <Obfuscate>Discord</Obfuscate>
-          </a>
-          <a
-            className="footersides link"
-            href="https://github.com/Metallic-Web/Metallic"
-          >
-            <Obfuscate>Github</Obfuscate>
-          </a>
-        </div>
-      </div>
+      <Footer/>
     </>
   );
 }

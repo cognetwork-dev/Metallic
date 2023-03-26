@@ -40,6 +40,13 @@ File: [/src/consts.js](https://github.com/Metallic-Web/Metallic/blob/main/src/co
 
 `const obfuscation = true | false;` - Choose to obfuscate text
 
+### Github and Discord
+File: [/src/consts.js](https://github.com/Metallic-Web/Metallic/blob/main/src/consts.js)
+
+`const github = "string";` - Update the Github links
+
+`const discord = "string";` - Update the Discord link
+
 ### Bare Servers
 File: [/src/consts.js](https://github.com/Metallic-Web/Metallic/blob/main/src/consts.js)
 
@@ -67,8 +74,8 @@ File: [/public/aero/config.js](https://github.com/Metallic-Web/Metallic/blob/mai
 `const backends = [url];` - Aero bare server
 
 
-## Changelog
-View the changelog/roadmap [here](https://github.com/Metallic-Web/Metallic/blob/main/CHANGELOG.md)
+## Changelog/Roadmap
+Check out the [changelog](https://github.com/Metallic-Web/Metallic/blob/main/CHANGELOG.md) and the [roadmap](https://github.com/orgs/Metallic-Web/projects/1/views/1).
 
 ## License
 Metallic uses the MIT license.
