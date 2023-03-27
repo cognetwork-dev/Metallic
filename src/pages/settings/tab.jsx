@@ -16,10 +16,9 @@ function Tab() {
   var [localIcon, setLocalIcon] = useLocalIcon();
 
   function tabReset() {
-    document.title = "Settings | Metallic";
     url.current.value = "";
-    setLocalTitle(null);
-    setLocalIcon(null);
+    setLocalTitle("");
+    setLocalIcon("");
   }
 
   async function setTab(url) {
@@ -101,9 +100,9 @@ function Tab() {
         autoComplete="off"
         placeholder={t("tab.titlePlaceholder")}
         className="optionchooseinput"
-        onKeyUp={(e) => setLocalTitle(e.target.value)}
-        value={localTitle}
         onChange={(e) => setLocalTitle(e.target.value)}
+        value={localTitle}
+        //onChange={(e) => setLocalTitle(e.target.value)}
       />
       <input
         autoComplete="off"

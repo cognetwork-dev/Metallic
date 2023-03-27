@@ -11,6 +11,10 @@ import { useTranslation } from 'react-i18next';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { ReactComponent as LogoSVG } from "../assets/logo.svg";
 
+export function resetTab() {
+  return "a"
+}
+
 function Head({ defaultTitle }) {
   var [localTitle] = useLocalTitle();
   var [localIcon] = useLocalIcon();
@@ -30,7 +34,7 @@ function Head({ defaultTitle }) {
     var title = localTitle || translatedTitle || "";
 
     document.title = title;
-  }, [localLanguage]);
+  }, [localTitle, localLanguage]);
 
   React.useEffect(() => {
     document.body.setAttribute("appearance", localAppearance);
@@ -44,7 +48,7 @@ function Head({ defaultTitle }) {
     for (var link of document.querySelectorAll("link[rel*='icon']")) {
       link.href = icon;
     }
-  }, [localAppearance]);
+  }, [localIcon, localAppearance]);
 
   return <></>;
 }

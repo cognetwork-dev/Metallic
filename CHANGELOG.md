@@ -63,6 +63,7 @@
  - [x] Footer component
  - [x] Use DuckDuckGo suggestions
  - [x] Obfuscate suggestions
+ - [x] Fix broken tab cloak
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/Metallic-Web/projects/1/views/1).

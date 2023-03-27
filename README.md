@@ -15,9 +15,9 @@
 ## Features
 - Simple clean design
 - Support for many popular sites
-- Advanced customization options
+- Customizable interface
 - Mobile support
-- Customizable interface and expansive library of themes
+- Expansive library of themes
 
 ## Setup
 ### Run
