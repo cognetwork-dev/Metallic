@@ -102,7 +102,6 @@ function Tab() {
         className="optionchooseinput"
         onChange={(e) => setLocalTitle(e.target.value)}
         value={localTitle}
-        //onChange={(e) => setLocalTitle(e.target.value)}
       />
       <input
         autoComplete="off"
