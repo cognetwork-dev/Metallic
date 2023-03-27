@@ -1,7 +1,7 @@
 import React from "react";
-import Nav from "../components/nav.js";
-import Head from "../components/head.js";
-import Obfuscate from "../components/obfuscate.js";
+import Nav from "../components/nav.jsx";
+import Head from "../components/head.jsx";
+import Obfuscate from "../components/obfuscate.jsx";
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 

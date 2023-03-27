@@ -55,6 +55,7 @@
  - [x] Obfuscate more text
 
 ### Next Update
+ - [x] Use Vite
  - [x] Fix Aero
  - [x] Update docs
  - [x] Move roadmap

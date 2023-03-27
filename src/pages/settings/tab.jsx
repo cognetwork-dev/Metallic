@@ -1,9 +1,9 @@
 import React from "react";
-import Obfuscate from "../../components/obfuscate.js";
+import Obfuscate from "../../components/obfuscate.jsx";
 import ClearIcon from "@mui/icons-material/Clear";
 import BareClient from "@tomphttp/bare-client";
-import { useLocalIcon, useLocalTitle } from "../../settings.js";
-import { bareServerURL } from "../../consts.js";
+import { useLocalIcon, useLocalTitle } from "../../settings.jsx";
+import { bareServerURL } from "../../consts.jsx";
 import { useTranslation } from 'react-i18next';
 
 function Tab() {

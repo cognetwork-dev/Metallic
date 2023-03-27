@@ -1,11 +1,11 @@
-import { bareServerURL } from "../consts.js";
-import { useLocalWindow } from "../settings.js";
+import { bareServerURL } from "../consts.jsx";
+import { useLocalWindow } from "../settings.jsx";
 import React, { useEffect } from "react";
 import PublicIcon from "@mui/icons-material/Public";
 import FullscreenIcon from "@mui/icons-material/Fullscreen";
 import RefreshIcon from "@mui/icons-material/Refresh";
 import CloseIcon from "@mui/icons-material/Close";
-import { getWindowLocation } from "../util.js";
+import { getWindowLocation } from "../util.jsx";
 import "../style/controls.css";
 import BareClient from "@tomphttp/bare-client";
 import { useSearchParams } from "react-router-dom";

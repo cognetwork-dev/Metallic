@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import React from "react";
-import Obfuscate from "../../components/obfuscate.js";
-import { useLocalLanguage, useLocalAppearance, useLocalBackground } from "../../settings.js";
-import { setLanguage } from "../../i18n.js";
+import Obfuscate from "../../components/obfuscate.jsx";
+import { useLocalLanguage, useLocalAppearance, useLocalBackground } from "../../settings.jsx";
+import { setLanguage } from "../../i18n.jsx";
 import { useTranslation } from 'react-i18next';
 
 function LanguageOption({ type, children }) {

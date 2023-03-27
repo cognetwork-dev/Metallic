@@ -1,8 +1,8 @@
 import React from "react";
-import Nav from "../components/nav.js";
-import Head from "../components/head.js";
+import Nav from "../components/nav.jsx";
+import Head from "../components/head.jsx";
 import { discord } from "../consts";
-import Obfuscate from "../components/obfuscate.js";
+import Obfuscate from "../components/obfuscate.jsx";
 import { useTranslation } from 'react-i18next';
 
 function Support() {

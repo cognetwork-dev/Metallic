@@ -9,7 +9,7 @@ import triangles from "../assets/backgrounds/triangles.json";
 import balls from "../assets/backgrounds/balls.json";
 import bubbles from "../assets/backgrounds/bubbles.json";
 import sus from "../assets/backgrounds/sus.json";
-import { useLocalBackground } from "../settings.js";
+import { useLocalBackground } from "../settings.jsx";
 
 var backgrounds = {
   particles,

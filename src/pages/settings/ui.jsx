@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import React from "react";
-import Obfuscate from "../../components/obfuscate.js";
-import { useLocalControls, useLocalWindow, useLocalRounding } from "../../settings.js";
+import Obfuscate from "../../components/obfuscate.jsx";
+import { useLocalControls, useLocalWindow, useLocalRounding } from "../../settings.jsx";
 import { useTranslation } from 'react-i18next';
 
 function WindowOption({ type, children }) {

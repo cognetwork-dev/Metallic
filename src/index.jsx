@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 
-import App from "./pages/app.js";
+import App from "./pages/app.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

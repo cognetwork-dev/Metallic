@@ -1,13 +1,13 @@
 import React from "react";
-import Nav from "../components/nav.js";
-import Footer from "../components/footer.js";
-import Obfuscate from "../components/obfuscate.js";
-import Head from "../components/head.js";
-import Proxy from "../components/proxy.js";
+import Nav from "../components/nav.jsx";
+import Footer from "../components/footer.jsx";
+import Obfuscate from "../components/obfuscate.jsx";
+import Head from "../components/head.jsx";
+import Proxy from "../components/proxy.jsx";
 import BareClient from "@tomphttp/bare-client";
-import { bareServerURL } from "../consts.js";
-import { getLink } from "../util.js";
-import { useLocalAppearance } from "../settings.js";
+import { bareServerURL } from "../consts.jsx";
+import { getLink } from "../util.jsx";
+import { useLocalAppearance } from "../settings.jsx";
 import { useTranslation } from 'react-i18next';
 import { renderToStaticMarkup } from 'react-dom/server';
 

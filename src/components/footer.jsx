@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Obfuscate from "./obfuscate.js";
+import Obfuscate from "./obfuscate.jsx";
 import { github, discord } from "../consts";
 import { useTranslation } from 'react-i18next';
 

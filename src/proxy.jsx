@@ -1,4 +1,4 @@
-/*global StompBoot,__DIP,__uv$config*/
+/*window StompBoot,__DIP,__uv$config*/
 import { bareServerURL } from "./consts";
 
 export const swSupported = navigator.serviceWorker !== undefined;
@@ -6,15 +6,15 @@ export const swSupported = navigator.serviceWorker !== undefined;
 if (swSupported) {
   navigator.serviceWorker.register(window.location.origin + "/sw.js");
 
-  navigator.serviceWorker.register(new URL("/uv-sw.js", global.location), {
+  navigator.serviceWorker.register(new URL("/uv-sw.js", window.location), {
     scope: __uv$config.prefix,
   });
 
-  navigator.serviceWorker.register(new URL("/dip-sw.js", global.location), {
+  navigator.serviceWorker.register(new URL("/dip-sw.js", window.location), {
     scope: __DIP.config.prefix,
   });
 
-  navigator.serviceWorker.register(new URL("/aero-sw.js", global.location), {
+  navigator.serviceWorker.register(new URL("/aero-sw.js", window.location), {
     scope: "/go/",
     // Don't cache http requests
     updateViaCache: "none",

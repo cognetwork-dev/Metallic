@@ -6,7 +6,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import { ReactComponent as LogoSVG } from "../assets/logo.svg";
 import { ReactComponent as TsunamiSVG } from "../assets/tsunamiLogo.svg";
 import { ReactComponent as BananaSVG } from "../assets/bananaLogo.svg";
-import { useLocalAppearance } from "../settings.js";
+import { useLocalAppearance } from "../settings.jsx";
 
 function Nav() {
   var [localAppearance] = useLocalAppearance();

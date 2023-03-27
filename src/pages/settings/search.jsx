@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import React from "react";
-import Obfuscate from "../../components/obfuscate.js";
-import { useLocalEngine, useLocalProxy } from "../../settings.js";
+import Obfuscate from "../../components/obfuscate.jsx";
+import { useLocalEngine, useLocalProxy } from "../../settings.jsx";
 import { useTranslation } from 'react-i18next';
 
 function EngineOption({ type, children }) {

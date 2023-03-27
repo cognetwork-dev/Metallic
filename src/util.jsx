@@ -1,5 +1,5 @@
-/*global __DIP,__uv$config*/
-import { stomp, swSupported } from "./proxy.js";
+/*window __DIP,__uv$config*/
+import { stomp, swSupported } from "./proxy.jsx";
 
 export function getSearchEngine() {
   var engine = localStorage.getItem("engine");
@@ -36,22 +36,22 @@ export function getLink(url) {
 
   switch (type) {
     case "Stomp":
-      return new URL(stomp.html(url), global.location).toString();
+      return new URL(stomp.html(url), window.location).toString();
     case "DIP":
       return new URL(
         __uv$config.encodeUrl(url),
-        new URL(__DIP.config.prefix, global.location)
+        new URL(__DIP.config.prefix, window.location)
       ).toString();
     case "Aero":
       return new URL(
         `/go/${url}`,
-        global.location
+        window.location
       ).toString();
     default:
     case "Ultraviolet":
       return new URL(
         __uv$config.encodeUrl(url),
-        new URL(__uv$config.prefix, global.location)
+        new URL(__uv$config.prefix, window.location)
       ).toString();
   }
 }

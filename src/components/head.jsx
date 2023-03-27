@@ -6,7 +6,7 @@ import {
   useLocalIcon,
   useLocalTitle,
   useLocalLanguage,
-} from "../settings.js";
+} from "../settings.jsx";
 import { useTranslation } from 'react-i18next';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { ReactComponent as LogoSVG } from "../assets/logo.svg";
