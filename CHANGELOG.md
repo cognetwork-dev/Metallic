@@ -54,7 +54,7 @@
  - [x] No obfuscation option in "/consts.js"
  - [x] Obfuscate more text
 
-### Next Update
+### Version 1.7
  - [x] Use Vite
  - [x] Fix Aero
  - [x] Update docs
@@ -64,6 +64,9 @@
  - [x] Use DuckDuckGo suggestions
  - [x] Obfuscate suggestions
  - [x] Fix broken tab cloak
+
+### Next Update
+Coming soon
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/Metallic-Web/projects/1/views/1).
