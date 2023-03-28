@@ -64,22 +64,16 @@ httpServer.on("listening", () => {
   console.log(`${chalk.bold(theme('Metallic'))}`)
 
   console.log(
-    `  ${chalk.bold('Local:')}            http://${
-      address.family === 'IPv6' ? `[${address.address}]` : addr.address
-    }${address.port === 80 ? '' : ':' + chalk.bold(address.port)}`
+    `  ${chalk.bold('Local:')}            http://${address.family === 'IPv6' ? `[${address.address}]` : addr.address}${address.port === 80 ? '' : ':' + chalk.bold(address.port)}`
   );
 
   console.log(
-    `  ${chalk.bold('Local:')}            http://localhost${
-      address.port === 80 ? '' : ':' + chalk.bold(address.port)
-    }`
+    `  ${chalk.bold('Local:')}            http://localhost${address.port === 80 ? '' : ':' + chalk.bold(address.port)}`
   );
 
   try {
     console.log(
-      `  ${chalk.bold('On Your Network:')}  http://${address.ip()}${
-        address.port === 80 ? '' : ':' + chalk.bold(address.port)
-      }`
+      `  ${chalk.bold('On Your Network:')}  http://${address.ip()}${address.port === 80 ? '' : ':' + chalk.bold(address.port)}`
     );
   } catch (err) {
     // can't find LAN interface
@@ -87,9 +81,13 @@ httpServer.on("listening", () => {
 
   if (process.env.REPL_SLUG && process.env.REPL_OWNER) {
     console.log(
-      `  ${chalk.bold('Replit:')}           https://${
-        process.env.REPL_SLUG
-      }.${process.env.REPL_OWNER}.repl.co`
+      `  ${chalk.bold('Replit:')}           https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`
+    );
+  }
+
+  if (process.env.HOSTNAME && process.env.GITPOD_WORKSPACE_CLUSTER_HOST) {
+    console.log(
+      `  ${chalk.bold('Gitpod:')}           https://${port}-${process.env.HOSTNAME}.${process.env.GITPOD_WORKSPACE_CLUSTER_HOST}`
     );
   }
 
