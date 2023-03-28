@@ -6,6 +6,7 @@ import createBareServer from "@tomphttp/bare-server-node";
 import http from "http";
 import serveStatic from "serve-static";
 import { fileURLToPath } from "url";
+import chalk from 'chalk';
 
 const httpServer = http.createServer();
 const port = process.env.PORT || 8080;
@@ -59,11 +60,39 @@ httpServer.on("upgrade", (req, socket, head) => {
 httpServer.on("listening", () => {
   const address = httpServer.address();
 
+  var theme = chalk.hex('#004953');
+  console.log(`${chalk.bold(theme('Metallic'))}`)
+
   console.log(
-    `Metallic is running at http://${
-      address.family === "IPv6" ? `[${address.address}]` : address.address
-    }:${address.port}`
+    `  ${chalk.bold('Local:')}            http://${
+      address.family === 'IPv6' ? `[${address.address}]` : addr.address
+    }${address.port === 80 ? '' : ':' + chalk.bold(address.port)}`
   );
+
+  console.log(
+    `  ${chalk.bold('Local:')}            http://localhost${
+      address.port === 80 ? '' : ':' + chalk.bold(address.port)
+    }`
+  );
+
+  try {
+    console.log(
+      `  ${chalk.bold('On Your Network:')}  http://${address.ip()}${
+        address.port === 80 ? '' : ':' + chalk.bold(address.port)
+      }`
+    );
+  } catch (err) {
+    // can't find LAN interface
+  }
+
+  if (process.env.REPL_SLUG && process.env.REPL_OWNER) {
+    console.log(
+      `  ${chalk.bold('Replit:')}           https://${
+        process.env.REPL_SLUG
+      }.${process.env.REPL_OWNER}.repl.co`
+    );
+  }
+
 });
 
 httpServer.listen({
