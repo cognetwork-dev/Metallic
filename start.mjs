@@ -6,7 +6,8 @@ import createBareServer from "@tomphttp/bare-server-node";
 import http from "http";
 import serveStatic from "serve-static";
 import { fileURLToPath } from "url";
-import chalk from 'chalk';
+import chalk from "chalk";
+import block from "./blocklist/block.json" assert { type: "json" };
 
 const httpServer = http.createServer();
 const port = process.env.PORT || 8080;
@@ -34,6 +35,12 @@ const fail = (req, res, err) => {
 
 httpServer.on("request", (req, res) => {
   if (bareServer.shouldRoute(req)) {
+    if (block.includes(req.headers["x-bare-host"])) {
+      return res.end(`{
+          "id": "error.Blocked",
+          "message": "Header was blocked by the owner of this site.",
+      `);
+    }
     bareServer.routeRequest(req, res);
   } else {
     serve(req, res, (err) => {
