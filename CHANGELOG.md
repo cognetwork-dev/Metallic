@@ -70,6 +70,9 @@
  - [x] Update apps
  - [x] Blocklist
  - [x] New messages on start
+ - [x] Fix no results
+ - [x] Translate no results
+ - [x] Upgrade dependencies
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/Metallic-Web/projects/1/views/1).

@@ -1,4 +1,5 @@
 import home from "./home.json"
+import apps from "./apps.json"
 import games from "./games.json"
 import settings from "./settings.json"
 import error from "./error.json"
@@ -9,6 +10,7 @@ import title from "./title.json"
 
 var de = {
     "home": home,
+    "apps": apps,
     "games": games,
     "settings": settings,
     "error": error,

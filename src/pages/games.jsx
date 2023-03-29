@@ -5,8 +5,11 @@ import Obfuscate from "../components/obfuscate.jsx";
 import Proxy from "../components/proxy.jsx";
 import globeSVG from "../assets/globe.svg";
 import gitems from "../assets/games.json";
+import { useTranslation } from 'react-i18next';
 
 function Games() {
+  const { t } = useTranslation("games");
+
   var proxy = React.useRef();
 
   function goGame(config) {
@@ -62,7 +65,7 @@ function Games() {
         </div>
       </div>
       {!gitemssearched.length ? (
-        <div className="desc">No results found.</div>
+        <div className="desc">{t("noResults")}</div>
       ) : (
         ""
       )}

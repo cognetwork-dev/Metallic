@@ -6,8 +6,11 @@ import Proxy from "../components/proxy.jsx";
 import globeSVG from "../assets/globe.svg";
 import gitems from "../assets/apps.json";
 import { getLink } from "../util.jsx";
+import { useTranslation } from 'react-i18next';
 
 function Apps() {
+  const { t } = useTranslation("apps");
+
   var proxy = React.useRef();
 
   function goApp(config) {
@@ -64,7 +67,7 @@ function Apps() {
         </div>
       </div>
       {!gitemssearched.length ? (
-        <div className="desc">No results found.</div>
+        <div className="desc">{t("noResults")}</div>
       ) : (
         ""
       )}
