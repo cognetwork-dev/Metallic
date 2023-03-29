@@ -42,7 +42,7 @@ File: [/src/consts.js](https://github.com/Metallic-Web/Metallic/blob/main/src/co
 ### Block List
 File: [/blocklist/block.json](https://github.com/Metallic-Web/Metallic/blob/main/blocklist/block.json)
 
-`[host, host, host...]` - An Array of hostnames to block
+`[host, sub.host, host...]` - An Array of hostnames to block (also include subdomains)
 
 ### Github and Discord
 File: [/src/consts.js](https://github.com/Metallic-Web/Metallic/blob/main/src/consts.js)
