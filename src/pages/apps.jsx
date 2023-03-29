@@ -4,7 +4,7 @@ import Head from "../components/head.jsx";
 import Obfuscate from "../components/obfuscate.jsx";
 import Proxy from "../components/proxy.jsx";
 import globeSVG from "../assets/globe.svg";
-import gitems from "../apps.jsx";
+import gitems from "../assets/apps.json";
 import { getLink } from "../util.jsx";
 
 function Apps() {
@@ -16,6 +16,7 @@ function Apps() {
         title: config.name,
         icon: config.icon,
         url: getLink(config.url),
+        keepicon: true
       });
     } catch (err) {
       console.error(err);

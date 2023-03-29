@@ -44,6 +44,11 @@ function BareIcon({ src, ...attributes }) {
   return <img src={src} {...attributes} />;
 }
 
+function KeepIcon({ src, ...attributes }) {
+    // eslint-disable-next-line jsx-a11y/alt-text
+    return <img src={src} {...attributes} />;
+}
+
 var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
   var bare = React.useMemo(() => new BareClient(bareServerURL), []);
   var web = React.createRef();
@@ -100,7 +105,11 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
       <div className="controls">
         <div className="controlsIcon">
           {config.icon ? (
-            <BareIcon src={config.icon} alt="Website" />
+            !config.keepicon ? (
+              <BareIcon src={config.icon} alt="Website" />
+            ) : (
+              <KeepIcon src={config.icon} alt="Website" />
+            )
           ) : (
             <PublicIcon fontSize="large" />
           )}
@@ -134,6 +143,7 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
         onLoad={async () => {
           var updatedConfig = {
             url: config.url,
+            keepicon: config.keepicon
           };
 
           updatedConfig.title =
@@ -144,6 +154,7 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
             "link[rel*='icon'],link[rel='shortcut icon']"
           );
 
+          if (!config.keepicon) {
           updatedConfig.icon = await workingIcon(
             bare,
             [
@@ -154,6 +165,9 @@ var Proxy = React.forwardRef(({ overrideWindow }, ref) => {
               ).toString(),
             ].filter(Boolean)
           );
+          } else {
+            updatedConfig.icon = config.icon
+          }
 
           setConfig(updatedConfig);
         }}

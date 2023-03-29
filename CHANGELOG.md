@@ -66,7 +66,10 @@
  - [x] Fix broken tab cloak
 
 ### Next Update
-Coming soon
+ - [x] Games
+ - [x] Update apps
+ - [x] Blocklist
+ - [x] New messages on start
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/Metallic-Web/projects/1/views/1).

@@ -1,0 +1,57 @@
+[
+    {
+      "name": "Google",
+      "icon": "/apps/google.jpg",
+      "url": "https://www.google.com"
+    },
+    {
+      "name": "Youtube",
+      "icon": "/apps/youtube.png",
+      "url": "https://www.youtube.com"
+    },
+    {
+      "name": "Spotify",
+      "icon": "/apps/spotify.png",
+      "url": "https://open.spotify.com"
+    },
+    {
+      "name": "Twitter",
+      "icon": "/apps/twitter.png",
+      "url": "https://twitter.com/explore"
+    },
+    {
+      "name": "Reddit",
+      "icon": "/apps/reddit.png",
+      "url": "https://reddit.com"
+    },
+    {
+      "name": "Twitch",
+      "icon": "/apps/twitch.jpg",
+      "url": "https://twitch.tv"
+    },
+    {
+      "name": "Discord",
+      "icon": "/apps/discord.jpg",
+      "url": "https://discord.com/app"
+    },
+    {
+      "name": "TikTok",
+      "icon": "/apps/tiktok.jpg",
+      "url": "https://www.tiktok.com"
+    },
+    {
+      "name": "Bored Panda",
+      "icon": "/apps/boredpanda.png",
+      "url": "https://www.boredpanda.com"
+    },
+    {
+      "name": "Zoom",
+      "icon": "/apps/zoom.png",
+      "url": "https://pwa.zoom.us/wc"
+    },
+    {
+      "name": "Pintrest",
+      "icon": "/apps/pintrest.png",
+      "url": "https://www.pinterest.com/today"
+    }
+]
