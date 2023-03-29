@@ -199,6 +199,8 @@ a {
   text-align: center;
   font-size: 18px;
   margin: 10px;
+  margin-top: calc(1rem + 44px + 20px);
+  color: var(--text);
 }
 
 .link {

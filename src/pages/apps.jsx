@@ -37,6 +37,7 @@ function Apps() {
       return item.name.toLowerCase().includes(appsSearchTerm);
     }
   });
+
   return (
     <>
       <Head defaultTitle="apps"></Head>
