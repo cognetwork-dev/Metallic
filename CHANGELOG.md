@@ -82,6 +82,7 @@
  - [x] Fix notifications animations
  - [x] Make notifications change rounding
  - [x] Fix hub notification not showing up
+ - [x] Fix 3kh0 theme placeholder
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/Metallic-Web/projects/1/views/1).
