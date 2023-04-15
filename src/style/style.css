@@ -578,7 +578,7 @@ a {
 }
 
 #notifications[new] {
-  bottom: calc(64px + 30px);
+  bottom: calc(64px + 1rem);
 }
 
 .notification {
@@ -588,8 +588,8 @@ a {
   display: flex;
   align-items: center;
   height: 50px;
-  border-radius: 30px;
-  margin-top: 14px;
+  border-radius: var(--border-radius-secondary);
+  margin-top: 1rem;
   background: var(--highlight);
   color: var(--text-contrast);
   transition: opacity 0.3s cubic-bezier(0.6, 0.4, 0, 1);

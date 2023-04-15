@@ -78,5 +78,10 @@
  - [x] Update year on license
  - [x] Fix search icon on Nebula theme
 
+# Next Update
+ - [x] Fix notifications animations
+ - [x] Make notifications change rounding
+ - [x] Fix hub notification not showing up
+
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/Metallic-Web/projects/1/views/1).

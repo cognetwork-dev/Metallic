@@ -87,7 +87,7 @@ function Home() {
         if (new URL(e.target.value).hostname === window.atob("cG9ybmh1Yi5jb20=")) {
           Notifications.create({
             text: "Unlocked Hub theme"
-          })        
+          })
           setLocalAppearance("hub")
           localStorage.setItem("hub", "true")
           return appearance;
@@ -95,6 +95,9 @@ function Home() {
       } catch {}
       try {
         if (new URL("https://" + e.target.value).hostname === window.atob("cG9ybmh1Yi5jb20=")) {
+          Notifications.create({
+            text: "Unlocked Hub theme"
+          })
           setLocalAppearance("hub")
           localStorage.setItem("hub", "true")
           return appearance;
