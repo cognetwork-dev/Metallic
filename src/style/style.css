@@ -563,3 +563,48 @@ a {
   padding: 0 0.1em;
   margin-left: 0.1em;
 }
+
+#notifications {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  max-width: calc(100% - 60px);
+  transform: translate3d(-50%, 0, 0);
+  transition: bottom 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+#notifications[new] {
+  bottom: calc(64px + 30px);
+}
+
+.notification {
+  opacity: 0;
+  max-width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 14px;
+  background: var(--highlight);
+  color: var(--text-contrast);
+  transition: opacity 0.3s cubic-bezier(0.6, 0.4, 0, 1);
+  user-select: none;
+  min-width: 150px;
+  margin-bottom: -64px;
+  width: fit-content;
+  pointer-events: all;
+}
+
+.notification-text {
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+}

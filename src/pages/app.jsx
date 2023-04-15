@@ -5,7 +5,9 @@ import "../style/index.css";
 import "../proxy.jsx";
 import Background from "../components/background.jsx";
 import SettingsLayout from "../SettingsLayout.jsx";
-import { ObfuscateLayout } from "../components/obfuscate";
+import { ObfuscateLayout } from "../components/obfuscate.jsx";
+import { NotificationsMain, Notifications } from "../components/notifications.jsx"
+import { useLocalAppearance } from "../settings.jsx";
 
 var Home = React.lazy(() => import("./home.jsx"));
 var SettingsAppearance = React.lazy(() => import("./settings/appearance.jsx"));
@@ -20,6 +22,32 @@ var Privacy = React.lazy(() => import("./privacy.jsx"));
 var Error = React.lazy(() => import("./error.jsx"));
 
 function App() {
+  const [localAppearance, setLocalAppearance] = useLocalAppearance();
+
+  var echoPattern = ['3', 'k', 'h', '0'];
+  var echoCurrent = 0;
+  
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== echoPattern[echoCurrent]) {
+      return (echoCurrent = 0);
+    }
+  
+    echoCurrent++;
+  
+    if (echoPattern.length == echoCurrent) {
+      echoCurrent = 0;
+      if (localStorage.getItem("echo") !== "true") {
+        var appearance = localAppearance || ""
+        Notifications.create({
+          text: "Unlocked 3kh0 theme"
+        })  
+        setLocalAppearance("echo")
+        localStorage.setItem("echo", "true")
+        return appearance;
+      }
+    }
+  });
+
   return (
     <>
       <ObfuscateLayout />
@@ -122,6 +150,7 @@ function App() {
           }
         />
       </Routes>
+      <NotificationsMain />
     </>
   );
 }

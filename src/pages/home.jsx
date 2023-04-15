@@ -10,6 +10,7 @@ import { getLink } from "../util.jsx";
 import { useLocalAppearance } from "../settings.jsx";
 import { useTranslation } from 'react-i18next';
 import { renderToStaticMarkup } from 'react-dom/server';
+import { Notifications } from "../components/notifications.jsx"
 
 function Home() {
   const { t } = useTranslation("home");
@@ -84,6 +85,9 @@ function Home() {
       var appearance = localAppearance || ""
       try {
         if (new URL(e.target.value).hostname === window.atob("cG9ybmh1Yi5jb20=")) {
+          Notifications.create({
+            text: "Unlocked Hub theme"
+          })        
           setLocalAppearance("hub")
           localStorage.setItem("hub", "true")
           return appearance;

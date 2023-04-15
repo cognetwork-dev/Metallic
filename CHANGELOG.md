@@ -65,14 +65,18 @@
  - [x] Obfuscate suggestions
  - [x] Fix broken tab cloak
 
-### Next Update
- - [x] Games
+### Version 1.8
+ - [x] Notifications for secret themes
+ - [x] Change 3kh0 theme to secret (type 3kh0 anywhere)
+ - [x] Games (1 for now)
  - [x] Update apps
  - [x] Blocklist
  - [x] New messages on start
  - [x] Fix no results
  - [x] Translate no results
  - [x] Upgrade dependencies
+ - [x] Update year on license
+ - [x] Fix search icon on Nebula theme
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/Metallic-Web/projects/1/views/1).

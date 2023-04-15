@@ -161,9 +161,6 @@ function Appearance() {
         <ThemeOption type="nebelung">
           <Obfuscate>Nebelung</Obfuscate>
         </ThemeOption>
-        <ThemeOption type="echo">
-          <Obfuscate>3kh0</Obfuscate>
-        </ThemeOption>
         <ThemeOption type="fracital">
           <Obfuscate>Fracital</Obfuscate>
         </ThemeOption>
@@ -176,6 +173,12 @@ function Appearance() {
         <ThemeOption type="tsunami">
           <Obfuscate>Tsunami</Obfuscate>
         </ThemeOption>
+        { localStorage.getItem("echo") === "true"  ? (
+        <ThemeOption type="echo">
+          <Obfuscate>3kh0</Obfuscate>
+        </ThemeOption>
+        ) : ""
+        }
         { localStorage.getItem("hub") === "true"  ? (
         <ThemeOption type="hub">
           <Obfuscate>Hub</Obfuscate>

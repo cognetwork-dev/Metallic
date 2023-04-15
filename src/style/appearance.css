@@ -341,6 +341,10 @@ body[appearance="nebula"] .search {
   color: var(--text);
 }
 
+body[appearance="nebula"] .searchicon {
+  color: var(--highlight);
+}
+
 body[appearance="nebula"] .navitem {
   background: transparent;
   color: var(--highlight);
