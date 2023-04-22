@@ -1,4 +1,5 @@
 import React from "react";
+import Obfuscate from "./obfuscate.jsx";
 
 class NotificationBuilder {
     removeNotification(element) {
@@ -23,7 +24,7 @@ class NotificationBuilder {
     
     var notificationText = document.createElement("div")
     notificationText.className = "notification-text"
-    notificationText.innerText = config.text
+    notificationText.innerText = <Obfuscate>config.text</Obfuscate>
     
     notification.appendChild(notificationText)
     
