@@ -53,5 +53,10 @@
       "name": "Pintrest",
       "icon": "/apps/pintrest.png",
       "url": "https://www.pinterest.com/today"
+    },
+    {
+      "name": "ChatGPT",
+      "icon": "/apps/chatgpt.svg",
+      "url": "https://chat.openai.com"
     }
 ]

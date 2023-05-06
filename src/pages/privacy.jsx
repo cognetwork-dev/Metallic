@@ -33,7 +33,7 @@ function Privacy() {
         </div>
         <div className="itemtext">
           <Obfuscate>{t("policy.2.text")}</Obfuscate>
-          <Link className="link" to="/support.html">
+          <Link className="link" to="/6.html">
             <Obfuscate>{t("policy.2.page")}</Obfuscate>
           </Link>
         </div>

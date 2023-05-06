@@ -458,3 +458,45 @@ body[appearance="echo"] {
 body[appearance="echo"] .nav {
   box-shadow: 0 5px 200px var(--highlight);
 }
+
+body[appearance="kahoot"] {
+  --text: white;
+  --text-contrast: #333333;
+  --highlight: white;
+  --background: #381272;
+  --placeholder: #bdc1c6;
+  --font-main: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-title: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --secondary: #ffffff1a;
+  --hover: #ffffff33;
+}
+
+body[appearance="booklet"] {
+  --text: white;
+  --text-contrast: white;
+  --highlight: #9a49aa;
+  --background: #0bc2cf;
+  --placeholder: #bdc1c6;
+  --font-main: Nunito, sans-serif;
+  --font-title: Titan One, sans-serif;
+  --secondary: transparent;
+  --hover: transparent;
+}
+
+body[appearance="booklet"] .hometitle {
+  text-shadow: 2px 2px 8px grey;
+  font-size: 100px;
+  font-weight: normal;
+}
+
+body[appearance="amethyst"] {
+  --text: #3f12f3;
+  --text-contrast: white;
+  --highlight: #1c1c1c;
+  --background: linear-gradient(to right, #db5dfd, #bf83fb), #bf83fb;
+  --placeholder: #bdc1c6;
+  --font-main: Lato, sans-serif;
+  --font-title: "Poppins";
+  --secondary: transparent;
+  --hover: transparent;
+}

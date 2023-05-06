@@ -158,11 +158,20 @@ function Appearance() {
         <ThemeOption type="tiktok">
           <Obfuscate>TikTok</Obfuscate>
         </ThemeOption>
+        <ThemeOption type="kahoot">
+          <Obfuscate>Kahoot</Obfuscate>
+        </ThemeOption>
+        <ThemeOption type="booklet">
+          <Obfuscate>Booklet</Obfuscate>
+        </ThemeOption>
         <ThemeOption type="nebelung">
           <Obfuscate>Nebelung</Obfuscate>
         </ThemeOption>
         <ThemeOption type="fracital">
           <Obfuscate>Fracital</Obfuscate>
+        </ThemeOption>
+        <ThemeOption type="amethyst">
+          <Obfuscate>Amethyst</Obfuscate>
         </ThemeOption>
         <ThemeOption type="simple">
           <Obfuscate>Simple</Obfuscate>

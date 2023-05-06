@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import "../i18n.jsx";
 import "../style/index.css";
 import "../proxy.jsx";
@@ -62,7 +62,19 @@ function App() {
           }
         />
         <Route
-          path="/settings/appearance.html"
+          path="/3"
+          element={
+            <Navigate to="/3/1.html" />
+          }
+        />
+        <Route
+          path="/3.html"
+          element={
+            <Navigate to="/3/1.html" />
+          }
+        />
+        <Route
+          path="/3/3.html"
           element={
             <SettingsLayout>
               <Suspense fallback={<></>}>
@@ -72,7 +84,7 @@ function App() {
           }
         />
         <Route
-          path="/settings/search.html"
+          path="/3/1.html"
           element={
             <SettingsLayout>
               <Suspense fallback={<></>}>
@@ -82,7 +94,7 @@ function App() {
           }
         />
         <Route
-          path="/settings/tab.html"
+          path="/3/2.html"
           element={
             <SettingsLayout>
               <Suspense fallback={<></>}>
@@ -92,7 +104,7 @@ function App() {
           }
         />
         <Route
-          path="/settings/ui.html"
+          path="/3/4.html"
           element={
             <SettingsLayout>
               <Suspense fallback={<></>}>
@@ -102,7 +114,7 @@ function App() {
           }
         />
         <Route
-          path="/apps.html"
+          path="/1.html"
           element={
             <Suspense fallback={<></>}>
               <Apps />
@@ -110,7 +122,7 @@ function App() {
           }
         />
         <Route
-          path="/games.html"
+          path="/2.html"
           element={
             <Suspense fallback={<></>}>
               <Games />
@@ -118,7 +130,7 @@ function App() {
           }
         />
         <Route
-          path="/support.html"
+          path="/6.html"
           element={
             <Suspense fallback={<></>}>
               <Support />
@@ -126,7 +138,7 @@ function App() {
           }
         />
         <Route
-          path="/credits.html"
+          path="/5.html"
           element={
             <Suspense fallback={<></>}>
               <Credits />
@@ -134,7 +146,7 @@ function App() {
           }
         />
         <Route
-          path="/privacy.html"
+          path="/4.html"
           element={
             <Suspense fallback={<></>}>
               <Privacy />

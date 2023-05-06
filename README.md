@@ -81,5 +81,21 @@ File: [/public/aero/config.js](https://github.com/Metallic-Web/Metallic/blob/mai
 ## Changelog/Roadmap
 Check out the [changelog](https://github.com/Metallic-Web/Metallic/blob/main/CHANGELOG.md) and the [roadmap](https://github.com/orgs/Metallic-Web/projects/1/views/1).
 
+## Pages
+Pages are is the order of 1, 2, 3 etc.
+
+- / - Home
+- `1.html` - Apps
+- `2.html` - Games
+- `3 (and 3.html)` - Redirects to /3/1.html
+    - 3/1.html - Search
+    - 3/2.html - Tab
+    - 3/3.html - Appearance
+    - 3/4.html - UI
+- `4.html` - Privacy
+- `5.html` - Credits
+- `6.html` - Support
+- `*` - Error
+
 ## License
 Metallic uses the MIT license.

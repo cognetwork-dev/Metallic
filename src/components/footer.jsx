@@ -10,10 +10,10 @@ function Footer() {
     return (
         <div className="footer">
         <div>
-          <Link className="footersides link" to="/privacy.html">
+          <Link className="footersides link" to="/4.html">
             <Obfuscate>{t("privacy")}</Obfuscate>
           </Link>
-          <Link className="footersides link" to="/credits.html">
+          <Link className="footersides link" to="/5.html">
             <Obfuscate>{t("credits")}</Obfuscate>
           </Link>
         </div>

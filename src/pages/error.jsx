@@ -21,7 +21,7 @@ function Error() {
         </Obfuscate>
         <br />
         <Obfuscate>{t("support.0")}</Obfuscate>
-        <Link className="link" to="/support.html">
+        <Link className="link" to="/6.html">
           <Obfuscate>{t("support.1")}</Obfuscate>
         </Link>
         <Obfuscate>{t("support.2")}</Obfuscate>

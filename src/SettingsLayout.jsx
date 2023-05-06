@@ -34,16 +34,16 @@ export default function SettingsLayout({ children }) {
         <div className="settingssidetitle">
           <Obfuscate>{t("title")}</Obfuscate>
         </div>
-        <Tab to="/settings/search.html">
+        <Tab to="/3/1.html">
           <Obfuscate>{t("sidebar.search")}</Obfuscate>
         </Tab>
-        <Tab to="/settings/tab.html">
+        <Tab to="/3/2.html">
           <Obfuscate>{t("sidebar.tab")}</Obfuscate>
         </Tab>
-        <Tab to="/settings/appearance.html">
+        <Tab to="/3/3.html">
           <Obfuscate>{t("sidebar.appearance")}</Obfuscate>
         </Tab>
-        <Tab to="/settings/ui.html">
+        <Tab to="/3/4.html">
           <Obfuscate>{t("sidebar.ui")}</Obfuscate>
         </Tab>
       </div>

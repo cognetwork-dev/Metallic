@@ -78,12 +78,21 @@
  - [x] Update year on license
  - [x] Fix search icon on Nebula theme
 
-# Next Update
+# Version 1.9
+ - [x] Add games thanks to 3kh0
+ - [x] 3 new themes Kahoot, Booklet and amethyst
+ - [x] Changed pages to 1, 2, 3 etc.
+ - [x] Redirect settings to settings search page (default)
+ - [x] Updated favicon.ico to latest logo
+ - [x] Add ChatGPT app
  - [x] Fix notifications animations
  - [x] Make notifications change rounding
  - [x] Fix hub notification not showing up
  - [x] Fix 3kh0 theme placeholder
  - [x] Obfuscate notifications
+
+# Next Update
+Coming soon!
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/Metallic-Web/projects/1/views/1).
