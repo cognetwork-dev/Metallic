@@ -84,14 +84,14 @@ Check out the [changelog](https://github.com/Metallic-Web/Metallic/blob/main/CHA
 ## Pages
 Pages are is the order of 1, 2, 3 etc.
 
-- / - Home
+- `/` - Home
 - `1.html` - Apps
 - `2.html` - Games
 - `3 (and 3.html)` - Redirects to /3/1.html
-    - 3/1.html - Search
-    - 3/2.html - Tab
-    - 3/3.html - Appearance
-    - 3/4.html - UI
+    - `3/1.html` - Search
+    - `3/2.html` - Tab
+    - `3/3.html` - Appearance
+    - `3/4.html` - UI
 - `4.html` - Privacy
 - `5.html` - Credits
 - `6.html` - Support
