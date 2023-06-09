@@ -167,6 +167,9 @@ function Appearance() {
         <ThemeOption type="nebelung">
           <Obfuscate>Nebelung</Obfuscate>
         </ThemeOption>
+        <ThemeOption type="pride">
+          <Obfuscate>Pride</Obfuscate>
+        </ThemeOption>
         <ThemeOption type="fracital">
           <Obfuscate>Fracital</Obfuscate>
         </ThemeOption>

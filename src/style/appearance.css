@@ -500,3 +500,16 @@ body[appearance="amethyst"] {
   --secondary: transparent;
   --hover: transparent;
 }
+
+body[appearance="pride"] {
+  --text: white;
+  --text-contrast: black;
+  --highlight: #ffffff;
+  --background: linear-gradient(180deg, #FE0000 16.66%, #FD8C00 16.66%, 33.32%, #FFE500 33.32%, 49.98%, #119F0B 49.98%, 66.64%, #0644B3 66.64%, 83.3%, #C22EDC 83.3%), #000000c4;
+  --placeholder: #bdc1c6;
+  --font-main: "Montserrat", sans-serif;
+  --font-title: "Montserrat", sans-serif;
+  --secondary: #ffffff1a;
+  --hover: #ffffff33;
+  background-blend-mode: overlay;
+}

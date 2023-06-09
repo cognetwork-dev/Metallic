@@ -92,7 +92,7 @@
  - [x] Obfuscate notifications
 
 # Next Update
-Coming soon!
+ - [x] Pride theme!
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/Metallic-Web/projects/1/views/1).
