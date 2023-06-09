@@ -512,4 +512,9 @@ body[appearance="pride"] {
   --secondary: #ffffff1a;
   --hover: #ffffff33;
   background-blend-mode: overlay;
+  background-attachment: fixed;
+}
+
+body[appearance="pride"] .omniboxcontainersearch {
+  background: transparent;
 }
