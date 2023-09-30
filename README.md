@@ -1,15 +1,15 @@
 <div align="center">
-<img height="150px" src="https://raw.githubusercontent.com/Metallic-Web/Metallic/main/src/assets/logo.svg">
+<img height="150px" src="https://raw.githubusercontent.com/cognetwork-dev/Metallic/main/src/assets/logo.svg">
 <h1>Metallic</h1>
 <h3>A powerful web proxy build for speed and customization.</h3>
 <p>Access the web with this stylish new web proxy service made in React supporting many sites. Metallic was originally created for <a href="https://github.com/titaniumnetwork-dev">TN</a>'s proxathon where it won 2nd place!</p>
 </div>
 
 <p align="center">
-<a href="https://repl.it/github/Metallic-Web/Metallic"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
-<a href="https://glitch.com/edit/#!/import/github/Metallic-Web/Metallic"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/glitch2.svg"><img></a>
-<a href="https://railway.app/new/template?template=https://github.com/Metallic-Web/Metallic"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/railway2.svg"><img></a>
-<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/Metallic-Web/Metallic&branch=main&name=Metallic"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/koyeb2.svg"><img></a>
+<a href="https://repl.it/github/cognetwork-dev/Metallic"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/replit2.svg"><img></a>
+<a href="https://glitch.com/edit/#!/import/github/cognetwork-dev/Metallic"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/glitch2.svg"><img></a>
+<a href="https://railway.app/new/template?template=https://github.com/cognetwork-dev/Metallic"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/railway2.svg"><img></a>
+<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/cognetwork-dev/Metallic&branch=main&name=Metallic"><img height="30px" src="https://raw.githubusercontent.com/FogNetwork/Tsunami/main/deploy/koyeb2.svg"><img></a>
 </p>
 
 ## Features
@@ -35,34 +35,34 @@ Click a button at the top of this page and follow the directions for an easy way
 ## Configuration
 
 ### Obfuscation
-File: [/src/consts.js](https://github.com/Metallic-Web/Metallic/blob/main/src/consts.js)
+File: [/src/consts.js](https://github.com/cognetwork-dev/Metallic/blob/main/src/consts.js)
 
 `const obfuscation = true | false;` - Choose to obfuscate text
 
 ### Block List
-File: [/blocklist/block.json](https://github.com/Metallic-Web/Metallic/blob/main/blocklist/block.json)
+File: [/blocklist/block.json](https://github.com/cognetwork-dev/Metallic/blob/main/blocklist/block.json)
 
 `[host, sub.host, host...]` - An Array of hostnames to block (also include subdomains)
 
 ### Github and Discord
-File: [/src/consts.js](https://github.com/Metallic-Web/Metallic/blob/main/src/consts.js)
+File: [/src/consts.js](https://github.com/cognetwork-dev/Metallic/blob/main/src/consts.js)
 
 `const github = "string";` - Update the Github links
 
 `const discord = "string";` - Update the Discord link
 
 ### Bare Servers
-File: [/src/consts.js](https://github.com/Metallic-Web/Metallic/blob/main/src/consts.js)
+File: [/src/consts.js](https://github.com/cognetwork-dev/Metallic/blob/main/src/consts.js)
 
 `const bareServerURL = new URL(url);` - Main bare server and Stomp bare server
 
 
-File: [/public/uv/uv.config.js](https://github.com/Metallic-Web/Metallic/blob/main/public/uv/uv.config.js)
+File: [/public/uv/uv.config.js](https://github.com/cognetwork-dev/Metallic/blob/main/public/uv/uv.config.js)
 
 `bare: url,` - Ultraviolet bare server
 
 
-File: [/public/dip/dip.config.js](https://github.com/Metallic-Web/Metallic/blob/main/public/dip/dip.config.js)
+File: [/public/dip/dip.config.js](https://github.com/cognetwork-dev/Metallic/blob/main/public/dip/dip.config.js)
 
 `bare: {`
 
@@ -73,13 +73,13 @@ File: [/public/dip/dip.config.js](https://github.com/Metallic-Web/Metallic/blob/
 `}`
 
 
-File: [/public/aero/config.js](https://github.com/Metallic-Web/Metallic/blob/main/public/aero/config.js)
+File: [/public/aero/config.js](https://github.com/cognetwork-dev/Metallic/blob/main/public/aero/config.js)
 
 `const backends = [url];` - Aero bare server
 
 
 ## Changelog/Roadmap
-Check out the [changelog](https://github.com/Metallic-Web/Metallic/blob/main/CHANGELOG.md) and the [roadmap](https://github.com/orgs/Metallic-Web/projects/1/views/1).
+Check out the [changelog](https://github.com/cognetwork-dev/Metallic/blob/main/CHANGELOG.md) and the [roadmap](https://github.com/orgs/cognetwork-dev/projects/1/views/1).
 
 ## Pages
 Pages are is the order of 1, 2, 3 etc.
