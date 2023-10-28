@@ -20,6 +20,10 @@
 - Expansive library of themes
 
 ## Setup
+
+### Install Dependencies
+Run `npm install` to install the required dependencies
+
 ### Run
 Run `npm start` to start a webserver and the Bare server. You may deploy Metallic by using an external bare server and a static file host. Metallic must be built before attempting to start.
 
