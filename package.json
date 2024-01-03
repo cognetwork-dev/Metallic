@@ -1,66 +1,22 @@
 {
   "name": "metallic",
-  "version": "1.9",
+  "version": "2.0-beta",
   "description": "A powerful web proxy build for speed and customization.",
-  "repository": "https://github.com/cognetwork-dev/Metallic.git",
+  "repository": "https://github.com/cognetwork-dev/Metallic",
   "license": "MIT",
   "author": "Nebelung",
   "type": "module",
-  "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@mui/icons-material": "^5.11.11",
-    "@mui/styled-engine": "^5.11.11",
-    "@tomphttp/bare-client": "^1.1.1",
-    "chalk": "^5.2.0",
-    "clsx": "^1.2.1",
-    "http-server": "^14.1.1",
-    "i18next": "^22.4.13",
-    "i18next-fs-backend": "^2.1.1",
-    "i18next-http-backend": "^2.2.0",
-    "random-seed": "^0.3.0",
-    "react-i18next": "^12.2.0",
-    "react-router-dom": "^6.9.0",
-    "react-tsparticles": "^2.9.3",
-    "tsparticles": "^2.9.3",
-    "vite-plugin-rewrite-all": "^1.0.1",
-    "vite-plugin-svgr": "^2.4.0"
-  },
-  "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "@tomphttp/bare-server-node": "^1.2.5",
-    "@vitejs/plugin-react": "^3.1.0",
-    "eslint": "^8.36.0",
-    "prettier": "^2.8.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "serve-static": "^1.15.0",
-    "vite": "^4.2.1",
-    "web-vitals": "^3.3.0"
-  },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node build.mjs",
-    "start": "node start.mjs"
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "preact": "^10.19.3"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@preact/preset-vite": "^2.7.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
   }
 }
