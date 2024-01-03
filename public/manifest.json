@@ -1,7 +1,7 @@
 {
   "name": "Metallic",
   "short_name": "Metallic",
-  "description": "A powerful web proxy build for speed and customization.",
+  "description": "A powerful web proxy built for speed and customization.",
   "icons": [
       {
         "src": "/logos/logo.svg",
