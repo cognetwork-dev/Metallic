@@ -94,7 +94,7 @@ server.on('upgrade', (req, socket, head) => {
 });
 
 server.on('listening', () => {
-	const theme = chalk.hex('#00FFFF');
+	const theme = chalk.hex('#004953');
 	console.log(`${chalk.bold(theme('Metallic'))}`)
 
 	console.log(
