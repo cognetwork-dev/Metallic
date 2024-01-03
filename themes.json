@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Default",
+        "id": "default",
+        "theme": {
+            "background": "#171717",
+            "secondary": "#2f2f2f",
+            "primary": "#004953",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Winter",
+        "id": "winter",
+        "theme": {
+            "background": "#d8dee9",
+            "secondary": "#c2c7d1",
+            "primary": "#004953",
+            "text": "black",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    }
+]

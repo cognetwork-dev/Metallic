@@ -7,15 +7,26 @@
   "author": "Nebelung",
   "type": "module",
   "scripts": {
+    "start": "tsx index.ts",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.19.3"
+    "@tomphttp/bare-server-node": "^2.0.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "million": "^2.6.4",
+    "preact": "^10.19.3",
+    "rammerhead": "https://github.com/holy-unblocker/rammerhead/releases/download/v1.2.41-holy.5/rammerhead-1.2.41-holy.5.tgz",
+    "tsx": "^4.7.0",
+    "vite-plugin-minify": "^1.5.2"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.7.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   }

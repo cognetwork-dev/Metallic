@@ -1,8 +1,8 @@
 <div align="center">
 <img height="150px" src="https://raw.githubusercontent.com/cognetwork-dev/Metallic/main/src/assets/logo.svg">
 <h1>Metallic</h1>
-<h3>A powerful web proxy build for speed and customization.</h3>
-<p>Access the web with this stylish new web proxy service made in React supporting many sites. Metallic was originally created for <a href="https://github.com/titaniumnetwork-dev">TN</a>'s proxathon where it won 2nd place!</p>
+<h3>A powerful web proxy built for speed and customization.</h3>
+<p>Access the web with this stylish web proxy made in Preact supporting many sites. Metallic was originally created for <a href="https://github.com/titaniumnetwork-dev">TN</a>'s proxathon where it won 2nd place!</p>
 </div>
 
 <p align="center">

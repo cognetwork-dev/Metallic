@@ -1,0 +1,15 @@
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: var(--font);
+}
+
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+input::placeholder {
+    user-select: none;
+}

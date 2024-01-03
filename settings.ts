@@ -1,0 +1,3 @@
+const pages = ["/"];
+
+export { pages };

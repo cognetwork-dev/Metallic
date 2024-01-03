@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('style.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
