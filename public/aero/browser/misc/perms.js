@@ -1,1 +1,0 @@
-// TODO: Parse permission policy
