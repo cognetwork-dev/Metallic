@@ -1,5 +1,5 @@
 import { Link } from 'preact-router/match';
-import { RoundButton } from "../interface/button";
+import { Button } from "../interface/button";
 import { AppsIcon } from "../assets/appsIcon";
 import { GamesIcon } from "../assets/gamesIcon";
 import { SettingsIcon } from "../assets/settingsIcon";
@@ -13,19 +13,22 @@ function Nav() {
             </Link>
             <div class="flex gap-4">
                 <Link href="/apps">
-                    <RoundButton>
+                    <Button>
                         <AppsIcon />
-                    </RoundButton>
+                        <span class="font-bold text-textInverse sr-only sm:not-sr-only">Apps</span>
+                    </Button>
                 </Link>
                 <Link href="/games">
-                    <RoundButton>
+                    <Button>
                         <GamesIcon />
-                    </RoundButton>
+                        <span class="font-bold text-textInverse sr-only sm:not-sr-only">Games</span>
+                    </Button>
                 </Link>
                 <Link href="/settings">
-                    <RoundButton>
+                    <Button>
                         <SettingsIcon />
-                    </RoundButton>
+                        <span class="font-bold text-textInverse sr-only sm:not-sr-only">Settings</span>
+                    </Button>
                 </Link>
             </div>
         </nav>

@@ -16,6 +16,9 @@ export default {
         text: "var(--text)",
         textInverse: "var(--textInverse)",
         transparent: "transparent"
+      },
+      fontFamily: {
+        title: "Poppins"
       }
     }
   },

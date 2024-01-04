@@ -2,6 +2,7 @@ import { render } from 'preact';
 import { Router, Route } from 'preact-router';
 
 import { Home } from "./pages/home";
+import { Settings } from './pages/settings';
 import { Error } from "./pages/error";
 import { Nav } from "./components/nav";
 import { Footer } from "./components/footer";
@@ -9,8 +10,6 @@ import { Footer } from "./components/footer";
 import './style/index.css';
 
 function App() {
-    document.body.dataset.theme = "default";
-
     return (
         <>
             <Nav />
@@ -19,6 +18,10 @@ function App() {
                     <Route
                         path="/"
                         component={Home}
+                    />
+                    <Route
+                        path="/settings"
+                        component={Settings}
                     />
                     <Route
                         default
