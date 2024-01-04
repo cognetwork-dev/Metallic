@@ -5,6 +5,9 @@ interface HeadTypes {
 }
 
 interface ButtonTypes {
-    children?: any;
+    [x:string]: any;
+}
+
+interface IconTypes {
     [x:string]: any;
 }

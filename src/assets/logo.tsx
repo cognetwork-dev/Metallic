@@ -1,6 +1,6 @@
-function Logo() {
+function Logo(props: IconTypes) {
     return (
-        <svg {...this.props} height="24" width="24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+        <svg {...props} height="24" width="24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
             <defs>
                 <mask id="mask">
                     <rect width="1772.308" height="913.792" fill="white" x="-1.846" y="-1.845"></rect>
