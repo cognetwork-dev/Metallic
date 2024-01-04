@@ -3,8 +3,8 @@
         "name": "Default",
         "id": "default",
         "theme": {
-            "background": "#171717",
-            "secondary": "#2f2f2f",
+            "background": "#0c1618",
+            "secondary": "#002931",
             "primary": "#004953",
             "text": "white",
             "textInverse": "white",
@@ -19,6 +19,59 @@
             "secondary": "#c2c7d1",
             "primary": "#004953",
             "text": "black",
+            "textInverse": "black",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "3kh0",
+        "id": "echo",
+        "theme": {
+            "background": "#1c1c1c",
+            "secondary": "#333333",
+            "primary": "#4caf50",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        },
+        "custom": {
+            ".nav": {
+                "box-shadow": "0 5px 200px var(--primary)"
+            }
+        }
+    },
+    {
+        "name": "Lime",
+        "id": "lime",
+        "theme": {
+            "background": "#0c1618",
+            "secondary": "#002931",
+            "primary": "#32CD32",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Space",
+        "id": "space",
+        "theme": {
+            "background": "#121212",
+            "secondary": "#1a1a1a",
+            "primary": "#662d91",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Molten",
+        "id": "molten",
+        "theme": {
+            "background": "black",
+            "secondary": "#211414",
+            "primary": "#ff6868",
+            "text": "white",
             "textInverse": "white",
             "font": "Roboto"
         }

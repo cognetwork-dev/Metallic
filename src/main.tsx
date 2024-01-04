@@ -14,7 +14,7 @@ function App() {
     return (
         <>
             <Nav />
-            <main class="px-7">
+            <main class="main px-7">
                 <Router>
                     <Route
                         path="/"
