@@ -1,7 +1,7 @@
 import { Head } from "../components/head";
 import { useGlobalState } from "@ekwoka/preact-global-state";
 import { SquareButton } from "../interface/button";
-import themes from "../../themes.json"
+import themes from "../themes.json"
 
 function Settings() {
     const [, setTheme] = useGlobalState<string>("theme", localStorage.getItem("metallic/theme") || "default");

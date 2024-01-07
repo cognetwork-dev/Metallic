@@ -7,10 +7,11 @@
   "author": "Nebelung",
   "type": "module",
   "scripts": {
-    "start": "tsx index.ts",
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "start": "ava && tsx index.ts",
+    "dev": "ava && vite",
+    "build": "ava && tsc && vite build",
+    "preview": "ava && vite preview",
+    "test": "ava"
   },
   "dependencies": {
     "@ekwoka/preact-global-state": "^2.0.0",
@@ -22,11 +23,13 @@
     "preact-router": "^4.1.2",
     "rammerhead": "https://github.com/holy-unblocker/rammerhead/releases/download/v1.2.41-holy.5/rammerhead-1.2.41-holy.5.tgz",
     "tsx": "^4.7.0",
-    "vite-plugin-minify": "^1.5.2"
+    "vite-plugin-minify": "^1.5.2",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.7.0",
     "autoprefixer": "^10.4.16",
+    "ava": "^6.0.1",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.2.2",

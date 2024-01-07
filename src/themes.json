@@ -5,7 +5,7 @@
         "theme": {
             "background": "#0c1618",
             "secondary": "#002931",
-            "primary": "#004953",
+            "primary": "#2a7152",
             "text": "white",
             "textInverse": "white",
             "font": "Roboto"
@@ -73,6 +73,18 @@
             "primary": "#ff6868",
             "text": "white",
             "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Catppuccin Mocha",
+        "id": "catppuccin-mocha",
+        "theme": {
+            "background": "#1e1e2e /* Base */",
+            "secondary": "#313244 /* Surface0 */",
+            "primary": "#89b4fa /* Blue */",
+            "text": "#cdd6f4 /* Text */",
+            "textInverse": "#cdd6f4 /* Text */",
             "font": "Roboto"
         }
     }

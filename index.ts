@@ -6,7 +6,8 @@ import chalk from "chalk";
 import path from 'path';
 import { createBareServer } from '@tomphttp/bare-server-node';
 import createRammerhead from 'rammerhead/src/server/index.js';
-import { pages } from "./settings";
+import { pages } from "./src/settings";
+import themes from "./src/themes.json";
 
 const __dirname = path.resolve();
 
@@ -94,7 +95,7 @@ server.on('upgrade', (req, socket, head) => {
 });
 
 server.on('listening', () => {
-	const theme = chalk.hex('#004953');
+	const theme = chalk.hex(themes.filter((theme) => theme.id = "default")[0].theme.primary);
 	console.log(`${chalk.bold(theme('Metallic'))}`)
 
 	console.log(

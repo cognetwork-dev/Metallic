@@ -7,7 +7,7 @@ import { createBareServer } from '@tomphttp/bare-server-node';
 import { generateFile } from './util/generateFileVite';
 //@ts-ignore
 import { generateThemes } from './util/generateThemes';
-import themes from './themes.json';
+import themes from './src/themes.json';
 
 // https://vitejs.dev/config/
 export default defineConfig({
