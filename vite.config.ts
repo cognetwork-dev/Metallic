@@ -4,9 +4,9 @@ import million from 'million/compiler';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import { createBareServer } from '@tomphttp/bare-server-node';
 //@ts-ignore
-import { generateFile } from './util/generateFileVite';
+import { generateFile } from './src/util/generateFileVite';
 //@ts-ignore
-import { generateThemes } from './util/generateThemes';
+import { generateThemes } from './src/util/generateThemes';
 import themes from './src/themes.json';
 
 // https://vitejs.dev/config/

@@ -1,4 +1,4 @@
-function generateProperties(items, variables = false) {
+function generateProperties(items: any, variables = false) {
     const varAdd = variables ? "--" : ""
 
     return Object.entries(items).map((prop) => {
@@ -6,7 +6,7 @@ function generateProperties(items, variables = false) {
     }).join("\n")
 }
 
-function generateCustomStyle(custom, id) {
+function generateCustomStyle(custom: any, id: any) {
     if (!custom) {
         return ""
     }
@@ -16,8 +16,8 @@ function generateCustomStyle(custom, id) {
     }).join("\n")
 }
 
-function generateThemes(themes) {
-    return themes.map((theme) => {
+function generateThemes(themes: any) {
+    return themes.map((theme: any) => {
         return "body[data-theme=\"" + theme.id + "\"] {\n" + generateProperties(theme.theme, true) + "\n}" + generateCustomStyle(theme.custom, theme.id)
     }).join("\n\n")
 }

@@ -14,4 +14,6 @@ interface IconTypes {
 
 interface WebTypes {
     ref: any;
+    open: any;
+    setOpen: any;
 }
