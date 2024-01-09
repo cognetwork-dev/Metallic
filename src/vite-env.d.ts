@@ -11,3 +11,7 @@ interface ButtonTypes {
 interface IconTypes {
     [x:string]: any;
 }
+
+interface WebTypes {
+    ref: any;
+}
