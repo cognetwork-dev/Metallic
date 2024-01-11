@@ -1,26 +1,38 @@
+import { useEffect } from "preact/hooks";
+import { useRef } from "preact/hooks";
 import { searchURL } from "../util/searchURL";
 import { RoundButton } from "../interface/button";
 import { CloseIcon } from "../assets/closeIcon";
 import { RefreshIcon } from "../assets/refreshIcon";
 import { FullscreenIcon } from "../assets/fullscreenIcon";
 
-function Web({ open, setOpen, ref }: WebTypes) {
+function Web({ open, setOpen, web, setWeb }: WebTypes) {
+    const webRef = useRef<HTMLIFrameElement>(null);
+
+    useEffect(() => {
+        setWeb(webRef);
+    }, [])
+
+    useEffect(() => {
+        document.body.dataset.webOpen = open
+    }, [open])
+
     function refreshWeb() {
-        if (ref && ref.current) {
+        if (web && web.current) {
             if (open) {
                 try {
-                    ref.current.contentWindow.location.reload()
+                    web.current.contentWindow.location.reload()
                 } catch {
-                    ref.current.src += ""
+                    web.current.src += ""
                 }
             }
         }
     }
 
     function fullscreenWeb() {
-        if (ref && ref.current) {
+        if (web && web.current) {
             if (open) {
-                ref.current.requestFullscreen()
+                web.current.requestFullscreen()
             }
         }
     }
@@ -49,7 +61,7 @@ function Web({ open, setOpen, ref }: WebTypes) {
                     </RoundButton>
                 </div>
             </header>
-            <iframe ref={ref} class="web fixed top-20 left-0 right-0 bottom-0 border-0 bg-background w-full h-full select-none hidden z-100"></iframe>
+            <iframe ref={webRef} class="web fixed top-20 left-0 right-0 bottom-0 border-0 bg-background w-full h-full select-none z-100 hidden"></iframe>
         </>
     )
 }

@@ -13,7 +13,8 @@ interface IconTypes {
 }
 
 interface WebTypes {
-    ref: any;
+    web: any;
+    setWeb: any;
     open: any;
     setOpen: any;
 }
