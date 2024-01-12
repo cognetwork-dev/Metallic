@@ -13,14 +13,26 @@ function App() {
     return (
         <>
             <Nav />
-            <main class="main px-7">
+            <main class="main p-7">
                 <Router>
                     <Route
                         path="/"
                         component={Home}
                     />
                     <Route
-                        path="/settings"
+                        path="/settings/search"
+                        component={Settings}
+                    />
+                    <Route
+                        path="/settings/tab"
+                        component={Settings}
+                    />
+                    <Route
+                        path="/settings/appearance"
+                        component={Settings}
+                    />
+                    <Route
+                        path="/settings/locale"
                         component={Settings}
                     />
                     <Route

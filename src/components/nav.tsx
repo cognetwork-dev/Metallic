@@ -31,7 +31,7 @@ function Nav() {
                         <span class="font-bold text-textInverse sr-only sm:not-sr-only">Games</span>
                     </Button>
                 </Link>
-                <Link href="/settings">
+                <Link href="/settings/search">
                     <Button>
                         <SettingsIcon />
                         <span class="font-bold text-textInverse sr-only sm:not-sr-only">Settings</span>

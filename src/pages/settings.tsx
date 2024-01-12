@@ -1,21 +1,45 @@
 import { Head } from "../components/head";
-import { useGlobalState } from "@ekwoka/preact-global-state";
-import { SquareButton } from "../interface/button";
-import themes from "../themes.json"
+import { Link } from "preact-router/match";
+import { Router, Route } from 'preact-router';
+import { SearchIcon } from "../assets/searchIcon";
+import { TabIcon } from "../assets/tabIcon";
+import { AppearanceIcon } from "../assets/appearanceIcon";
+import { LocaleIcon } from "../assets/localeIcon";
+
+import { AppearanceSearch } from "./settings/appearance";
 
 function Settings() {
-    const [, setTheme] = useGlobalState<string>("theme", localStorage.getItem("metallic/theme") || "default");
-
     return (
         <>
             <Head title="Settings" />
-            <section class="py-5 flex items-center gap-3">
-                {themes.map((theme) => (
-                    <SquareButton onClick={() => setTheme(theme.id)}>
-                        <span class="font-bold text-textInverse">{theme.name}</span>
-                    </SquareButton>
-                ))}
-            </section>
+            <div class="flex gap-7 overflow-hidden">
+                <aside class="flex flex-col gap-4">
+                    <Link activeClassName="bg-secondary" class="rounded-lg px-4 py-2 select-none cursor-pointer h-10 flex items-center gap-1.5 w-72" href="/settings/search">
+                        <SearchIcon />
+                        <span class="font-bold text-textInverse sr-only sm:not-sr-only">Search</span>
+                    </Link>
+                    <Link activeClassName="bg-secondary" class="rounded-lg px-4 py-2 select-none cursor-pointer h-10 flex items-center gap-1.5 w-72" href="/settings/tab">
+                        <TabIcon />
+                        <span class="font-bold text-textInverse sr-only sm:not-sr-only">Tab</span>
+                    </Link>
+                    <Link activeClassName="bg-secondary" class="rounded-lg px-4 py-2 select-none cursor-pointer h-10 flex items-center gap-1.5 w-72" href="/settings/appearance">
+                        <AppearanceIcon />
+                        <span class="font-bold text-textInverse sr-only sm:not-sr-only">Appearance</span>
+                    </Link>
+                    <Link activeClassName="bg-secondary" class="rounded-lg px-4 py-2 select-none cursor-pointer h-10 flex items-center gap-1.5 w-72" href="/settings/locale">
+                        <LocaleIcon />
+                        <span class="font-bold text-textInverse sr-only sm:not-sr-only">Locale</span>
+                    </Link>
+                </aside>
+                <section>
+                    <Router>
+                        <Route
+                            path="/settings/appearance"
+                            component={AppearanceSearch}
+                        />
+                    </Router>
+                </section>
+            </div>
         </>
     )
 }
