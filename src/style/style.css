@@ -13,3 +13,7 @@ body {
 input::placeholder {
     user-select: none;
 }
+
+body[data-web-open="false"] .not-web-open-hidden {
+    display: none;
+}

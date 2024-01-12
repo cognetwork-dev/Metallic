@@ -5,17 +5,11 @@ import { SearchIcon } from "../assets/searchIcon"
 
 function Home() {
     const [webOpen, setWebOpen] = useState(false);
-    //Preact bug making me do this
-    let web: any = null;
-
-    function setWeb(newWeb: any) {
-        web = newWeb
-    }
 
     const handleSearch = async (e: any) => {
         if (e.key == "Enter") {
             if (e.target.value) {
-                searchWeb(e.target.value, web, webOpen, setWebOpen)
+                searchWeb(e.target.value, webOpen, setWebOpen)
             }
         }
     }
@@ -23,7 +17,7 @@ function Home() {
     return (
         <>
             <Head />
-            <Web open={webOpen} setOpen={setWebOpen} web={web} setWeb={setWeb} />
+            <Web open={webOpen} setOpen={setWebOpen} />
             <h1 class="text-4xl sm:text-6xl font-bold text-center mt-32 mb-8 sm:mb-16 font-title">Metallic</h1>
             <div class="flex justify-center">
                 <div class="bg-secondary pr-4 rounded-full w-[600px] h-14 flex items-center justify-center">
