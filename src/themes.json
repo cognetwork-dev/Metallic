@@ -77,6 +77,198 @@
         }
     },
     {
+        "name": "EagleNet",
+        "id": "eaglenet",
+        "theme": {
+            "background": "linear-gradient(to right, #665fd2, #9824d3)",
+            "secondary": "#9b219b",
+            "primary": "#4d004d",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Honey",
+        "id": "honey",
+        "theme": {
+            "background": "#ffa15f",
+            "secondary": "#f2883e",
+            "primary": "black",
+            "text": "black",
+            "textInverse": "black",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Swamp",
+        "id": "swamp",
+        "theme": {
+            "background": "#006072",
+            "secondary": "#004755",
+            "primary": "#15fc95",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Ruby",
+        "id": "ruby",
+        "theme": {
+            "background": "#0c1618",
+            "secondary": "#002931",
+            "primary": "#c01c73",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Squid",
+        "id": "squid",
+        "theme": {
+            "background": "#0c1618",
+            "secondary": "#002931",
+            "primary": "#00b0f4",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Lemon",
+        "id": "lemon",
+        "theme": {
+            "background": "#0c1618",
+            "secondary": "#002931",
+            "primary": "#feeb01",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Connection",
+        "id": "connection",
+        "theme": {
+            "background": "#1c1b29",
+            "secondary": "#2e835c",
+            "primary": "#43b581",
+            "text": "#43b581",
+            "textInverse": "#1c1b29",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Dune",
+        "id": "dune",
+        "theme": {
+            "background": "#d2c59d",
+            "secondary": "#7d7259",
+            "primary": "#282425",
+            "text": "#282425",
+            "textInverse": "#fff0c2",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Ice",
+        "id": "ice",
+        "theme": {
+            "background": "#e8e8ea",
+            "secondary": "#cacae2",
+            "primary": "#70aecb",
+            "text": "black",
+            "textInverse": "black",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Campfire",
+        "id": "campfire",
+        "theme": {
+            "background": "#333538",
+            "secondary": "#232528",
+            "primary": "#f17755",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Butter",
+        "id": "butter",
+        "theme": {
+            "background": "#f7d5c5",
+            "secondary": "#e79974",
+            "primary": "#ff5200",
+            "text": "black",
+            "textInverse": "black",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Box",
+        "id": "box",
+        "theme": {
+            "background": "#282828",
+            "secondary": "#000000",
+            "primary": "#fdf4c1",
+            "text": "#fdf4c1",
+            "textInverse": "#fdf4c1",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Blackpink",
+        "id": "blackpink",
+        "theme": {
+            "background": "black",
+            "secondary": "#202020",
+            "primary": "#f8708c",
+            "text": "#f8708c",
+            "textInverse": "#f8708c",
+            "font": "Roboto",
+        }
+    },
+    {
+        "name": "Nebelung",
+        "id": "nebelung",
+        "theme": {
+            "background": "#dabc9a",
+            "secondary": "#190f05",
+            "primary": "#85684b",
+            "text": "#190f05",
+            "textInverse": "white",
+            "font": "Roboto",
+        }
+    },
+    {
+        "name": "Simple",
+        "id": "simple",
+        "theme": {
+            "background": "#18191c",
+            "secondary": "#292b2f",
+            "primary": "white",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Cobalt",
+        "id": "cobalt",
+        "theme": {
+            "background": "#030303",
+            "secondary": "#09283e",
+            "primary": "#0095ff",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
         "name": "Catppuccin Mocha",
         "id": "catppuccin-mocha",
         "theme": {
