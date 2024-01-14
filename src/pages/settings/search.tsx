@@ -1,6 +1,8 @@
 import { SquareButton } from "../../interface/button";
 import ultravioletLogo from "../../assets/ultravioletLogo.png";
 import dynamicLogo from "../../assets/dynamicLogo.png";
+import rammerheadLogo from "../../assets/rammerheadLogo.png";
+import { StompLogo } from "../../assets/stompLogo";
 
 function SearchSettings() {
 
@@ -22,11 +24,11 @@ function SearchSettings() {
                     <span class="font-bold text-textInverse">Dynamic</span>
                 </SquareButton>
                 <SquareButton onClick={() => setService("rammerhead")}>
-                    {/**Service logo */}
+                    <img height="24" width="24" src={rammerheadLogo} loading="lazy" />
                     <span class="font-bold text-textInverse">Rammerhead</span>
                 </SquareButton>
                 <SquareButton onClick={() => setService("stomp")}>
-                    {/**Service logo */}
+                    <StompLogo />
                     <span class="font-bold text-textInverse">Stomp</span>
                 </SquareButton>
             </section>
