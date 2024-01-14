@@ -9,7 +9,7 @@ import { SettingsIcon } from "../assets/settingsIcon";
 function Nav() {
     return (
         <nav class="nav px-7 py-5 flex items-center justify-between">
-            <Link href="/">
+            <Link class="logo" href="/">
                 <Logo class="h-10 w-10" />
             </Link>
             <div class="flex gap-4">

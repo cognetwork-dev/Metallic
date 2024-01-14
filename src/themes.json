@@ -233,6 +233,90 @@
         }
     },
     {
+        "name": "Infinity",
+        "id": "infinity",
+        "theme": {
+            "background": "linear-gradient(90deg, #0c2f4b, #030b11)",
+            "secondary": "#0f4a7a",
+            "primary": "#008dff",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Fracital",
+        "id": "fracital",
+        "theme": {
+            "background": "#222",
+            "secondary": "#333",
+            "primary": "#f971e4",
+            "text": "#f971e4",
+            "textInverse": "#f971e4",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Baja Blast",
+        "id": "baja-blast",
+        "theme": {
+            "background": "#3b8680",
+            "secondary": "#225450",
+            "primary": "#00d5c4",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Tsunami",
+        "id": "tsunami",
+        "theme": {
+            "background": "#121212",
+            "secondary": "#292929",
+            "primary": "#2493ff",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Chrome",
+        "id": "chrome",
+        "theme": {
+            "background": "#3c3c3c",
+            "secondary": "#2a2a2a",
+            "primary": "#abc6ff",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "TikTok",
+        "id": "tiktok",
+        "theme": {
+            "background": "#121212",
+            "secondary": "#292929",
+            "primary": "#ff3b5c",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Kahoot",
+        "id": "kahoot",
+        "theme": {
+            "background": "#381272",
+            "secondary": "#623d9a",
+            "primary": "white",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
         "name": "Nebelung",
         "id": "nebelung",
         "theme": {
@@ -257,6 +341,65 @@
         }
     },
     {
+        "name": "Nord",
+        "id": "nord",
+        "theme": {
+            "background": "#2E3440 /* nord0 */",
+            "secondary": "#3B4252 /* nord1 */",
+            "primary": "#81A1C1 /* nord9 */",
+            "text": "#E5E9F0 /* nord5 */",
+            "textInverse": "#E5E9F0 /* nord5 */",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Nord Green",
+        "id": "nord-green",
+        "theme": {
+            "background": "#2E3440 /* nord0 */",
+            "secondary": "#3B4252 /* nord1 */",
+            "primary": "#8FBCBB /* nord7 */",
+            "text": "#E5E9F0 /* nord5 */",
+            "textInverse": "#E5E9F0 /* nord5 */",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Rosé Pine",
+        "id": "rose-pine",
+        "theme": {
+            "background": "#191724 /* Base */",
+            "secondary": "#26233a /* Overlay */",
+            "primary": "#c4a7e7 /* Text */",
+            "text": "#e0def4 /* Text */",
+            "textInverse": "#e0def4  /* Iris */",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Hub",
+        "id": "hub",
+        "theme": {
+            "background": "black",
+            "secondary": "#ff9000",
+            "primary": "black",
+            "text": "white",
+            "textInverse": "black",
+            "font": "Roboto"
+        },
+        "custom": {
+            ".logo": {
+                "--primary": "var(--secondary)"
+            },
+            ".button:not(.activeButton)": {
+                "--primary": "var(--secondary)"
+            },
+            ".settingsButton:not(.settingsButtonActive)": {
+                "--primary": "var(--secondary)"
+            }
+        }
+    },
+    {
         "name": "Cobalt",
         "id": "cobalt",
         "theme": {
@@ -277,6 +420,42 @@
             "primary": "#89b4fa /* Blue */",
             "text": "#cdd6f4 /* Text */",
             "textInverse": "#cdd6f4 /* Text */",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Catppuccin Macchiato",
+        "id": "catppuccin-macchiato",
+        "theme": {
+            "background": "#24273a /* Base */",
+            "secondary": "#363a4f /* Surface0 */",
+            "primary": "#8aadf4 /* Blue */",
+            "text": "#cad3f5 /* Text */",
+            "textInverse": "#cad3f5 /* Text */",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Catppuccin Frappé",
+        "id": "catppuccin-frappe",
+        "theme": {
+            "background": "#303446 /* Base */",
+            "secondary": "#414559 /* Surface0 */",
+            "primary": "#8caaee /* Blue */",
+            "text": "#c6d0f5 /* Text */",
+            "textInverse": "#c6d0f5 /* Text */",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Catppuccin Latte",
+        "id": "catppuccin-latte",
+        "theme": {
+            "background": "#eff1f5 /* Base */",
+            "secondary": "#ccd0da /* Surface0 */",
+            "primary": "#1e66f5 /* Blue */",
+            "text": "#4c4f69 /* Text */",
+            "textInverse": "#4c4f69 /* Text */",
             "font": "Roboto"
         }
     }
