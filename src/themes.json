@@ -236,7 +236,7 @@
         "name": "Infinity",
         "id": "infinity",
         "theme": {
-            "background": "linear-gradient(90deg, #0c2f4b, #030b11)",
+            "background": "#030b11",
             "secondary": "#0f4a7a",
             "primary": "#008dff",
             "text": "white",
@@ -396,6 +396,23 @@
             },
             ".settingsButton:not(.settingsButtonActive)": {
                 "--primary": "var(--secondary)"
+            }
+        }
+    },
+    {
+        "name": "Hacker",
+        "id": "hacker",
+        "theme": {
+            "background": "#090909",
+            "secondary": "#232323",
+            "primary": "#7de38d",
+            "text": "#7de38d",
+            "textInverse": "#7de38d",
+            "font": "JetBrains Mono"
+        },
+        "custom": {
+            ".title": {
+                "font-family": "JetBrains Mono"
             }
         }
     },

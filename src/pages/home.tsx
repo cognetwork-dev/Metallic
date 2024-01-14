@@ -22,12 +22,12 @@ function Home() {
             <Head />
             <Web open={webOpen} setOpen={setWebOpen} />
             {theme == "hub" ? (
-                <h1 class="mt-32 mb-8 sm:mb-16 flex items-center justify-center">
+                <h1 class="title mt-32 mb-8 sm:mb-16 flex items-center justify-center">
                     <span class="text-4xl sm:text-6xl font-bold text-center font-title">Metal</span>
                     <span class="text-4xl sm:text-6xl font-bold text-center font-title bg-secondary rounded p-1 ml-1 text-textInverse">lic</span>
                 </h1>
             ) : (
-                <h1 class="text-4xl sm:text-6xl font-bold text-center mt-32 mb-8 sm:mb-16 font-title">Metallic</h1>
+                <h1 class="title text-4xl sm:text-6xl font-bold text-center mt-32 mb-8 sm:mb-16 font-title">Metallic</h1>
             )}
             <div class="flex justify-center">
                 <div class="bg-secondary pr-4 rounded-full w-[600px] h-14 flex items-center justify-center">
