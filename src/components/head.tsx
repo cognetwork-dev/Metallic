@@ -14,6 +14,14 @@ function Head({ title }: HeadTypes) {
     }, [])
 
     useEffect(() => {
+        const iconElement = document.querySelector("link[rel='icon']")
+
+        if (iconElement) {
+            iconElement.setAttribute("href", "/assets/logo.svg");
+        }
+    }, [])
+
+    useEffect(() => {
         const themeChannel = new BroadcastChannel("metallic/theme");
 
         themeChannel.onmessage = (e) => {
