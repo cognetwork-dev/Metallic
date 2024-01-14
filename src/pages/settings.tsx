@@ -13,8 +13,8 @@ function Settings() {
     return (
         <>
             <Head title="Settings" />
-            <div class="flex gap-7 overflow-hidden">
-                <aside class="flex flex-col gap-4">
+            <div class="flex gap-7">
+                <aside class="flex flex-col gap-4 sticky top-[108px] self-start">
                     <Link activeClassName="bg-secondary text-textInverse settingsButtonActive" class="settingsButton rounded-lg px-4 py-2 select-none cursor-pointer h-10 flex items-center gap-1.5 w-auto sm:w-72" href="/settings/search">
                         <SearchIcon />
                         <span class="font-bold sr-only sm:not-sr-only">Search</span>
