@@ -44,21 +44,21 @@ Themes can be changed from the [/src/themes.json](https://github.com/cognetwork-
 > [!IMPORTANT]  
 > Themes file will validated before building, starting the server, or starting the dev server.
 
-```json
+```yaml
 {
-    "name": "string", /* Display name of theme */
-    "id": "string", /* Unique ID of theme */
+    "name": "string", # Display name of theme
+    "id": "string", # Unique ID of theme
     "theme": {
-        "background": "string", /* Background color of site */
-        "secondary": "string", /* Buttons and inputs */
-        "primary": "string", /* Icons amd logo */
-        "text": "string", /* Text color */
-        "textInverse": "string", /* Text color for buttons and inputs */
-        "font": "string" /* Font for website (default is Roboto) */
+        "background": "string", # Background color of site
+        "secondary": "string", # Buttons and inputs
+        "primary": "string", # Icons amd logo
+        "text": "string", # Text color
+        "textInverse": "string", # Text color for buttons and inputs
+        "font": "string" # Font for website (default is "Roboto")
     },
-    "custom": {
-        "selector": {
-            "property": "string"
+    "custom": { # Optional
+        "selector": { # CSS selector (".nav" for example)
+            "key": "string" # CSS key and value ("background": "red" for example)
         }
     }
 }
