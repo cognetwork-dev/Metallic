@@ -14,27 +14,27 @@ function Nav() {
             </Link>
             <div class="flex gap-4">
                 <Link href="/" class="sr-only sm:not-sr-only">
-                    <Button>
+                    <Button active={true}>
                         <HomeIcon />
-                        <span class="font-bold text-textInverse sr-only sm:not-sr-only">Home</span>
+                        <span class="font-bold sr-only sm:not-sr-only">Home</span>
                     </Button>
                 </Link>
                 <Link href="/apps">
-                    <Button>
+                    <Button active={true}>
                         <AppsIcon />
-                        <span class="font-bold text-textInverse sr-only sm:not-sr-only">Apps</span>
+                        <span class="font-bold sr-only sm:not-sr-only">Apps</span>
                     </Button>
                 </Link>
                 <Link href="/games">
-                    <Button>
+                    <Button active={true}>
                         <GamesIcon />
-                        <span class="font-bold text-textInverse sr-only sm:not-sr-only">Games</span>
+                        <span class="font-bold sr-only sm:not-sr-only">Games</span>
                     </Button>
                 </Link>
                 <Link href="/settings/search">
-                    <Button>
+                    <Button active={true}>
                         <SettingsIcon />
-                        <span class="font-bold text-textInverse sr-only sm:not-sr-only">Settings</span>
+                        <span class="font-bold sr-only sm:not-sr-only">Settings</span>
                     </Button>
                 </Link>
             </div>

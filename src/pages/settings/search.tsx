@@ -6,27 +6,27 @@ import rammerheadLogo from "../../assets/rammerheadLogo.png";
 import { StompLogo } from "../../assets/stompLogo";
 
 function SearchSettings() {
-    const [, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
+    const [service, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
 
     return (
         <>
             <h1 class="text-4xl font-bold mb-8">Proxy</h1>
             <section class="flex flex-wrap items-center gap-3">
-                <SquareButton onClick={() => setService("ultraviolet")}>
+                <SquareButton active={service == "ultraviolet"} onClick={() => setService("ultraviolet")}>
                     <img height="24" width="24" src={ultravioletLogo} loading="lazy" />
-                    <span class="font-bold text-textInverse">Ultraviolet</span>
+                    <span class="font-bold">Ultraviolet</span>
                 </SquareButton>
-                <SquareButton onClick={() => setService("dynamic")}>
-                <img height="24" width="24" src={dynamicLogo} loading="lazy" />
-                    <span class="font-bold text-textInverse">Dynamic</span>
+                <SquareButton active={service == "dynamic"} onClick={() => setService("dynamic")}>
+                    <img height="24" width="24" src={dynamicLogo} loading="lazy" />
+                    <span class="font-bold">Dynamic</span>
                 </SquareButton>
-                <SquareButton onClick={() => setService("rammerhead")}>
+                <SquareButton active={service == "rammerhead"} onClick={() => setService("rammerhead")}>
                     <img height="24" width="24" src={rammerheadLogo} loading="lazy" />
-                    <span class="font-bold text-textInverse">Rammerhead</span>
+                    <span class="font-bold">Rammerhead</span>
                 </SquareButton>
-                <SquareButton onClick={() => setService("stomp")}>
+                <SquareButton active={service == "stomp"} onClick={() => setService("stomp")}>
                     <StompLogo />
-                    <span class="font-bold text-textInverse">Stomp</span>
+                    <span class="font-bold">Stomp</span>
                 </SquareButton>
             </section>
         </>
