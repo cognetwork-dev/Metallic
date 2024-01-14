@@ -229,7 +229,7 @@
             "primary": "#f8708c",
             "text": "#f8708c",
             "textInverse": "#f8708c",
-            "font": "Roboto",
+            "font": "Roboto"
         }
     },
     {
@@ -241,7 +241,7 @@
             "primary": "#85684b",
             "text": "#190f05",
             "textInverse": "white",
-            "font": "Roboto",
+            "font": "Roboto"
         }
     },
     {
