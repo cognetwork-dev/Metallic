@@ -1,15 +1,17 @@
 import { useState } from "preact/hooks";
+import { useGlobalState } from "@ekwoka/preact-global-state";
 import { Head } from "../components/head";
 import { Web, searchWeb } from "../components/web";
 import { SearchIcon } from "../assets/searchIcon"
 
 function Home() {
+    const [service] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
     const [webOpen, setWebOpen] = useState(false);
 
     const handleSearch = async (e: any) => {
         if (e.key == "Enter") {
             if (e.target.value) {
-                searchWeb(e.target.value, webOpen, setWebOpen)
+                await searchWeb(e.target.value, service, webOpen, setWebOpen)
             }
         }
     }

@@ -4,7 +4,9 @@
 
 import fs, { writeFile } from 'fs';
 import path, { resolve, relative } from 'path';
+// @ts-ignore
 import ejs from 'ejs';
+// @ts-ignore
 import * as mime from 'mime-types';
 
 function ensureDirectoryExistence(filePath: any) {
@@ -52,6 +54,7 @@ function generateFile(option: any) {
     });
 }
 function configureServer(server: any) {
+    // @ts-ignore
     server.middlewares.use("/__generate_file_list", (req: any, res: any) => {
         res.writeHead(200, { "Content-Type": "text/html" });
         res.write(

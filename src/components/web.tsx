@@ -68,11 +68,11 @@ function Web({ open, setOpen }: WebTypes) {
     )
 }
 
-function searchWeb(input: string, open: boolean, setOpen: any) {
+async function searchWeb(input: string, service: string, open: boolean, setOpen: any) {
     if (!open) {
         setOpen(true)
         if (web && web.current) {
-            web.current.src = searchURL(input, "https://www.google.com/search?q=%s")
+            web.current.src = await searchURL(input, service, "https://www.google.com/search?q=%s")
             web.current.focus()
         }
     }

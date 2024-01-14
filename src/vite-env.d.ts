@@ -5,11 +5,11 @@ interface HeadTypes {
 }
 
 interface ButtonTypes {
-    [x:string]: any;
+    [x: string]: any;
 }
 
 interface IconTypes {
-    [x:string]: any;
+    [x: string]: any;
 }
 
 interface WebTypes {

@@ -1,3 +1,4 @@
+import { useGlobalState } from "@ekwoka/preact-global-state";
 import { SquareButton } from "../../interface/button";
 import ultravioletLogo from "../../assets/ultravioletLogo.png";
 import dynamicLogo from "../../assets/dynamicLogo.png";
@@ -5,11 +6,7 @@ import rammerheadLogo from "../../assets/rammerheadLogo.png";
 import { StompLogo } from "../../assets/stompLogo";
 
 function SearchSettings() {
-
-    //Temp
-    function setService(service: string) {
-        return service;
-    }
+    const [, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
 
     return (
         <>
