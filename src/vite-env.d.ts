@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 
 interface HeadTypes {
-    title?: string;
+    pageTitle?: string;
 }
 
 interface ButtonTypes {

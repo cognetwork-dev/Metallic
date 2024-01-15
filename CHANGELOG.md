@@ -92,11 +92,13 @@
 - [x] Obfuscate notifications
 
 # Version 2.0 (Next Update)
-- [ ] Remake from scratch
-- [ ] Use Preact instead of React
-- [ ] Use Tailwind
-- [ ] Custom themes
-- [ ] Add Rammerhead
+- [x] Remake from scratch
+- [x] Use Preact instead of React
+- [x] Use Tailwind
+- [x] Add Rammerhead
+- [x] Update settings between tabs
+- [x] More search engines
+- [x] Revamp themes
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/cognetwork-dev/projects/1/views/1).

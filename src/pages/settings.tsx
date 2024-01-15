@@ -8,11 +8,12 @@ import { LocaleIcon } from "../assets/localeIcon";
 
 import { AppearanceSettings } from "./settings/appearance";
 import { SearchSettings } from "./settings/search";
+import { TabSettings } from "./settings/tab";
 
 function Settings() {
     return (
         <>
-            <Head title="Settings" />
+            <Head pageTitle="Settings" />
             <div class="flex gap-7">
                 <aside class="flex flex-col gap-4 sticky top-[108px] self-start">
                     <Link activeClassName="bg-secondary text-textInverse settingsButtonActive" class="settingsButton rounded-lg px-4 py-2 select-none cursor-pointer h-10 flex items-center gap-1.5 w-auto sm:w-72" href="/settings/search">
@@ -38,8 +39,10 @@ function Settings() {
                             path="/settings/search"
                             component={SearchSettings}
                         />
-                    </Router>
-                    <Router>
+                        <Route
+                            path="/settings/tab"
+                            component={TabSettings}
+                        />
                         <Route
                             path="/settings/appearance"
                             component={AppearanceSettings}
