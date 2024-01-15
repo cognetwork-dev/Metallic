@@ -9,24 +9,26 @@ declare global {
     }
 }
 
-async function encodeURL(input: any, service: string) {
+async function encodeURL(input: string, service: string) {
+    let result;
+
     switch (service) {
         case "ultraviolet":
-            input = window.location.origin + window.__uv$config.prefix + window.__uv$config.encodeUrl(input)
+            result = window.location.origin + window.__uv$config.prefix + window.__uv$config.encodeUrl(input)
             break;
         case "dynamic":
-            input = window.location.origin + window.__dynamic$config.prefix + window.__uv$config.encodeUrl(input)
+            result = window.location.origin + window.__dynamic$config.prefix + window.__uv$config.encodeUrl(input)
             break;
         case "rammerhead":
-            input = window.location.origin + await rammerheadEncode(input);
+            result = window.location.origin + await rammerheadEncode(input);
             break;
         case "stomp":
             //@ts-ignore
-            input = new URL(stomp.html(input), window.location).toString()
+            result = new URL(stomp.html(input), window.location).toString()
             break;
     }
 
-    return input;
+    return result;
 }
 
 async function searchURL(input: string, service: string, searchEngine: string) {

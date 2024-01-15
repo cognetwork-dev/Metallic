@@ -3,16 +3,18 @@ import { useGlobalState } from "@ekwoka/preact-global-state";
 import { Head } from "../components/head";
 import { Web, searchWeb } from "../components/web";
 import { SearchIcon } from "../assets/searchIcon"
+import { geSearchEngine } from "../util/getSearchEngine";
 
 function Home() {
     const [service] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
     const [theme] = useGlobalState<string>("theme", localStorage.getItem("metallic/theme") || "default");
+    const [searchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || "google");
     const [webOpen, setWebOpen] = useState(false);
 
     const handleSearch = async (e: any) => {
         if (e.key == "Enter") {
             if (e.target.value) {
-                await searchWeb(e.target.value, service, webOpen, setWebOpen)
+                await searchWeb(e.target.value, service, geSearchEngine(searchEngine), webOpen, setWebOpen)
             }
         }
     }
@@ -34,7 +36,7 @@ function Home() {
                     <div class="w-16 h-full flex items-center justify-center">
                         <SearchIcon />
                     </div>
-                    <input onKeyUp={handleSearch} class="bg-transparent w-full h-full outline-none text-textInverse" spellcheck={false} autocomplete="off" data-enable-grammarly="false" />
+                    <input autoFocus={true} onKeyUp={handleSearch} class="bg-transparent w-full h-full outline-none text-textInverse" spellcheck={false} autocomplete="off" data-enable-grammarly="false" />
                 </div>
             </div>
         </>
