@@ -1,17 +1,17 @@
 import { useGlobalState } from "@ekwoka/preact-global-state";
 import { SquareButton } from "../../interface/button";
-import ultravioletLogo from "../../assets/ultravioletLogo.png";
-import dynamicLogo from "../../assets/dynamicLogo.png";
-import rammerheadLogo from "../../assets/rammerheadLogo.png";
-import { StompLogo } from "../../assets/stompLogo";
-import { GoogleLogo } from "../../assets/googleLogo";
-import { DuckDuckGoLogo } from "../../assets/duckDuckGoLogo";
-import { BingLogo } from "../../assets/bingLogo";
-import { YahooLogo } from "../../assets/yahooLogo";
-import { BraveLogo } from "../../assets/braveLogo";
-import { QwantLogo } from "../../assets/qwantLogo";
-import { SearXNGLogo } from "../../assets/searXNGLogo";
-import { EcosiaLogo } from "../../assets/ecosiaLogo";
+import ultravioletLogo from "../../assets/services/ultravioletLogo.png";
+import dynamicLogo from "../../assets/services/dynamicLogo.png";
+import rammerheadLogo from "../../assets/services/rammerheadLogo.png";
+import { StompLogo } from "../../assets/services/stompLogo";
+import { GoogleLogo } from "../../assets/searchEngines/googleLogo";
+import { DuckDuckGoLogo } from "../../assets/searchEngines/duckDuckGoLogo";
+import { BingLogo } from "../../assets/searchEngines/bingLogo";
+import { YahooLogo } from "../../assets/searchEngines/yahooLogo";
+import { BraveLogo } from "../../assets/searchEngines/braveLogo";
+import { QwantLogo } from "../../assets/searchEngines/qwantLogo";
+import { SearXNGLogo } from "../../assets/searchEngines/searXNGLogo";
+import { EcosiaLogo } from "../../assets/searchEngines/ecosiaLogo";
 
 function SearchSettings() {
     const [service, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
