@@ -4,6 +4,7 @@ import { useGlobalState } from "@ekwoka/preact-global-state";
 function Head({ title }: HeadTypes) {
     const [theme, setTheme] = useGlobalState<string>("theme", localStorage.getItem("metallic/theme") || "default");
     const [service, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
+    const [searchEngine, setSearchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || "google");
 
     useEffect(() => {
         if (title) {
@@ -43,6 +44,17 @@ function Head({ title }: HeadTypes) {
         localStorage.setItem("metallic/service", service);
         serviceChannel.postMessage(service)
     }, [service])
+
+    useEffect(() => {
+        const engineChannel = new BroadcastChannel("metallic/engine");
+
+        engineChannel.onmessage = (e) => {
+            setSearchEngine(String(e.data))
+        }
+
+        localStorage.setItem("metallic/engine", searchEngine);
+        engineChannel.postMessage(searchEngine)
+    }, [searchEngine])
 
     return (
         <></>
