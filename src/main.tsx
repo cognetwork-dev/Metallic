@@ -7,6 +7,7 @@ import { Error } from "./pages/error";
 import { Nav } from "./components/nav";
 import { Footer } from "./components/footer";
 
+import './util/locale';
 import './util/setupSW';
 import './style/index.css';
 

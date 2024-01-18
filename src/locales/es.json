@@ -1,0 +1,20 @@
+{
+    "404": {
+        "title": "Página no encontrada",
+        "text": "No se pudo encontrar la página que estás buscando."
+    },
+    "nav": {
+        "home": "Hogar",
+        "apps": "Aplicaciones",
+        "games": "Juegos",
+        "settings": "Ajustes"
+    },
+    "settings": {
+        "tabs": {
+            "search": "Buscar",
+            "tab": "Pestaña",
+            "appearance": "Apariencia",
+            "locale": "Lugar"
+        }
+    }
+}

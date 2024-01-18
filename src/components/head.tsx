@@ -1,5 +1,6 @@
 import { useEffect } from "preact/hooks";
 import { useGlobalState } from "@ekwoka/preact-global-state";
+import { seti18Locale } from "../util/locale";
 
 function Head({ pageTitle }: HeadTypes) {
     const [theme, setTheme] = useGlobalState<string>("theme", localStorage.getItem("metallic/theme") || "default");
@@ -7,6 +8,7 @@ function Head({ pageTitle }: HeadTypes) {
     const [searchEngine, setSearchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || "google");
     const [title, setTitle] = useGlobalState<string>("title", localStorage.getItem("metallic/title") || "");
     const [icon, setIcon] = useGlobalState<string>("icon", localStorage.getItem("metallic/icon") || "");
+    const [locale, setLocale] = useGlobalState<string>("locale", localStorage.getItem("metallic/locale") || "en");
 
     useEffect(() => {
         if (title) {
@@ -87,6 +89,18 @@ function Head({ pageTitle }: HeadTypes) {
         localStorage.setItem("metallic/icon", icon);
         iconChannel.postMessage(icon)
     }, [icon]);
+
+    useEffect(() => {
+        const localeChannel = new BroadcastChannel("metallic/locale");
+
+        localeChannel.onmessage = (e) => {
+            setLocale(String(e.data))
+            seti18Locale(e.data);
+        }
+
+        localStorage.setItem("metallic/locale", locale);
+        localeChannel.postMessage(locale)
+    }, [locale]);
 
     return (
         <></>
