@@ -28,3 +28,8 @@ input::placeholder {
 body[data-web-open="false"] .not-web-open-hidden {
     display: none;
 }
+
+input::placeholder {
+    color: var(--text);
+    opacity: 0.25;
+}

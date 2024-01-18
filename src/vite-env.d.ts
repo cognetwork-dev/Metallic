@@ -8,6 +8,10 @@ interface ButtonTypes {
     [x: string]: any;
 }
 
+interface InputTypes {
+    [x: string]: any;
+}
+
 interface IconTypes {
     [x: string]: any;
 }

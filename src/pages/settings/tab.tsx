@@ -1,5 +1,6 @@
 import { useGlobalState } from "@ekwoka/preact-global-state";
 import { RoundButton } from "../../interface/button";
+import { SquareInput } from "../../interface/input";
 import { CloseIcon } from "../../assets/closeIcon";
 import { GoogleLogo } from "../../assets/searchEngines/googleLogo";
 import wikipediaLogo from "../../assets/cloakingIcons/wikipedia.ico";
@@ -13,7 +14,7 @@ function TabSettings() {
     const [title, setTitle] = useGlobalState<string>("title", localStorage.getItem("metallic/title") || "");
     const [icon, setIcon] = useGlobalState<string>("icon", localStorage.getItem("metallic/icon") || "");
 
-    function setPreset(title, icon) {
+    function setPreset(title: string, icon: string) {
         setTitle(title);
         setIcon(icon)
     }
@@ -50,6 +51,11 @@ function TabSettings() {
                 <RoundButton active={title == "Edpuzzle" && icon == "https://edpuzzle.imgix.net/favicons/favicon-32.png"} onClick={() => setPreset("Edpuzzle", "https://edpuzzle.imgix.net/favicons/favicon-32.png")}>
                     <img draggable={false} height="24" width="24" src={edpuzzleLogo} loading="lazy" />
                 </RoundButton>
+            </section>
+            <h1 class="text-4xl font-bold my-8">Custom Tab Mask</h1>
+            <section class="flex flex-wrap items-center gap-3">
+                <SquareInput placeholder="Title" value={title} onInput={(e: any) => setTitle(e.target.value)} />
+                <SquareInput placeholder="Icon" value={icon} onInput={(e: any) => setIcon(e.target.value)} />
             </section>
         </>
     )
