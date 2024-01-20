@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useGlobalState } from "@ekwoka/preact-global-state";
 import { SquareButton } from "../../interface/button";
 import ultravioletLogo from "../../assets/services/ultravioletLogo.png";
@@ -14,12 +15,13 @@ import { SearXNGLogo } from "../../assets/searchEngines/searXNGLogo";
 import { EcosiaLogo } from "../../assets/searchEngines/ecosiaLogo";
 
 function SearchSettings() {
+    const { t } = useTranslation();
     const [service, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
     const [searchEngine, setSearchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || "google");
 
     return (
         <>
-            <h1 class="text-4xl font-bold mb-8">Service</h1>
+            <h1 class="text-4xl font-bold mb-8">{t("settings.search.service.title")}</h1>
             <section class="flex flex-wrap items-center gap-3">
                 <SquareButton active={service == "ultraviolet"} onClick={() => setService("ultraviolet")}>
                     <img draggable={false} height="24" width="24" src={ultravioletLogo} loading="lazy" />
@@ -38,7 +40,7 @@ function SearchSettings() {
                     <span class="font-bold">Stomp</span>
                 </SquareButton>
             </section>
-            <h1 class="text-4xl font-bold my-8">Search Engine</h1>
+            <h1 class="text-4xl font-bold my-8">{t("settings.search.searchEngine.title")}</h1>
             <section class="flex flex-wrap items-center gap-3">
                 <SquareButton active={searchEngine == "google"} onClick={() => setSearchEngine("google")}>
                     <GoogleLogo />

@@ -1,0 +1,48 @@
+{
+    "404": {
+        "title": "Page non trouvée",
+        "text": "La page que vous recherchez est introuvable."
+    },
+    "nav": {
+        "home": "Domicile",
+        "apps": "Apps",
+        "games": "Jeux",
+        "settings": "Paramètres"
+    },
+    "settings": {
+        "tabs": {
+            "search": "Recherche",
+            "tab": "Onglet",
+            "appearance": "Apparence",
+            "locale": "Langue"
+        },
+        "search": {
+            "service": {
+                "title": "Service"
+            },
+            "searchEngine": {
+                "title": "Moteur de recherche"
+            }
+        },
+        "tab": {
+            "tabMask": {
+                "title": "Masque d'onglet"
+            },
+            "customTabMask": {
+                "title": "Masque d'onglet personnalisé",
+                "titleInput": "Titre",
+                "iconInput": "Icône"
+            }
+        },
+        "appearance": {
+            "theme": {
+                "title": "Thème"
+            }
+        },
+        "locale": {
+            "locale": {
+                "title": "Langue"
+            }
+        }
+    }
+}

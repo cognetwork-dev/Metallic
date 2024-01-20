@@ -1,0 +1,48 @@
+{
+    "404": {
+        "title": "पृष्ठ नहीं मिला",
+        "text": "आप जिस पृष्ठ की तलाश कर रहे हैं वह नहीं मिल सका।"
+    },
+    "nav": {
+        "home": "घर",
+        "apps": "ऐप्स",
+        "games": "खेल",
+        "settings": "समायोजन"
+    },
+    "settings": {
+        "tabs": {
+            "search": "खोज",
+            "tab": "टैब",
+            "appearance": "उपस्थिति",
+            "locale": "स्थान"
+        },
+        "search": {
+            "service": {
+                "title": "सेवा"
+            },
+            "searchEngine": {
+                "title": "खोज इंजन"
+            }
+        },
+        "tab": {
+            "tabMask": {
+                "title": "टैब मास्क"
+            },
+            "customTabMask": {
+                "title": "कस्टम टैब मास्क",
+                "titleInput": "शीर्षक",
+                "iconInput": "आइकन"
+            }
+        },
+        "appearance": {
+            "theme": {
+                "title": "विषय"
+            }
+        },
+        "locale": {
+            "locale": {
+                "title": "स्थान"
+            }
+        }
+    }
+}

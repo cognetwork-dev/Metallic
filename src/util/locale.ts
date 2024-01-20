@@ -4,6 +4,12 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 import en from "../locales/en.json";
 import es from "../locales/es.json";
+import fr from "../locales/fr.json";
+import nl from "../locales/nl.json";
+import de from "../locales/de.json";
+import ar from "../locales/ar.json";
+import zh from "../locales/zh.json";
+import hi from "../locales/hi.json";
 
 const language = localStorage.getItem("metallic/locale") || "en"
 
@@ -13,6 +19,24 @@ const resources = {
     },
     es: {
         translation: es
+    },
+    fr: {
+        translation: fr
+    },
+    nl: {
+        translation: nl
+    },
+    de: {
+        translation: de
+    },
+    ar: {
+        translation: ar
+    },
+    zh: {
+        translation: zh
+    },
+    hi: {
+        translation: hi
     }
 };
 

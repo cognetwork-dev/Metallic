@@ -1,0 +1,48 @@
+{
+    "404": {
+        "title": "找不到网页",
+        "text": "无法找到您要查找的页面。"
+    },
+    "nav": {
+        "home": "家",
+        "apps": "应用",
+        "games": "游戏",
+        "settings": "设置"
+    },
+    "settings": {
+        "tabs": {
+            "search": "搜索",
+            "tab": "标签",
+            "appearance": "外貌",
+            "locale": "语言环境"
+        },
+        "search": {
+            "service": {
+                "title": "服务"
+            },
+            "searchEngine": {
+                "title": "搜索引擎"
+            }
+        },
+        "tab": {
+            "tabMask": {
+                "title": "标签面膜"
+            },
+            "customTabMask": {
+                "title": "定制标签面膜",
+                "titleInput": "标题",
+                "iconInput": "图标"
+            }
+        },
+        "appearance": {
+            "theme": {
+                "title": "主题"
+            }
+        },
+        "locale": {
+            "locale": {
+                "title": "语言环境"
+            }
+        }
+    }
+}

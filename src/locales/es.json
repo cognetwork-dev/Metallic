@@ -15,6 +15,34 @@
             "tab": "Pestaña",
             "appearance": "Apariencia",
             "locale": "Lugar"
+        },
+        "search": {
+            "service": {
+                "title": "Servicio"
+            },
+            "searchEngine": {
+                "title": "Buscador"
+            }
+        },
+        "tab": {
+            "tabMask": {
+                "title": "Máscara de pestaña"
+            },
+            "customTabMask": {
+                "title": "Máscara de pestaña personalizada",
+                "titleInput": "Título",
+                "iconInput": "Icono"
+            }
+        },
+        "appearance": {
+            "theme": {
+                "title": "Tema"
+            }
+        },
+        "locale": {
+            "locale": {
+                "title": "Lugar"
+            }
         }
     }
 }

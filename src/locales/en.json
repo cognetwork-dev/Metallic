@@ -15,6 +15,34 @@
             "tab": "Tab",
             "appearance": "Appearance",
             "locale": "Locale"
+        },
+        "search": {
+            "service": {
+                "title": "Service"
+            },
+            "searchEngine": {
+                "title": "Search Engine"
+            }
+        },
+        "tab": {
+            "tabMask": {
+                "title": "Tab Mask"
+            },
+            "customTabMask": {
+                "title": "Custom Tab Mask",
+                "titleInput": "Title",
+                "iconInput": "Icon"
+            }
+        },
+        "appearance": {
+            "theme": {
+                "title": "Theme"
+            }
+        },
+        "locale": {
+            "locale": {
+                "title": "Locale"
+            }
         }
     }
 }

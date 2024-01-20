@@ -1,0 +1,48 @@
+{
+    "404": {
+        "title": "Pagina niet gevonden",
+        "text": "De pagina die u zoekt, kan niet worden gevonden."
+    },
+    "nav": {
+        "home": "Thuis",
+        "apps": "Apps",
+        "games": "Spellen",
+        "settings": "Instellingen"
+    },
+    "settings": {
+        "tabs": {
+            "search": "Zoekopdracht",
+            "tab": "Tab",
+            "appearance": "Verschijning",
+            "locale": "Lokaal"
+        },
+        "search": {
+            "service": {
+                "title": "Dienst"
+            },
+            "searchEngine": {
+                "title": "Zoekmachine"
+            }
+        },
+        "tab": {
+            "tabMask": {
+                "title": "Tabbladmasker"
+            },
+            "customTabMask": {
+                "title": "Aangepast tabbladmasker",
+                "titleInput": "Titel",
+                "iconInput": "Icoon"
+            }
+        },
+        "appearance": {
+            "theme": {
+                "title": "Thema"
+            }
+        },
+        "locale": {
+            "locale": {
+                "title": "Lokaal"
+            }
+        }
+    }
+}

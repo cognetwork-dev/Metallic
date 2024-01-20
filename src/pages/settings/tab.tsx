@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useGlobalState } from "@ekwoka/preact-global-state";
 import { RoundButton } from "../../interface/button";
 import { SquareInput } from "../../interface/input";
@@ -11,6 +12,7 @@ import googleDriveLogo from "../../assets/cloakingIcons/googledrive.png";
 import edpuzzleLogo from "../../assets/cloakingIcons/edpuzzle.png";
 
 function TabSettings() {
+    const { t } = useTranslation();
     const [title, setTitle] = useGlobalState<string>("title", localStorage.getItem("metallic/title") || "");
     const [icon, setIcon] = useGlobalState<string>("icon", localStorage.getItem("metallic/icon") || "");
 
@@ -25,7 +27,7 @@ function TabSettings() {
 
     return (
         <>
-            <h1 class="text-4xl font-bold mb-8">Tab Mask</h1>
+            <h1 class="text-4xl font-bold mb-8">{t("settings.tab.tabMask.title")}</h1>
             <section class="flex flex-wrap items-center gap-3">
                 <RoundButton active={title == "" && icon == ""} onClick={() => resetTab()}>
                     <CloseIcon />
@@ -52,10 +54,10 @@ function TabSettings() {
                     <img draggable={false} height="24" width="24" src={edpuzzleLogo} loading="lazy" />
                 </RoundButton>
             </section>
-            <h1 class="text-4xl font-bold my-8">Custom Tab Mask</h1>
+            <h1 class="text-4xl font-bold my-8">{t("settings.tab.customTabMask.title")}</h1>
             <section class="flex flex-wrap items-center gap-3">
-                <SquareInput placeholder="Title" value={title} onInput={(e: any) => setTitle(e.target.value)} />
-                <SquareInput placeholder="Icon" value={icon} onInput={(e: any) => setIcon(e.target.value)} />
+                <SquareInput placeholder={t("settings.tab.customTabMask.titleInput")} value={title} onInput={(e: any) => setTitle(e.target.value)} />
+                <SquareInput placeholder={t("settings.tab.customTabMask.iconInput")} value={icon} onInput={(e: any) => setIcon(e.target.value)} />
             </section>
         </>
     )

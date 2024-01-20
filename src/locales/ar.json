@@ -1,0 +1,48 @@
+{
+    "404": {
+        "title": "الصفحة غير موجودة",
+        "text": "الصفحة التي تبحث عنها لا يمكن العثور عليها."
+    },
+    "nav": {
+        "home": "بيت",
+        "apps": "تطبيقات",
+        "games": "ألعاب",
+        "settings": "إعدادات"
+    },
+    "settings": {
+        "tabs": {
+            "search": "يبحث",
+            "tab": "فاتورة غير مدفوعة",
+            "appearance": "مظهر",
+            "locale": "لغة"
+        },
+        "search": {
+            "service": {
+                "title": "خدمة"
+            },
+            "searchEngine": {
+                "title": "محرك البحث"
+            }
+        },
+        "tab": {
+            "tabMask": {
+                "title": "قناع علامة التبويب"
+            },
+            "customTabMask": {
+                "title": "قناع علامة التبويب المخصصة",
+                "titleInput": "عنوان",
+                "iconInput": "أيقونة"
+            }
+        },
+        "appearance": {
+            "theme": {
+                "title": "سمة"
+            }
+        },
+        "locale": {
+            "locale": {
+                "title": "لغة"
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "404": {
+        "title": "Seite nicht gefunden",
+        "text": "Die gesuchte Seite konnte nicht gefunden werden."
+    },
+    "nav": {
+        "home": "Heim",
+        "apps": "Apps",
+        "games": "Spiele",
+        "settings": "Einstellungen"
+    },
+    "settings": {
+        "tabs": {
+            "search": "Suchen",
+            "tab": "Tab",
+            "appearance": "Aussehen",
+            "locale": "Gebietsschema"
+        },
+        "search": {
+            "service": {
+                "title": "Service"
+            },
+            "searchEngine": {
+                "title": "Suchmaschine"
+            }
+        },
+        "tab": {
+            "tabMask": {
+                "title": "Tab-Maske"
+            },
+            "customTabMask": {
+                "title": "Benutzerdefinierte Tab-Maske",
+                "titleInput": "Titel",
+                "iconInput": "Symbol"
+            }
+        },
+        "appearance": {
+            "theme": {
+                "title": "Thema"
+            }
+        },
+        "locale": {
+            "locale": {
+                "title": "Gebietsschema"
+            }
+        }
+    }
+}
