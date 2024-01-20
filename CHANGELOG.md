@@ -99,6 +99,9 @@
 - [x] Update settings between tabs
 - [x] More search engines
 - [x] Revamp themes
+- [x] More tab mask presets
+- [x] Update settings layout
+- [ ] More languages
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/cognetwork-dev/projects/1/views/1).
