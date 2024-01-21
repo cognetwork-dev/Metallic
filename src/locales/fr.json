@@ -3,18 +3,24 @@
         "title": "Page non trouvée",
         "text": "La page que vous recherchez est introuvable."
     },
+    "title": {
+        "apps": "Applications",
+        "games": "Jeux",
+        "settings": "Paramètres",
+        "notFound": "Pas trouvé"
+    },
     "nav": {
-        "home": "Domicile",
-        "apps": "Apps",
+        "home": "Maison",
+        "apps": "Applications",
         "games": "Jeux",
         "settings": "Paramètres"
     },
     "settings": {
         "tabs": {
             "search": "Recherche",
-            "tab": "Onglet",
+            "tab": "Languette",
             "appearance": "Apparence",
-            "locale": "Langue"
+            "locale": "Lieu"
         },
         "search": {
             "service": {
@@ -41,7 +47,7 @@
         },
         "locale": {
             "locale": {
-                "title": "Langue"
+                "title": "Lieu"
             }
         }
     }

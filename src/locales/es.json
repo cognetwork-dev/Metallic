@@ -3,6 +3,12 @@
         "title": "Página no encontrada",
         "text": "No se pudo encontrar la página que estás buscando."
     },
+    "title": {
+        "apps": "Aplicaciones",
+        "games": "Juegos",
+        "settings": "Ajustes",
+        "notFound": "Extraviado"
+    },
     "nav": {
         "home": "Hogar",
         "apps": "Aplicaciones",

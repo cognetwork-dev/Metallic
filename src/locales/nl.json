@@ -3,6 +3,12 @@
         "title": "Pagina niet gevonden",
         "text": "De pagina die u zoekt, kan niet worden gevonden."
     },
+    "title": {
+        "apps": "Apps",
+        "games": "Spellen",
+        "settings": "Instellingen",
+        "notFound": "Niet gevonden"
+    },
     "nav": {
         "home": "Thuis",
         "apps": "Apps",

@@ -3,6 +3,12 @@
         "title": "Seite nicht gefunden",
         "text": "Die gesuchte Seite konnte nicht gefunden werden."
     },
+    "title": {
+        "apps": "Apps",
+        "games": "Spiele",
+        "settings": "Einstellungen",
+        "notFound": "Nicht gefunden"
+    },
     "nav": {
         "home": "Heim",
         "apps": "Apps",

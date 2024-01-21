@@ -3,6 +3,12 @@
         "title": "找不到网页",
         "text": "无法找到您要查找的页面。"
     },
+    "title": {
+        "apps": "应用",
+        "games": "游戏",
+        "settings": "设置",
+        "notFound": "未找到"
+    },
     "nav": {
         "home": "家",
         "apps": "应用",

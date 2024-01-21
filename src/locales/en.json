@@ -3,6 +3,12 @@
         "title": "Page Not Found",
         "text": "The page you are looking for could not be found."
     },
+    "title": {
+        "apps": "Apps",
+        "games": "Games",
+        "settings": "Settings",
+        "notFound": "Not Found"
+    },
     "nav": {
         "home": "Home",
         "apps": "Apps",
