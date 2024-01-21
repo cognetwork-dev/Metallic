@@ -20,7 +20,7 @@ function Head({ pageTitle }: HeadTypes) {
                 window.document.title = "Metallic";
             }
         }
-    }, [title])
+    }, [title, locale])
 
     useEffect(() => {
         const iconElement = document.querySelector("link[rel='icon']")
