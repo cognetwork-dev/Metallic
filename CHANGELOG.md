@@ -107,8 +107,6 @@
 - [ ] Suggestions with icon for website or search
 - [ ] Apps
 - [ ] Games
-- [ ] Discord and github
-- [ ] Config file
 - [ ] Privacy policy
 - [ ] "Open" option in settings => search with: default, direct, about:blank
 - [ ] Obfuscate everything

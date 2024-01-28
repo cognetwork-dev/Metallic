@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useGlobalState } from "@ekwoka/preact-global-state";
 import { SquareButton } from "../../interface/button";
+import { rammerhead } from "../../settings";
 import ultravioletLogo from "../../assets/services/ultravioletLogo.png";
 import dynamicLogo from "../../assets/services/dynamicLogo.png";
 import rammerheadLogo from "../../assets/services/rammerheadLogo.png";
@@ -31,10 +32,12 @@ function SearchSettings() {
                     <img draggable={false} height="24" width="24" src={dynamicLogo} loading="lazy" />
                     <span class="font-bold">Dynamic</span>
                 </SquareButton>
-                <SquareButton active={service == "rammerhead"} onClick={() => setService("rammerhead")}>
-                    <img draggable={false} height="24" width="24" src={rammerheadLogo} loading="lazy" />
-                    <span class="font-bold">Rammerhead</span>
-                </SquareButton>
+                {rammerhead ? (
+                    <SquareButton active={service == "rammerhead"} onClick={() => setService("rammerhead")}>
+                        <img draggable={false} height="24" width="24" src={rammerheadLogo} loading="lazy" />
+                        <span class="font-bold">Rammerhead</span>
+                    </SquareButton>
+                ) : null}
                 <SquareButton active={service == "stomp"} onClick={() => setService("stomp")}>
                     <StompLogo />
                     <span class="font-bold">Stomp</span>
