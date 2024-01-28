@@ -8,6 +8,7 @@ import { FullscreenIcon } from "../assets/fullscreenIcon";
 
 let web: any = null;
 let search: any = null;
+let clearInput: any = null;
 
 function Web({ open, setOpen }: WebTypes) {
     const webRef = useRef<HTMLIFrameElement>(null);
@@ -43,6 +44,7 @@ function Web({ open, setOpen }: WebTypes) {
     function closeWeb() {
         if (open) {
             search.value = "";
+            clearInput();
             setOpen(false);
             search.focus();
         }
@@ -71,13 +73,14 @@ function Web({ open, setOpen }: WebTypes) {
     )
 }
 
-async function searchWeb(input: string, service: string, searchEngine: string, open: boolean, setOpen: any, searchRef: any) {
+async function searchWeb(input: string, service: string, searchEngine: string, open: boolean, setOpen: any, searchRef: any, clearInputFunction: any) {
     if (!open) {
         setOpen(true)
         if (web && web.current) {
             web.current.src = await searchURL(input, service, searchEngine)
             web.current.focus()
             search = searchRef;
+            clearInput = clearInputFunction
         }
     }
 }

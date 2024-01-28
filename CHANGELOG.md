@@ -105,7 +105,6 @@
 
 # Todo
 - [ ] Suggestions with icon for website or search
-- [ ] Clear search on enter
 - [ ] Apps
 - [ ] Games
 - [ ] Discord and github
