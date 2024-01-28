@@ -111,7 +111,7 @@
 - [ ] Config file
 - [ ] Privacy policy
 - [ ] "Open" option in settings => search with: default, direct, about:blank
-- [ ] Page title and icon in web nav
+- [ ] Obfuscate everything
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/cognetwork-dev/projects/1/views/1).
