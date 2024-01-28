@@ -7,6 +7,7 @@ import { RefreshIcon } from "../assets/refreshIcon";
 import { FullscreenIcon } from "../assets/fullscreenIcon";
 
 let web: any = null;
+let search: any = null;
 
 function Web({ open, setOpen }: WebTypes) {
     const webRef = useRef<HTMLIFrameElement>(null);
@@ -41,7 +42,9 @@ function Web({ open, setOpen }: WebTypes) {
 
     function closeWeb() {
         if (open) {
+            search.value = "";
             setOpen(false);
+            search.focus();
         }
     }
 
@@ -52,13 +55,13 @@ function Web({ open, setOpen }: WebTypes) {
                     {/**Title and Icon */}
                 </div>
                 <div class="flex gap-4">
-                    <RoundButton onclick={fullscreenWeb}>
+                    <RoundButton onclick={fullscreenWeb} active={true}>
                         <FullscreenIcon />
                     </RoundButton>
-                    <RoundButton onclick={refreshWeb}>
+                    <RoundButton onclick={refreshWeb} active={true}>
                         <RefreshIcon />
                     </RoundButton>
-                    <RoundButton onClick={closeWeb}>
+                    <RoundButton onClick={closeWeb} active={true}>
                         <CloseIcon />
                     </RoundButton>
                 </div>
@@ -68,12 +71,13 @@ function Web({ open, setOpen }: WebTypes) {
     )
 }
 
-async function searchWeb(input: string, service: string, searchEngine: string, open: boolean, setOpen: any) {
+async function searchWeb(input: string, service: string, searchEngine: string, open: boolean, setOpen: any, searchRef: any) {
     if (!open) {
         setOpen(true)
         if (web && web.current) {
             web.current.src = await searchURL(input, service, searchEngine)
             web.current.focus()
+            search = searchRef;
         }
     }
 }

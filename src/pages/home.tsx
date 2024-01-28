@@ -21,7 +21,7 @@ function Home() {
     const handleSearch = async (e: any) => {
         if (e.key == "Enter") {
             if (e.target.value) {
-                await searchWeb(e.target.value, service, geSearchEngine(searchEngine), webOpen, setWebOpen)
+                await searchWeb(e.target.value, service, geSearchEngine(searchEngine), webOpen, setWebOpen, e.target);
             }
         }
     }
