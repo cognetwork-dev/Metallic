@@ -1,4 +1,4 @@
-import { useState } from "preact/hooks";
+import { useState, useEffect, useRef } from "preact/hooks";
 import { useGlobalState } from "@ekwoka/preact-global-state";
 import { Head } from "../components/head";
 import { Web, searchWeb } from "../components/web";
@@ -10,7 +10,14 @@ function Home() {
     const [theme] = useGlobalState<string>("theme", localStorage.getItem("metallic/theme") || "default");
     const [searchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || "google");
     const [webOpen, setWebOpen] = useState(false);
+    const search = useRef<HTMLInputElement>();
 
+    useEffect(() => {
+        if (search && search.current) {
+            search.current.focus();
+        }
+    }, [location.pathname])
+    
     const handleSearch = async (e: any) => {
         if (e.key == "Enter") {
             if (e.target.value) {
@@ -36,7 +43,8 @@ function Home() {
                     <div class="w-16 h-full flex items-center justify-center">
                         <SearchIcon />
                     </div>
-                    <input autoFocus={true} onKeyUp={handleSearch} class="bg-transparent w-full h-full outline-none text-textInverse" spellcheck={false} autocomplete="off" data-enable-grammarly="false" />
+                    {/**@ts-ignore */}
+                    <input ref={search} autoFocus={true} onKeyUp={handleSearch} class="bg-transparent w-full h-full outline-none text-textInverse" spellcheck={false} autocomplete="off" data-enable-grammarly="false" />
                 </div>
             </div>
         </>

@@ -103,5 +103,15 @@
 - [x] Update settings layout
 - [x] More languages
 
+# Todo
+- [ ] Suggestions with icon for website or search
+- [ ] Clear search on enter
+- [ ] Apps
+- [ ] Games
+- [ ] Discord and github
+- [ ] Config file
+- [ ] Privacy policy
+- [ ] "Open" option in settings => search with: default, direct, about:blank
+
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/cognetwork-dev/projects/1/views/1).
