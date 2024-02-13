@@ -53,6 +53,7 @@ function Web({ open, setOpen }: WebTypes) {
 
     function closeWeb() {
         if (open) {
+            web.current.src = "";
             search.value = "";
             clearInput();
             setOpen(false);

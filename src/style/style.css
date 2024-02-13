@@ -4,6 +4,10 @@ body {
     font-family: var(--font);
 }
 
+body[data-web-open="true"] {
+    overflow: hidden;
+}
+
 ::-webkit-scrollbar {
     width: 16px;
 }

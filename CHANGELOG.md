@@ -104,7 +104,6 @@
 - [x] More languages
 
 # Todo
-- [ ] Suggestions with icon for website or search
 - [ ] Apps
 - [ ] Games
 - [ ] Privacy policy
