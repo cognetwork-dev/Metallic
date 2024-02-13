@@ -19,6 +19,7 @@
     "@tomphttp/bare-server-node": "^2.0.1",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "hidden-from-bots-react": "^1.0.0",
     "i18next": "^23.7.16",
     "i18next-browser-languagedetector": "^7.2.0",
     "million": "^2.6.4",

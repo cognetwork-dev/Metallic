@@ -4,14 +4,15 @@
         "text": "La page que vous recherchez est introuvable."
     },
     "title": {
-        "apps": "Applications",
+        "apps": "applications",
         "games": "Jeux",
         "settings": "Paramètres",
-        "notFound": "Pas trouvé"
+        "notFound": "Pas trouvé",
+        "privacy": "politique de confidentialité"
     },
     "nav": {
         "home": "Maison",
-        "apps": "Applications",
+        "apps": "applications",
         "games": "Jeux",
         "settings": "Paramètres"
     },
@@ -48,6 +49,40 @@
         "locale": {
             "locale": {
                 "title": "Lieu"
+            }
+        }
+    },
+    "privacy": {
+        "title": "politique de confidentialité",
+        "updated": "Dernière mise à jour le {{updated}}",
+        "policy": {
+            "consent": {
+                "title": "Consentement",
+                "text": "Cet avis de confidentialité pour Metallic (\"nous\", \"notre\" ou \"notre\") décrit comment et pourquoi nous pouvons collecter, stocker, utiliser et/ou partager (\"traiter\") vos informations lorsque vous utilisez nos services (\"  {{host}}, ou l'un de nos sites Web qui renvoie à cet avis de confidentialité."
+            },
+            "information": {
+                "title": "Collecte d'informations",
+                "text": "Nous ne collectons, ne stockons ni ne vendons aucune information vous concernant. "
+            },
+            "children": {
+                "title": "Confidentialité des enfants",
+                "text": "Nous ne collectons sciemment aucune information personnelle auprès d'enfants de moins de 13 ans. Si vous avez moins de 13 ans, veuillez ne soumettre aucune information personnelle via notre site Web."
+            },
+            "cookies": {
+                "title": "Biscuits",
+                "text": "Ce site Web n'utilise pas de cookies. "
+            },
+            "changes": {
+                "title": "Changements et amendements",
+                "text": "Nous nous réservons le droit de modifier cette politique de confidentialité relative au site Web à tout moment, à compter de la publication d'une version mise à jour de cette politique sur le site Web. "
+            },
+            "acceptance": {
+                "title": "Acceptation de cette politique",
+                "text": "Vous reconnaissez que vous avez lu cette politique et acceptez tous ses termes et conditions. "
+            },
+            "contact": {
+                "title": "Contact",
+                "text": "Si vous avez des questions concernant cette politique, veuillez nous contacter"
             }
         }
     }

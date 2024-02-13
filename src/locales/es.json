@@ -7,7 +7,8 @@
         "apps": "Aplicaciones",
         "games": "Juegos",
         "settings": "Ajustes",
-        "notFound": "Extraviado"
+        "notFound": "Extraviado",
+        "privacy": "política de privacidad"
     },
     "nav": {
         "home": "Hogar",
@@ -48,6 +49,40 @@
         "locale": {
             "locale": {
                 "title": "Lugar"
+            }
+        }
+    },
+    "privacy": {
+        "title": "política de privacidad",
+        "updated": "Ultima actualización en {{updated}}",
+        "policy": {
+            "consent": {
+                "title": "Consentir",
+                "text": "Este aviso de privacidad para Metallic (\"nosotros\", \"nos\" o \"nuestro\") describe cómo y por qué podemos recopilar, almacenar, usar y/o compartir (\"procesar\") su información cuando utiliza nuestros servicios (\"  {{host}}, o cualquier sitio web nuestro que enlace a este aviso de privacidad."
+            },
+            "information": {
+                "title": "Colección de información",
+                "text": "No recopilamos, almacenamos ni vendemos ninguna información relacionada con usted. "
+            },
+            "children": {
+                "title": "Privacidad de los niños",
+                "text": "No recopilamos intencionadamente ninguna información personal de niños menores de 13 años. Si es menor de 13 años, no envíe ninguna información personal a través de nuestro sitio web."
+            },
+            "cookies": {
+                "title": "Galletas",
+                "text": "Este sitio web no utiliza cookies. "
+            },
+            "changes": {
+                "title": "Cambios y enmiendas",
+                "text": "Nos reservamos el derecho de modificar esta política de privacidad relacionada con el sitio web en cualquier momento, a partir de la publicación de una versión actualizada de esta Política en el sitio web. "
+            },
+            "acceptance": {
+                "title": "Aceptación de esta política",
+                "text": "Usted reconoce que ha leído esta Política y acepta todos sus términos y condiciones. "
+            },
+            "contact": {
+                "title": "Contacto",
+                "text": "Si tiene alguna pregunta sobre esta Política, por favor contáctenos"
             }
         }
     }

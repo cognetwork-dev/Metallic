@@ -7,7 +7,8 @@
         "apps": "Apps",
         "games": "Spellen",
         "settings": "Instellingen",
-        "notFound": "Niet gevonden"
+        "notFound": "Niet gevonden",
+        "privacy": "Privacybeleid"
     },
     "nav": {
         "home": "Thuis",
@@ -48,6 +49,40 @@
         "locale": {
             "locale": {
                 "title": "Lokaal"
+            }
+        }
+    },
+    "privacy": {
+        "title": "Privacybeleid",
+        "updated": "Laatst geupdate op {{updated}}",
+        "policy": {
+            "consent": {
+                "title": "Toestemming",
+                "text": "Deze privacyverklaring voor Metallic (\"wij\", \"ons\" of \"onze\") beschrijft hoe en waarom we uw informatie kunnen verzamelen, opslaan, gebruiken en/of delen (\"verwerken\") wanneer u onze diensten gebruikt (\"  {{host}}, of een website van ons die naar deze privacyverklaring linkt."
+            },
+            "information": {
+                "title": "Verzameling van informatie",
+                "text": "Wij verzamelen, bewaren of verkopen geen informatie die op u betrekking heeft. "
+            },
+            "children": {
+                "title": "Privacy van kinderen",
+                "text": "Wij verzamelen niet bewust persoonlijke gegevens van kinderen jonger dan 13 jaar. Als u jonger dan 13 jaar bent, dient u geen persoonlijke gegevens in te dienen via onze website."
+            },
+            "cookies": {
+                "title": "Koekjes",
+                "text": "Deze website maakt geen gebruik van cookies. "
+            },
+            "changes": {
+                "title": "Wijzigingen en amendementen",
+                "text": "Wij behouden ons het recht voor om dit privacybeleid met betrekking tot de website op elk moment te wijzigen, met ingang van het plaatsen van een bijgewerkte versie van dit beleid op de website. "
+            },
+            "acceptance": {
+                "title": "Acceptatie van dit beleid",
+                "text": "U erkent dat u dit Beleid heeft gelezen en akkoord gaat met alle bepalingen en voorwaarden ervan. "
+            },
+            "contact": {
+                "title": "Contact",
+                "text": "Als u vragen heeft over dit beleid, neem dan contact met ons op"
             }
         }
     }

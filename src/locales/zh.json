@@ -7,7 +7,8 @@
         "apps": "应用",
         "games": "游戏",
         "settings": "设置",
-        "notFound": "未找到"
+        "notFound": "未找到",
+        "privacy": "隐私政策"
     },
     "nav": {
         "home": "家",
@@ -48,6 +49,40 @@
         "locale": {
             "locale": {
                 "title": "语言环境"
+            }
+        }
+    },
+    "privacy": {
+        "title": "隐私政策",
+        "updated": "最后更新于 {{updated}}",
+        "policy": {
+            "consent": {
+                "title": "同意",
+                "text": "Metallic（“我们”或“我们的”）的本隐私声明描述了当您使用我们的服务（“ {{host}}，或我们链接到本隐私声明的任何网站。"
+            },
+            "information": {
+                "title": "信息收集",
+                "text": "我们不会收集、存储或出售与您有关的任何信息。"
+            },
+            "children": {
+                "title": "儿童的隐私",
+                "text": "我们不会故意收集 13 岁以下儿童的任何个人信息。如果您未满 13 岁，请不要通过我们的网站提交任何个人信息。"
+            },
+            "cookies": {
+                "title": "饼干",
+                "text": "本网站不使用cookie。"
+            },
+            "changes": {
+                "title": "变更和修正",
+                "text": "我们保留随时修改与本网站相关的隐私政策的权利，修改自在网站上发布本政策的更新版本后生效。"
+            },
+            "acceptance": {
+                "title": "接受本政策",
+                "text": "您承认您已阅读本政策并同意其所有条款和条件。"
+            },
+            "contact": {
+                "title": "接触",
+                "text": "如果您对本政策有任何疑问，请联系我们"
             }
         }
     }

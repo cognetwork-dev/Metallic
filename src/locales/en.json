@@ -7,7 +7,8 @@
         "apps": "Apps",
         "games": "Games",
         "settings": "Settings",
-        "notFound": "Not Found"
+        "notFound": "Not Found",
+        "privacy": "Privacy Policy"
     },
     "nav": {
         "home": "Home",
@@ -48,6 +49,40 @@
         "locale": {
             "locale": {
                 "title": "Locale"
+            }
+        }
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "updated": "Last updated on {{updated}}",
+        "policy": {
+            "consent": {
+                "title": "Consent",
+                "text": "This privacy notice for Metallic (\"we,\" \"us,\" or \"our\"), describes how and why we might collect, store, use, and/or share (\"process\") your information when you use our services (\"Services\"), such as when you visit our Website at {{host}}, or any website of ours that links to this privacy notice."
+            },
+            "information": {
+                "title": "Collection of information",
+                "text": "We do not collect, store, or sell any information related to you. Because of the nature of this service, third party websites may collect and/or store your information. Read this privacy policy of each website you visit using this service for information on what they collect."
+            },
+            "children": {
+                "title": "Privacy of children",
+                "text": "We do not knowingly collect any Personal Information from children under the age of 13. If you are under the age of 13, please do not submit any Personal Information through our Website."
+            },
+            "cookies": {
+                "title": "Cookies",
+                "text": "This Website does not use cookies. We may use related technologies to save your preferences, these preferences do not contain personal information and are local to your device."
+            },
+            "changes": {
+                "title": "Changes and amendments",
+                "text": "We reserve the right to modify this privacy policy relating to the Website at any time, effective upon posting of an updated version of this Policy on the Website. When we do we will revise the updated date at the top of this page."
+            },
+            "acceptance": {
+                "title": "Acceptance of this policy",
+                "text": "You acknowledge that you have read this Policy and agree to all its terms and conditions. By using the Website you agree to be bound by this Policy. If you do not agree to follow the terms of this Policy, you are not authorized to use this Website."
+            },
+            "contact": {
+                "title": "Contact",
+                "text": "If you have any questions regarding this Policy, please contact us"
             }
         }
     }

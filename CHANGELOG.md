@@ -106,9 +106,8 @@
 # Todo
 - [ ] Apps
 - [ ] Games
-- [ ] Privacy policy
 - [ ] "Open" option in settings => search with: default, direct, about:blank
-- [ ] Obfuscate everything
+- [ ] Obfuscate keywords
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/cognetwork-dev/projects/1/views/1).

@@ -7,7 +7,8 @@
         "apps": "Apps",
         "games": "Spiele",
         "settings": "Einstellungen",
-        "notFound": "Nicht gefunden"
+        "notFound": "Nicht gefunden",
+        "privacy": "Datenschutzrichtlinie"
     },
     "nav": {
         "home": "Heim",
@@ -48,6 +49,40 @@
         "locale": {
             "locale": {
                 "title": "Gebietsschema"
+            }
+        }
+    },
+    "privacy": {
+        "title": "Datenschutzrichtlinie",
+        "updated": "Zuletzt aktualisiert am {{updated}}",
+        "policy": {
+            "consent": {
+                "title": "Zustimmung",
+                "text": "Diese Datenschutzerklärung für Metallic („wir“, „uns“ oder „unser“) beschreibt, wie und warum wir Ihre Daten erfassen, speichern, nutzen und/oder weitergeben („verarbeiten“), wenn Sie unsere Dienste nutzen („  {{host}}oder einer unserer Websites, die auf diese Datenschutzerklärung verlinkt."
+            },
+            "information": {
+                "title": "Sammlung von Informationen",
+                "text": "Wir sammeln, speichern oder verkaufen keine Informationen über Sie. "
+            },
+            "children": {
+                "title": "Privatsphäre von Kindern",
+                "text": "Wir erfassen wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren. Wenn Sie unter 13 Jahre alt sind, übermitteln Sie bitte keine personenbezogenen Daten über unsere Website."
+            },
+            "cookies": {
+                "title": "Kekse",
+                "text": "Diese Website verwendet keine Cookies. "
+            },
+            "changes": {
+                "title": "Änderungen und Ergänzungen",
+                "text": "Wir behalten uns das Recht vor, diese Datenschutzrichtlinie in Bezug auf die Website jederzeit zu ändern, wirksam mit der Veröffentlichung einer aktualisierten Version dieser Richtlinie auf der Website. "
+            },
+            "acceptance": {
+                "title": "Akzeptanz dieser Richtlinie",
+                "text": "Sie bestätigen, dass Sie diese Richtlinie gelesen haben und allen darin enthaltenen Bedingungen zustimmen. "
+            },
+            "contact": {
+                "title": "Kontakt",
+                "text": "Wenn Sie Fragen zu dieser Richtlinie haben, kontaktieren Sie uns bitte"
             }
         }
     }

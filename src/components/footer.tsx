@@ -10,6 +10,8 @@ function Footer() {
                 <a class="hover:underline" href={github}>GitHub</a>
                 <span>/</span>
                 <a class="hover:underline" href={discord}>Discord</a>
+                <span>/</span>
+                <a class="hover:underline" href="/privacy">Privacy</a>
             </div>
         </footer>
     )

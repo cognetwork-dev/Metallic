@@ -3,6 +3,7 @@ import { Router, Route } from 'preact-router';
 
 import { Home } from "./pages/home";
 import { Settings } from './pages/settings';
+import { Privacy } from './pages/privacy';
 import { Error } from "./pages/error";
 import { Nav } from "./components/nav";
 import { Footer } from "./components/footer";
@@ -36,6 +37,10 @@ function App() {
                     <Route
                         path="/settings/locale"
                         component={Settings}
+                    />
+                    <Route
+                        path="/privacy"
+                        component={Privacy}
                     />
                     <Route
                         default
