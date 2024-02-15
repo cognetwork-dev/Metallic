@@ -1,5 +1,4 @@
 import { rammerheadEncode } from "./rammerheadEncode";
-import { stomp } from "./stomp";
 
 declare global {
     interface Window {
@@ -21,10 +20,6 @@ async function encodeURL(input: string, service: string) {
             break;
         case "rammerhead":
             result = window.location.origin + await rammerheadEncode(input);
-            break;
-        case "stomp":
-            //@ts-ignore
-            result = new URL(stomp.html(input), window.location).toString()
             break;
     }
 

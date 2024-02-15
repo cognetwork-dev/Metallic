@@ -6,7 +6,7 @@ import chalk from "chalk";
 import path from 'path';
 import { createBareServer } from '@tomphttp/bare-server-node';
 import createRammerhead from 'rammerhead/src/server/index.js';
-import { pages } from "./src/settings";
+import pages from "./src/pages.json";
 import themes from "./src/themes.json";
 
 const __dirname = path.resolve();

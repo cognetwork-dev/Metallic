@@ -5,7 +5,6 @@ import { rammerhead } from "../../settings";
 import ultravioletLogo from "../../assets/services/ultravioletLogo.png";
 import dynamicLogo from "../../assets/services/dynamicLogo.png";
 import rammerheadLogo from "../../assets/services/rammerheadLogo.png";
-import { StompLogo } from "../../assets/services/stompLogo";
 import { GoogleLogo } from "../../assets/searchEngines/googleLogo";
 import { DuckDuckGoLogo } from "../../assets/searchEngines/duckDuckGoLogo";
 import { BingLogo } from "../../assets/searchEngines/bingLogo";
@@ -38,10 +37,6 @@ function SearchSettings() {
                         <span class="font-bold">Rammerhead</span>
                     </SquareButton>
                 ) : null}
-                <SquareButton active={service == "stomp"} onClick={() => setService("stomp")}>
-                    <StompLogo />
-                    <span class="font-bold">Stomp</span>
-                </SquareButton>
             </section>
             <h1 class="text-4xl font-bold my-8">{t("settings.search.searchEngine.title")}</h1>
             <section class="flex flex-wrap items-center gap-3">
