@@ -1,5 +1,6 @@
 import { render } from 'preact';
 import { Router, Route } from 'preact-router';
+import { ObfuscateLayout } from './util/obfuscate';
 
 import { Home } from "./pages/home";
 import { Settings } from './pages/settings';
@@ -15,6 +16,7 @@ import './style/index.css';
 function App() {
     return (
         <>
+            <ObfuscateLayout />
             <Nav />
             <main class="main p-7">
                 <Router>

@@ -7,6 +7,7 @@ import { geSearchEngine } from "../util/getSearchEngine";
 import { CloseIcon } from "../assets/closeIcon";
 import { createBareClient } from "@tomphttp/bare-client";
 import { bare } from "../settings";
+import { Obfuscated } from "../util/obfuscate";
 
 function Home() {
     const [service] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
@@ -85,11 +86,11 @@ function Home() {
             <Web open={webOpen} setOpen={setWebOpen} />
             {theme == "hub" ? (
                 <h1 class="title mt-32 mb-8 sm:mb-16 flex items-center justify-center">
-                    <span class="text-4xl sm:text-6xl font-bold text-center font-title">Metal</span>
-                    <span class="text-4xl sm:text-6xl font-bold text-center font-title bg-secondary rounded p-1 ml-1 text-textInverse">lic</span>
+                    <span class="text-4xl sm:text-6xl font-bold text-center font-title"><Obfuscated>Metal</Obfuscated></span>
+                    <span class="text-4xl sm:text-6xl font-bold text-center font-title bg-secondary rounded p-1 ml-1 text-textInverse"><Obfuscated>lic</Obfuscated></span>
                 </h1>
             ) : (
-                <h1 class="title text-4xl sm:text-6xl font-bold text-center mt-32 mb-8 sm:mb-16 font-title">Metallic</h1>
+                <h1 class="title text-4xl sm:text-6xl font-bold text-center mt-32 mb-8 sm:mb-16 font-title"><Obfuscated>Metallic</Obfuscated></h1>
             )}
             <div class="flex flex-col items-center justify-center">
                 <div class={"bg-secondary w-[600px] h-14 flex items-center justify-center" + (suggestions.length ? " rounded-[28px_28px_0_0]" : " rounded-full")}>
@@ -104,7 +105,7 @@ function Home() {
                 </div>
                 <div class={"bg-secondary rounded-[0_0_28px_28px] w-[600px]" + (!suggestions.length ? " hidden" : "")}>
                     {suggestions.map((suggestion: string) => (
-                        <div onClick={() => clickSuggestion(suggestion)} class="h-14 flex items-center cursor-pointer px-4 select-none" key={suggestion}>{suggestion}</div>
+                        <div onClick={() => clickSuggestion(suggestion)} class="h-14 flex items-center cursor-pointer px-4 select-none" key={suggestion}><Obfuscated>{suggestion}</Obfuscated></div>
                     ))}
                 </div>
             </div>

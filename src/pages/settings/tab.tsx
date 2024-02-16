@@ -10,6 +10,7 @@ import googleClassroomLogo from "../../assets/cloakingIcons/googleclassroom.png"
 import khanAcademyLogo from "../../assets/cloakingIcons/khanacademy.ico";
 import googleDriveLogo from "../../assets/cloakingIcons/googledrive.png";
 import edpuzzleLogo from "../../assets/cloakingIcons/edpuzzle.png";
+import { Obfuscated } from "../../util/obfuscate";
 
 function TabSettings() {
     const { t } = useTranslation();
@@ -27,7 +28,7 @@ function TabSettings() {
 
     return (
         <>
-            <h1 class="text-4xl font-bold mb-8">{t("settings.tab.tabMask.title")}</h1>
+            <h1 class="text-4xl font-bold mb-8"><Obfuscated>{t("settings.tab.tabMask.title")}</Obfuscated></h1>
             <section class="flex flex-wrap items-center gap-3">
                 <RoundButton active={title == "" && icon == ""} onClick={() => resetTab()}>
                     <CloseIcon />
@@ -54,7 +55,7 @@ function TabSettings() {
                     <img draggable={false} height="24" width="24" src={edpuzzleLogo} loading="lazy" />
                 </RoundButton>
             </section>
-            <h1 class="text-4xl font-bold my-8">{t("settings.tab.customTabMask.title")}</h1>
+            <h1 class="text-4xl font-bold my-8"><Obfuscated>{t("settings.tab.customTabMask.title")}</Obfuscated></h1>
             <section class="flex flex-wrap items-center gap-3">
                 <SquareInput placeholder={t("settings.tab.customTabMask.titleInput")} value={title} onInput={(e: any) => setTitle(e.target.value)} />
                 <SquareInput placeholder={t("settings.tab.customTabMask.iconInput")} value={icon} onInput={(e: any) => setIcon(e.target.value)} />

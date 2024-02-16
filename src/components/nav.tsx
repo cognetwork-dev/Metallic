@@ -6,6 +6,7 @@ import { HomeIcon } from "../assets/homeIcon";
 import { AppsIcon } from "../assets/appsIcon";
 import { GamesIcon } from "../assets/gamesIcon";
 import { SettingsIcon } from "../assets/settingsIcon";
+import { Obfuscated } from '../util/obfuscate';
 
 function Nav() {
     const { t } = useTranslation();
@@ -31,7 +32,7 @@ function Nav() {
                 <Link href="/games">
                     <Button active={true}>
                         <GamesIcon />
-                        <span class="font-bold sr-only sm:not-sr-only">{t("nav.games")}</span>
+                        <span class="font-bold sr-only sm:not-sr-only"><Obfuscated>{t("nav.games")}</Obfuscated></span>
                     </Button>
                 </Link>
                 <Link href="/settings/search">

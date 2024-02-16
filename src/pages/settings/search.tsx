@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useGlobalState } from "@ekwoka/preact-global-state";
 import { SquareButton } from "../../interface/button";
 import { rammerhead } from "../../settings";
+import { Obfuscated } from "../../util/obfuscate";
 import ultravioletLogo from "../../assets/services/ultravioletLogo.png";
 import dynamicLogo from "../../assets/services/dynamicLogo.png";
 import rammerheadLogo from "../../assets/services/rammerheadLogo.png";
@@ -25,16 +26,16 @@ function SearchSettings() {
             <section class="flex flex-wrap items-center gap-3">
                 <SquareButton active={service == "ultraviolet"} onClick={() => setService("ultraviolet")}>
                     <img draggable={false} height="24" width="24" src={ultravioletLogo} loading="lazy" />
-                    <span class="font-bold">Ultraviolet</span>
+                    <span class="font-bold"><Obfuscated>Ultraviolet</Obfuscated></span>
                 </SquareButton>
                 <SquareButton active={service == "dynamic"} onClick={() => setService("dynamic")}>
                     <img draggable={false} height="24" width="24" src={dynamicLogo} loading="lazy" />
-                    <span class="font-bold">Dynamic</span>
+                    <span class="font-bold"><Obfuscated>Dynamic</Obfuscated></span>
                 </SquareButton>
                 {rammerhead ? (
                     <SquareButton active={service == "rammerhead"} onClick={() => setService("rammerhead")}>
                         <img draggable={false} height="24" width="24" src={rammerheadLogo} loading="lazy" />
-                        <span class="font-bold">Rammerhead</span>
+                        <span class="font-bold"><Obfuscated>Rammerhead</Obfuscated></span>
                     </SquareButton>
                 ) : null}
             </section>

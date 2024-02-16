@@ -12,7 +12,7 @@
 </p>
 
 ## Features
-- Modern, clean design
+- Modern and clean design
 - Support for many popular sites
 - Customizable interface
 - Mobile support
@@ -25,7 +25,7 @@
 
 **Run**
 
-Run `npm start` to start the server. If no build if found, Metallic will attempt to build.
+Run `npm start` to start the server. If no build folder if found, Metallic will attempt to build.
 
 **Build**
 
@@ -39,10 +39,10 @@ Run `npm run dev` to run the app in development mode. Rammerhead will not work i
 
 **Themes**
 
-Themes can be changed from the [/src/themes.json](https://github.com/cognetwork-dev/Metallic/blob/main/src/themes.json) file. The file should be an array of objects using the format below.
+Themes can be configured from the [/src/themes.json](https://github.com/cognetwork-dev/Metallic/blob/main/src/themes.json) file. The file should be an array of objects using the format below.
 
 > [!IMPORTANT]  
-> Themes file will validated before building, starting the server, or starting the dev server.
+> Themes file will be validated before building, starting the server, or the dev server.
 
 ```yaml
 {
