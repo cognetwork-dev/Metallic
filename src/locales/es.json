@@ -29,6 +29,13 @@
             },
             "searchEngine": {
                 "title": "Buscador"
+            },
+            "open": {
+                "title": "Abierto",
+                "options": {
+                    "default": "Por defecto",
+                    "direct": "Directo"
+                }
             }
         },
         "tab": {

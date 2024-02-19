@@ -29,6 +29,13 @@
             },
             "searchEngine": {
                 "title": "खोज इंजन"
+            },
+            "open": {
+                "title": "खुला",
+                "options": {
+                    "default": "गलती करना",
+                    "direct": "प्रत्यक्ष"
+                }
             }
         },
         "tab": {

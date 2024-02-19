@@ -19,6 +19,7 @@ function SearchSettings() {
     const { t } = useTranslation();
     const [service, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
     const [searchEngine, setSearchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || "google");
+    const [openUsing, setOpenUsing] = useGlobalState<string>("open", localStorage.getItem("metallic/open") || "default");
 
     return (
         <>
@@ -72,6 +73,18 @@ function SearchSettings() {
                 <SquareButton active={searchEngine == "ecosia"} onClick={() => setSearchEngine("ecosia")}>
                     <EcosiaLogo />
                     <span class="font-bold">Ecosia</span>
+                </SquareButton>
+            </section>
+            <h1 class="text-4xl font-bold my-8">{t("settings.search.open.title")}</h1>
+            <section class="flex flex-wrap items-center gap-3">
+                <SquareButton active={openUsing == "default"} onClick={() => setOpenUsing("default")}>
+                    <span class="font-bold">{t("settings.search.open.options.default")}</span>
+                </SquareButton>
+                <SquareButton active={openUsing == "direct"} onClick={() => setOpenUsing("direct")}>
+                    <span class="font-bold">{t("settings.search.open.options.direct")}</span>
+                </SquareButton>
+                <SquareButton active={openUsing == "about:blank"} onClick={() => setOpenUsing("about:blank")}>
+                    <span class="font-bold">about:blank</span>
                 </SquareButton>
             </section>
         </>

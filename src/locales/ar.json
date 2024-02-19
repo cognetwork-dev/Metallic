@@ -29,6 +29,13 @@
             },
             "searchEngine": {
                 "title": "محرك البحث"
+            },
+            "open": {
+                "title": "يفتح",
+                "options": {
+                    "default": "تقصير",
+                    "direct": "مباشر"
+                }
             }
         },
         "tab": {

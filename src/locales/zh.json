@@ -29,6 +29,13 @@
             },
             "searchEngine": {
                 "title": "搜索引擎"
+            },
+            "open": {
+                "title": "打开",
+                "options": {
+                    "default": "默认",
+                    "direct": "直接的"
+                }
             }
         },
         "tab": {
@@ -62,7 +69,7 @@
             },
             "information": {
                 "title": "信息收集",
-                "text": "我们不会收集、存储或出售与您有关的任何信息。"
+                "text": "我们不会收集、存储或出售与您相关的任何信息。"
             },
             "children": {
                 "title": "儿童的隐私",

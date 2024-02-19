@@ -29,6 +29,13 @@
             },
             "searchEngine": {
                 "title": "Suchmaschine"
+            },
+            "open": {
+                "title": "Offen",
+                "options": {
+                    "default": "Standard",
+                    "direct": "Direkte"
+                }
             }
         },
         "tab": {

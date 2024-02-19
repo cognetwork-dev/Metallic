@@ -29,6 +29,13 @@
             },
             "searchEngine": {
                 "title": "Search Engine"
+            },
+            "open": {
+                "title": "Open",
+                "options": {
+                    "default": "Default",
+                    "direct": "Direct"
+                }
             }
         },
         "tab": {

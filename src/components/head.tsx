@@ -9,6 +9,7 @@ function Head({ pageTitle }: HeadTypes) {
     const [title, setTitle] = useGlobalState<string>("title", localStorage.getItem("metallic/title") || "");
     const [icon, setIcon] = useGlobalState<string>("icon", localStorage.getItem("metallic/icon") || "");
     const [locale, setLocale] = useGlobalState<string>("locale", localStorage.getItem("metallic/locale") || "en");
+    const [openUsing, setOpenUsing] = useGlobalState<string>("open", localStorage.getItem("metallic/open") || "default");
 
     useEffect(() => {
         if (title) {
@@ -101,6 +102,17 @@ function Head({ pageTitle }: HeadTypes) {
         localStorage.setItem("metallic/locale", locale);
         localeChannel.postMessage(locale)
     }, [locale]);
+
+    useEffect(() => {
+        const openChannel = new BroadcastChannel("metallic/open");
+
+        openChannel.onmessage = (e) => {
+            setOpenUsing(String(e.data))
+        }
+
+        localStorage.setItem("metallic/open", openUsing);
+        openChannel.postMessage(openUsing)
+    }, [openUsing]);
 
     return (
         <></>
