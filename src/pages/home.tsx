@@ -8,11 +8,13 @@ import { CloseIcon } from "../assets/closeIcon";
 import { createBareClient } from "@tomphttp/bare-client";
 import { bare } from "../settings";
 import { Obfuscated } from "../util/obfuscate";
+import { searchURL } from "../util/searchURL";
 
 function Home() {
     const [service] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
     const [theme] = useGlobalState<string>("theme", localStorage.getItem("metallic/theme") || "default");
     const [searchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || "google");
+    const [openUsing] = useGlobalState<string>("open", localStorage.getItem("metallic/open") || "default");
     const [webOpen, setWebOpen] = useState(false);
     const search = useRef<HTMLInputElement>();
     const [searchHasValue, setSearchHasValue] = useState(false);
@@ -63,7 +65,28 @@ function Home() {
     const handleSearch = async (e: any) => {
         if (e.key == "Enter") {
             if (e.target.value) {
-                await searchWeb(e.target.value, service, geSearchEngine(searchEngine), webOpen, setWebOpen, e.target, clearInput);
+                switch (openUsing) {
+                    case "default":
+                        await searchWeb(e.target.value, service, geSearchEngine(searchEngine), webOpen, setWebOpen, e.target, clearInput);
+                        break;
+                    case "direct":
+                        window.open(await searchURL(e.target.value, service, geSearchEngine(searchEngine)))
+                        if (search && search.current) {
+                            search.current.value = "";
+                        }
+                        clearInput()
+                        break;
+                    case "about:blank":
+                        const blank = window.open("")
+                        if (blank) {
+                            blank.document.body.innerHTML = `<iframe style="height:100%; width: 100%; border: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; border: none" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="` + await searchURL(e.target.value, service, geSearchEngine(searchEngine)) + `"></iframe>`;
+                        }
+                        if (search && search.current) {
+                            search.current.value = "";
+                        }
+                        clearInput()
+                        break;
+                }
             }
         }
     }
@@ -77,7 +100,28 @@ function Home() {
     }
 
     async function clickSuggestion(suggestion: string) {
-        await searchWeb(suggestion, service, geSearchEngine(searchEngine), webOpen, setWebOpen, search.current, clearInput);
+        switch (openUsing) {
+            case "default":
+                await searchWeb(suggestion, service, geSearchEngine(searchEngine), webOpen, setWebOpen, e.target, clearInput);
+                break;
+            case "direct":
+                window.open(await searchURL(suggestion, service, geSearchEngine(searchEngine)))
+                if (search && search.current) {
+                    search.current.value = "";
+                }
+                clearInput()
+                break;
+            case "about:blank":
+                const blank = window.open("")
+                if (blank) {
+                    blank.document.body.innerHTML = `<iframe style="height:100%; width: 100%; border: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; border: none" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="` + await searchURL(suggestion, service, geSearchEngine(searchEngine)) + `"></iframe>`;
+                }
+                if (search && search.current) {
+                    search.current.value = "";
+                }
+                clearInput()
+                break;
+        }
     }
 
     return (
