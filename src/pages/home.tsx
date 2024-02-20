@@ -102,7 +102,7 @@ function Home() {
     async function clickSuggestion(suggestion: string) {
         switch (openUsing) {
             case "default":
-                await searchWeb(suggestion, service, geSearchEngine(searchEngine), webOpen, setWebOpen, e.target, clearInput);
+                await searchWeb(suggestion, service, geSearchEngine(searchEngine), webOpen, setWebOpen, search.current, clearInput);
                 break;
             case "direct":
                 window.open(await searchURL(suggestion, service, geSearchEngine(searchEngine)))
