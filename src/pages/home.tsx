@@ -149,7 +149,7 @@ function Home() {
                 </div>
                 <div class={"bg-secondary rounded-[0_0_28px_28px] w-[600px]" + (!suggestions.length ? " hidden" : "")}>
                     {suggestions.map((suggestion: string) => (
-                        <div onClick={() => clickSuggestion(suggestion)} class="h-14 flex items-center cursor-pointer px-4 select-none" key={suggestion}><Obfuscated>{suggestion}</Obfuscated></div>
+                        <div onClick={() => clickSuggestion(suggestion)} class="h-14 flex items-center cursor-pointer px-4 select-none text-textInverse" key={suggestion}><Obfuscated>{suggestion}</Obfuscated></div>
                     ))}
                 </div>
             </div>
