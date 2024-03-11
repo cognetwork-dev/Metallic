@@ -5,6 +5,12 @@ import { execSync } from "child_process";
 import chalk from "chalk";
 import path from 'path';
 import { createBareServer } from '@tomphttp/bare-server-node';
+//@ts-ignore
+import { epoxyPath } from "@mercuryworkshop/epoxy-transport";
+import wisp from "wisp-server-node";
+import { Request, Response } from "express";
+//@ts-ignore
+import { Socket, Head } from "ws";
 import createRammerhead from 'rammerhead/src/server/index.js';
 import pages from "./src/pages.json";
 import themes from "./src/themes.json";
@@ -40,7 +46,7 @@ const rammerheadScopes = [
 
 const rammerheadSession = /^\/[a-z0-9]{32}/;
 
-function shouldRouteRh(req) {
+function shouldRouteRh(req: Request) {
 	const url = new URL(req.url, 'http://0.0.0.0');
 	return (
 		rammerheadScopes.includes(url.pathname) ||
@@ -48,21 +54,20 @@ function shouldRouteRh(req) {
 	);
 }
 
-function routeRhRequest(req, res) {
+function routeRhRequest(req: Request, res: Response) {
 	rh.emit("request", req, res);
 }
 
-function routeRhUpgrade(req, socket, head) {
+function routeRhUpgrade(req: Request, socket: Socket, head: Head) {
 	rh.emit("upgrade", req, socket, head);
 }
 
 const app = express();
 
-//@ts-ignore
 app.use(express.static("build"));
+app.use("/epoxy/", express.static(epoxyPath));
 
-//@ts-ignore
-app.use((req, res) => {
+app.use((req: Request, res: Response) => {
 	if (pages.includes(req.url)) {
 		return res.sendFile(__dirname + "/build/index.html");
 	} else {
@@ -74,7 +79,7 @@ const server = createServer();
 
 const bare = createBareServer('/bare/');
 
-server.on('request', (req, res) => {
+server.on('request', (req: Request, res: Response) => {
 	if (bare.shouldRoute(req)) {
 		bare.routeRequest(req, res);
 	} else if (shouldRouteRh(req)) {
@@ -84,8 +89,10 @@ server.on('request', (req, res) => {
 	}
 });
 
-server.on('upgrade', (req, socket, head) => {
-	if (bare.shouldRoute(req)) {
+server.on('upgrade', (req: Request, socket: Socket, head: Head) => {
+	if (req.url && req.url.endsWith("/wisp/")) {
+    	wisp.routeRequest(req, socket, head);
+	} else if (bare.shouldRoute(req)) {
 		bare.routeUpgrade(req, socket, head);
 	} else if (shouldRouteRh(req)) {
 		routeRhUpgrade(req, socket, head);

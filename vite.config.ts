@@ -1,8 +1,11 @@
 import { defineConfig } from 'vite';
 import preact from '@preact/preset-vite';
-import million from 'million/compiler';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import { createBareServer } from '@tomphttp/bare-server-node';
+import wisp from "wisp-server-node";
+//@ts-ignore
+import { epoxyPath } from "@mercuryworkshop/epoxy-transport";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 //@ts-ignore
 import { generateFile } from './src/util/generateFileVite';
 //@ts-ignore
@@ -15,8 +18,17 @@ export default defineConfig({
     outDir: "build",
   },
   plugins: [
+    viteStaticCopy({
+      targets: [
+        {
+          src: `${epoxyPath}/**/*`.replace(/\\/g, "/"),
+          dest: "epoxy",
+          overwrite: false
+        }
+      ]
+    }),
     {
-      name: "bare server",
+      name: "server",
       configureServer(server) {
         const bare = createBareServer("/bare/");
         server.middlewares.use((req, res, next) => {
@@ -34,7 +46,10 @@ export default defineConfig({
         }
 
         server.httpServer.on("upgrade", (req, socket, head) => {
-          if (bare.shouldRoute(req)) {
+          if (req.url && req.url.endsWith("/wisp/")) {
+            //@ts-ignore
+            wisp.routeRequest(req, socket, head);
+          } else if (bare.shouldRoute(req)) {
             bare.routeUpgrade(req, socket, head);
           } else {
             for (const upgrader of upgraders) {
@@ -51,7 +66,6 @@ export default defineConfig({
       data: generateThemes(themes)
     }]),
     ViteMinifyPlugin(),
-    million.vite({ auto: true, mute: true }),
     preact()
   ],
 })

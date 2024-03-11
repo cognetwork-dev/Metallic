@@ -1,7 +1,6 @@
 /*global Ultraviolet*/
 self.__uv$config = {
     prefix: '/service1/',
-    bare: '/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/ultraviolet/ultraviolet.handler.js',

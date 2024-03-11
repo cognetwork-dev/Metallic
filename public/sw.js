@@ -1,3 +1,4 @@
+importScripts("/epoxy/index.js");
 importScripts("/ultraviolet/ultraviolet.bundle.js");
 importScripts("/ultraviolet/ultraviolet.config.js");
 importScripts(__uv$config.sw || "/ultraviolet/ultraviolet.sw.js");
