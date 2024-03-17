@@ -154,7 +154,7 @@
         "theme": {
             "background": "#1c1b29",
             "secondary": "#2e835c",
-            "primary": "#43b581",
+            "primary": "#99ffd0",
             "text": "#43b581",
             "textInverse": "#1c1b29",
             "font": "Roboto"
@@ -168,7 +168,7 @@
             "secondary": "#7d7259",
             "primary": "#282425",
             "text": "#282425",
-            "textInverse": "#fff0c2",
+            "textInverse": "#282425",
             "font": "Roboto"
         }
     },
@@ -178,7 +178,7 @@
         "theme": {
             "background": "#e8e8ea",
             "secondary": "#cacae2",
-            "primary": "#70aecb",
+            "primary": "#005882",
             "text": "black",
             "textInverse": "black",
             "font": "Roboto"
