@@ -7,10 +7,10 @@
   "author": "Nebelung",
   "type": "module",
   "scripts": {
-    "start": "ava && tsx index.ts",
-    "dev": "ava && vite",
-    "build": "ava && tsc && vite build",
-    "preview": "ava && vite preview",
+    "start": "npm run test && tsx index.ts",
+    "dev": "npm run test && vite",
+    "build": "npm run test && tsc && vite build",
+    "preview": "npm run test && vite preview",
     "test": "ava"
   },
   "dependencies": {
@@ -47,5 +47,9 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.2",
     "vite": "^5.1.5"
+  },
+  "engines" : { 
+    "npm" : ">=10.2.4",
+    "node" : ">=20.11.1"
   }
 }

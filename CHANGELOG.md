@@ -96,17 +96,18 @@
 - [x] Use Preact instead of React
 - [x] Use Tailwind
 - [x] Add Rammerhead
+- [x] Removed Stomp
+- [x] Updated Ultraviolet and now using Wisp
 - [x] Update settings between tabs
 - [x] More search engines
 - [x] Revamp themes
 - [x] More tab mask presets
 - [x] Update settings layout
 - [x] More languages
+- [x] Update app icons and names
 
 # Todo
-- [ ] Apps
 - [ ] Games
-- [ ] "Open" option in settings => search with: default, direct, about:blank
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/cognetwork-dev/projects/1/views/1).
