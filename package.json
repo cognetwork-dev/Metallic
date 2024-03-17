@@ -32,7 +32,6 @@
     "rammerhead": "https://github.com/holy-unblocker/rammerhead/releases/download/v1.2.41-holy.5/rammerhead-1.2.41-holy.5.tgz",
     "random-seed": "^0.3.0",
     "react-i18next": "^14.1.0",
-    "tsimp": "^2.0.11",
     "tsx": "^4.7.1",
     "vite-plugin-minify": "^1.5.2",
     "vite-plugin-static-copy": "^1.0.1",

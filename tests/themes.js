@@ -6,7 +6,7 @@ test('Themes file exists', (t) => {
     t.true(fs.existsSync('src/themes.json'), "The file /src/themes.json file does not exist.");
 });
 
-let themes: any = fs.readFileSync("src/themes.json", "utf-8");
+let themes = fs.readFileSync("src/themes.json", "utf-8");
 
 test('Themes file contains JSON', (t) => {
     try {
@@ -85,9 +85,9 @@ test('Themes are valid', (t) => {
 });
 
 test('Default theme exists', (t) => {
-    t.true(themes.filter((theme: any) => theme.id == "default").length > 0, "No default theme was found")
+    t.true(themes.filter((theme) => theme.id == "default").length > 0, "No default theme was found")
 });
 
 test('No duplicate themes exist', (t) => {
-    t.true(themes.filter((theme: any) => themes.filter((x: any) => x.id == theme.id).length > 1).length == 0, "Duplicate themes exist with the same ID.")
+    t.true(themes.filter((theme) => themes.filter((x) => x.id == theme.id).length > 1).length == 0, "Duplicate themes exist with the same ID.")
 });

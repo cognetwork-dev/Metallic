@@ -64,6 +64,9 @@ Themes can be configured from the [/src/themes.json](https://github.com/cognetwo
 }
 ```
 
+## Issues
+Using older versions of Node.js will cause Metallic to crash. Upgrade to the latest version using `nvm install --lts`.
+
 ## Changelog/Roadmap
 Check out the [changelog and roadmap](https://github.com/cognetwork-dev/Metallic/blob/main/CHANGELOG.md)
 
