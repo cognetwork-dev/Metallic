@@ -31,7 +31,7 @@
         "name": "Reddit",
         "author": "Advance Publications",
         "description": "Join communities, share stories, explore endless content",
-        "icon": "/apps/reddit.png",
+        "icon": "/apps/reddit.jpg",
         "url": "https://reddit.com"
     },
     {
@@ -66,7 +66,7 @@
         "name": "Zoom",
         "author": "Zoom Video Communications, Inc.",
         "description": "Video conferencing, meetings, and virtual hangouts made easy",
-        "icon": "/apps/zoom.png",
+        "icon": "/apps/zoom.jpg",
         "url": "https://pwa.zoom.us/wc"
     },
     {
