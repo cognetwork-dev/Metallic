@@ -3,6 +3,7 @@ import { Router, Route } from 'preact-router';
 import { ObfuscateLayout } from './util/obfuscate';
 
 import { Home } from "./pages/home";
+import { Apps } from "./pages/apps";
 import { Settings } from './pages/settings';
 import { Privacy } from './pages/privacy';
 import { Error } from "./pages/error";
@@ -23,6 +24,10 @@ function App() {
                     <Route
                         path="/"
                         component={Home}
+                    />
+                    <Route
+                        path="/apps"
+                        component={Apps}
                     />
                     <Route
                         path="/settings/search"

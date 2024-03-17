@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Google",
+        "author": "Alphabet Inc.",
+        "description": "Search, browse, and discover information with ease.",
+        "icon": "/apps/google.jpg",
+        "url": "https://www.google.com"
+    },
+    {
+        "name": "Youtube",
+        "author": "Alphabet Inc.",
+        "description": "Watch, share, and enjoy videos anytime, anywhere.",
+        "icon": "/apps/youtube.png",
+        "url": "https://www.youtube.com"
+    },
+    {
+        "name": "Spotify",
+        "author": "Spotify",
+        "description": "Discover, stream, and enjoy endless music.",
+        "icon": "/apps/spotify.png",
+        "url": "https://open.spotify.com"
+    },
+    {
+        "name": "X (Twitter)",
+        "author": "X Corp.",
+        "description": "Connect, follow, and share thoughts in real-time",
+        "icon": "/apps/x.png",
+        "url": "https://twitter.com/explore"
+    },
+    {
+        "name": "Reddit",
+        "author": "Advance Publications",
+        "description": "Join communities, share stories, explore endless content",
+        "icon": "/apps/reddit.png",
+        "url": "https://reddit.com"
+    },
+    {
+        "name": "Twitch",
+        "author": "Amazon.com, Inc.",
+        "description": "Connect, watch, chat, and stream live gaming content.",
+        "icon": "/apps/twitch.jpg",
+        "url": "https://twitch.tv"
+    },
+    {
+        "name": "Discord",
+        "author": "Discord Inc.",
+        "description": "Voice, video, and text chats for communities worldwide",
+        "icon": "/apps/discord.jpg",
+        "url": "https://discord.com/app"
+    },
+    {
+        "name": "TikTok",
+        "author": "Bytedance",
+        "description": "Short videos, music, and creative content showcase",
+        "icon": "/apps/tiktok.jpg",
+        "url": "https://www.tiktok.com"
+    },
+    {
+        "name": "Bored Panda",
+        "author": "Bored Panda",
+        "description": "Explore creative, funny, and viral content daily.",
+        "icon": "/apps/boredpanda.png",
+        "url": "https://www.boredpanda.com"
+    },
+    {
+        "name": "Zoom",
+        "author": "Zoom Video Communications, Inc.",
+        "description": "Video conferencing, meetings, and virtual hangouts made easy",
+        "icon": "/apps/zoom.png",
+        "url": "https://pwa.zoom.us/wc"
+    },
+    {
+        "name": "Pintrest",
+        "author": "Pinterest, Inc",
+        "description": "Discover inspiration, DIY ideas, and beautiful visuals galore.",
+        "icon": "/apps/pintrest.png",
+        "url": "https://www.pinterest.com/today"
+    },
+    {
+        "name": "ChatGPT",
+        "author": "OpenAI",
+        "description": "Engage in natural conversations with an AI assistant.",
+        "icon": "/apps/chatgpt.svg",
+        "url": "https://chat.openai.com"
+    }
+]

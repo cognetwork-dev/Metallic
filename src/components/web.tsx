@@ -54,10 +54,16 @@ function Web({ open, setOpen }: WebTypes) {
     function closeWeb() {
         if (open) {
             web.current.src = "";
-            search.value = "";
-            clearInput();
+            if (search) {
+                search.value = "";
+            }
+            if (clearInput) {
+                clearInput();
+            }
             setOpen(false);
-            search.focus();
+            if (search) {
+                search.focus();
+            }
         }
     }
 
@@ -101,4 +107,14 @@ async function searchWeb(input: string, service: string, searchEngine: string, o
     }
 }
 
-export { Web, searchWeb };
+async function setWeb(url: string, open: boolean, setOpen: any) {
+    if (!open) {
+        setOpen(true)
+        if (web && web.current) {
+            web.current.src = url;
+            web.current.focus()
+        }
+    }
+}
+
+export { Web, searchWeb, setWeb };

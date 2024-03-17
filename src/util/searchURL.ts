@@ -23,7 +23,7 @@ async function encodeURL(input: string, service: string) {
             break;
     }
 
-    return result;
+    return result as string;
 }
 
 async function searchURL(input: string, service: string, searchEngine: string) {
@@ -35,4 +35,4 @@ async function searchURL(input: string, service: string, searchEngine: string) {
         return await encodeURL(searchEngine.replace("%s", encodeURIComponent(input)), service);
     }
 }
-export { searchURL };
+export { searchURL, encodeURL };
