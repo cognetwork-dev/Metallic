@@ -313,7 +313,7 @@
             "primary": "white",
             "text": "white",
             "textInverse": "white",
-            "font": "Roboto"
+            "font": "Montserrat"
         }
     },
     {
@@ -385,7 +385,7 @@
             "primary": "black",
             "text": "white",
             "textInverse": "black",
-            "font": "Roboto"
+            "font": "Arial"
         },
         "custom": {
             ".logo": {
@@ -473,6 +473,134 @@
             "primary": "#1e66f5 /* Blue */",
             "text": "#4c4f69 /* Text */",
             "textInverse": "#4c4f69 /* Text */",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Mercury Workshop",
+        "id": "hg",
+        "theme": {
+            "background": "#0b0f3d",
+            "secondary": "#3d4065",
+            "primary": "white",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Space Grotesk"
+        },
+        "custom": {
+            ".logo svg": {
+                "filter": "drop-shadow(0 0 15px var(--primary))"
+            }
+        }
+    },
+    {
+        "name": "Ludicrous",
+        "id": "ludicrous",
+        "theme": {
+            "background": "#091b2c",
+            "secondary": "#114067",
+            "primary": "white",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Discord",
+        "id": "discord",
+        "theme": {
+            "background": "#313338",
+            "secondary": "#2B2D31",
+            "primary": "#5865F2",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Open Sans"
+        }
+    },
+    {
+        "name": "FlowOS",
+        "id": "flow",
+        "theme": {
+            "background": "#11111b",
+            "secondary": "#1e1e2e",
+            "primary": "#89B4FA",
+            "text": "#cdd6f4",
+            "textInverse": "#cdd6f4",
+            "font": "monospace"
+        },
+        "custom": {
+            "": {
+                "font-size": "16px"
+            }
+        }
+    },
+    {
+        "name": "Bubblegum",
+        "id": "bubblegum",
+        "theme": {
+            "background": "#EE6176",
+            "secondary": "#F58092",
+            "primary": "#ffc1cc",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Noctura",
+        "id": "noctura",
+        "theme": {
+            "background": "black",
+            "secondary": "#242424",
+            "primary": "white",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        },
+        "custom": {
+            ".title": {
+                "font-family": "Major Mono Display"
+            }
+        }
+    },
+    {
+        "name": "VS Code",
+        "id": "vscode",
+        "theme": {
+            "background": "#1f1f1f",
+            "secondary": "#181818",
+            "primary": "#0078d4",
+            "text": "#CCC",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Pride",
+        "id": "pride",
+        "theme": {
+            "background": "linear-gradient(180deg, #FE0000 16.66%, #FD8C00 16.66%, 33.32%, #FFE500 33.32%, 49.98%, #119F0B 49.98%, 66.64%, #0644B3 66.64%, 83.3%, #C22EDC 83.3%), #000000c4",
+            "secondary": "white",
+            "primary": "black",
+            "text": "black",
+            "textInverse": "black",
+            "font": "Roboto"
+        },
+        "custom": {
+            "": {
+                "background-attachment": "fixed"
+            }
+        }
+    },
+    {
+        "name": "Immortal",
+        "id": "immortal",
+        "theme": {
+            "background": "linear-gradient(120deg, rgba(01,06,15,1) 21%, rgba(01,21,49,1) 97%)",
+            "secondary": "#1E293B",
+            "primary": "#155E75",
+            "text": "white",
+            "textInverse": "white",
             "font": "Roboto"
         }
     }
