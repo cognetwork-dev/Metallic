@@ -107,6 +107,9 @@
 - [x] Update app icons and names
 
 # Todo
+- [ ] Custom search engine
+- [ ] Change transport (Eproxy, Libcurl, Bare)
+- [ ] Change Wisp URL and Bare URL
 - [ ] Games
 
 ### Roadmap
