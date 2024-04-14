@@ -30,6 +30,10 @@
             "searchEngine": {
                 "title": "Moteur de recherche"
             },
+            "customSearchEngine": {
+                "title": "Moteur de recherche personnalisé",
+                "input": "URL avec %s à la place de la requête"
+            },
             "open": {
                 "title": "Ouvrir",
                 "options": {

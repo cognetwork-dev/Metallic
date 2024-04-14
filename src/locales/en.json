@@ -30,6 +30,10 @@
             "searchEngine": {
                 "title": "Search Engine"
             },
+            "customSearchEngine": {
+                "title": "Custom Search Engine",
+                "input": "URL with %s in place of query"
+            },
             "open": {
                 "title": "Open",
                 "options": {

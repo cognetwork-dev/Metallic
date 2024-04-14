@@ -30,6 +30,10 @@
             "searchEngine": {
                 "title": "Buscador"
             },
+            "customSearchEngine": {
+                "title": "Motor de búsqueda personalizado",
+                "input": "URL con %s en lugar de consulta"
+            },
             "open": {
                 "title": "Abierto",
                 "options": {
@@ -73,7 +77,7 @@
             },
             "children": {
                 "title": "Privacidad de los niños",
-                "text": "No recopilamos intencionadamente ninguna información personal de niños menores de 13 años. Si es menor de 13 años, no envíe ninguna información personal a través de nuestro sitio web."
+                "text": "No recopilamos intencionalmente ninguna Información personal de niños menores de 13 años. Si es menor de 13 años, no envíe ninguna Información personal a través de nuestro sitio web."
             },
             "cookies": {
                 "title": "Galletas",

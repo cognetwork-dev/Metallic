@@ -1,0 +1,10 @@
+{
+    "google": "https://www.google.com/search?q=%s",
+    "duckduckgo": "https://duckduckgo.com/?q=%s&ia=web",
+    "bing": "https://www.bing.com/search?q=%s",
+    "yahoo": "https://search.yahoo.com/search?p=%s",
+    "brave": "https://search.brave.com/search?q=%s",
+    "qwant": "https://www.qwant.com/?q=%s&t=web",
+    "searxng": "https://searx.si/search?q=%s",
+    "ecosia": "https://www.ecosia.org/search?method=index&q=%s"
+}

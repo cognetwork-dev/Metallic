@@ -30,6 +30,10 @@
             "searchEngine": {
                 "title": "Suchmaschine"
             },
+            "customSearchEngine": {
+                "title": "Benutzerdefinierte Suchmaschine",
+                "input": "URL mit %s anstelle der Abfrage"
+            },
             "open": {
                 "title": "Offen",
                 "options": {

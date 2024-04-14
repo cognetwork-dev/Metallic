@@ -30,6 +30,10 @@
             "searchEngine": {
                 "title": "Zoekmachine"
             },
+            "customSearchEngine": {
+                "title": "Aangepaste zoekmachine",
+                "input": "URL met %s in plaats van de zoekopdracht"
+            },
             "open": {
                 "title": "Open",
                 "options": {

@@ -3,7 +3,6 @@ import { useGlobalState } from "@ekwoka/preact-global-state";
 import { Head } from "../components/head";
 import { Web, searchWeb } from "../components/web";
 import { SearchIcon } from "../assets/searchIcon";
-import { geSearchEngine } from "../util/getSearchEngine";
 import { CloseIcon } from "../assets/closeIcon";
 import { createBareClient } from "@tomphttp/bare-client";
 import { bare } from "../settings";
@@ -67,10 +66,10 @@ function Home() {
             if (e.target.value) {
                 switch (openUsing) {
                     case "default":
-                        await searchWeb(e.target.value, service, geSearchEngine(searchEngine), webOpen, setWebOpen, e.target, clearInput);
+                        await searchWeb(e.target.value, service, searchEngine, webOpen, setWebOpen, e.target, clearInput);
                         break;
                     case "direct":
-                        window.open(await searchURL(e.target.value, service, geSearchEngine(searchEngine)))
+                        window.open(await searchURL(e.target.value, service, searchEngine))
                         if (search && search.current) {
                             search.current.value = "";
                         }
@@ -79,7 +78,7 @@ function Home() {
                     case "about:blank":
                         const blank = window.open("")
                         if (blank) {
-                            blank.document.body.innerHTML = `<iframe style="height:100%; width: 100%; border: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; border: none" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="` + await searchURL(e.target.value, service, geSearchEngine(searchEngine)) + `"></iframe>`;
+                            blank.document.body.innerHTML = `<iframe style="height:100%; width: 100%; border: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; border: none" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="` + await searchURL(e.target.value, service, searchEngine) + `"></iframe>`;
                         }
                         if (search && search.current) {
                             search.current.value = "";
@@ -102,10 +101,10 @@ function Home() {
     async function clickSuggestion(suggestion: string) {
         switch (openUsing) {
             case "default":
-                await searchWeb(suggestion, service, geSearchEngine(searchEngine), webOpen, setWebOpen, search.current, clearInput);
+                await searchWeb(suggestion, service, searchEngine, webOpen, setWebOpen, search.current, clearInput);
                 break;
             case "direct":
-                window.open(await searchURL(suggestion, service, geSearchEngine(searchEngine)))
+                window.open(await searchURL(suggestion, service, searchEngine))
                 if (search && search.current) {
                     search.current.value = "";
                 }
@@ -114,7 +113,7 @@ function Home() {
             case "about:blank":
                 const blank = window.open("")
                 if (blank) {
-                    blank.document.body.innerHTML = `<iframe style="height:100%; width: 100%; border: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; border: none" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="` + await searchURL(suggestion, service, geSearchEngine(searchEngine)) + `"></iframe>`;
+                    blank.document.body.innerHTML = `<iframe style="height:100%; width: 100%; border: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; border: none" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="` + await searchURL(suggestion, service, searchEngine) + `"></iframe>`;
                 }
                 if (search && search.current) {
                     search.current.value = "";

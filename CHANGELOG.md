@@ -105,9 +105,9 @@
 - [x] Update settings layout
 - [x] More languages
 - [x] Update app icons and names
+- [x] Custom search engine
 
 # Todo
-- [ ] Custom search engine
 - [ ] Change transport (Eproxy, Libcurl, Bare)
 - [ ] Change Wisp URL and Bare URL
 - [ ] Games
