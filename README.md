@@ -17,6 +17,7 @@
 - Customizable interface
 - Mobile support
 - Expansive library of themes
+- Large selection of games thanks to [Radon Games!](https://github.com/Radon-Games/Radon-Games/)
 
 ## Setup
 

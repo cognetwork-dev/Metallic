@@ -106,11 +106,12 @@
 - [x] More languages
 - [x] Update app icons and names
 - [x] Custom search engine
+- [x] Use Radon Games
 
 # Todo
 - [ ] Change transport (Eproxy, Libcurl, Bare)
 - [ ] Change Wisp URL and Bare URL
-- [ ] Games
+- [ ] Lazy load games
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/cognetwork-dev/projects/1/views/1).

@@ -81,10 +81,10 @@ function Apps() {
                                 class="h-full w-full object-cover"
                             />
                         </div>
-                        <div class="overflow-hidden text-lg font-bold mt-3 text-ellipsis">
+                        <div class="whitespace-nowrap overflow-hidden text-lg font-bold mt-3 text-ellipsis">
                             {app.name}
                         </div>
-                        <div class="text-base overflow-hidden text-ellipsis">
+                        <div class="text-base whitespace-nowrap overflow-hidden text-ellipsis">
                             {app.author}
                         </div>
                         <div

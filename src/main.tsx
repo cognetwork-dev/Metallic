@@ -4,6 +4,7 @@ import { ObfuscateLayout } from './util/obfuscate';
 
 import { Home } from "./pages/home";
 import { Apps } from "./pages/apps";
+import { Games } from "./pages/games";
 import { Settings } from './pages/settings';
 import { Privacy } from './pages/privacy';
 import { Error } from "./pages/error";
@@ -28,6 +29,10 @@ function App() {
                     <Route
                         path="/apps"
                         component={Apps}
+                    />
+                    <Route
+                        path="/games"
+                        component={Games}
                     />
                     <Route
                         path="/settings/search"
