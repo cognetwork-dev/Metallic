@@ -91,7 +91,7 @@
 - [x] Fix 3kh0 theme placeholder
 - [x] Obfuscate notifications
 
-# Version 2.0 (Next Update)
+# Version 2.0
 - [x] Remake from scratch
 - [x] Use Preact instead of React
 - [x] Use Tailwind
@@ -111,7 +111,8 @@
 # Todo
 - [ ] Change transport (Eproxy, Libcurl, Bare)
 - [ ] Change Wisp URL and Bare URL
-- [ ] Lazy load games
+- [ ] Improve game loading time
+- [ ] Add missing game assets
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/cognetwork-dev/projects/1/views/1).

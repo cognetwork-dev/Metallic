@@ -603,5 +603,41 @@
             "textInverse": "white",
             "font": "Roboto"
         }
+    },
+    {
+        "name": "Deep Sea",
+        "id": "deepsea",
+        "theme": {
+            "background": "#0a244a",
+            "secondary": "#051730",
+            "primary": "white",
+            "text": "white",
+            "textInverse": "white",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Astro",
+        "id": "astro",
+        "theme": {
+            "background": "#2B1C3D",
+            "secondary": "#351E4F",
+            "primary": "purple",
+            "text": "white",
+            "textInverse": "#D88FD8",
+            "font": "Roboto"
+        }
+    },
+    {
+        "name": "Greatsword",
+        "id": "greatsword",
+        "theme": {
+            "background": "#141414",
+            "secondary": "#222222",
+            "primary": "#636363",
+            "text": "#A9A9A9",
+            "textInverse": "#636363",
+            "font": "Roboto"
+        }
     }
 ]
