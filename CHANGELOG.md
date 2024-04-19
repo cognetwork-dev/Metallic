@@ -107,11 +107,11 @@
 - [x] Update app icons and names
 - [x] Custom search engine
 - [x] Use Radon Games
+- [x] Games load on scroll
 
 # Todo
 - [ ] Change transport (Eproxy, Libcurl, Bare)
 - [ ] Change Wisp URL and Bare URL
-- [ ] Improve game loading time
 - [ ] Add missing game assets
 
 ### Roadmap

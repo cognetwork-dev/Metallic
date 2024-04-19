@@ -16,6 +16,9 @@ function Games() {
     const search = useRef<HTMLInputElement>();
     const [searchValue, setSearchValue] = useState("");
     const [searchHasValue, setSearchHasValue] = useState(false);
+    const scrollBuffer = 250;
+    const resultsIncrease = 20;
+    const [resultsNumber, setResultsNumber] = useState(resultsIncrease);
 
     async function openApp(url: string) {
         setWeb(await encodeURL(new URL(url, gamesCdn).toString(), service), webOpen, setWebOpen)
@@ -46,6 +49,15 @@ function Games() {
         }
     });
 
+    const appsTrimmed = appsSearched.slice(0, Math.min(resultsNumber, appsSearched.length));
+
+    window.addEventListener("scroll", function () {
+        if (document.body.scrollHeight <= (window.scrollY + window.innerHeight) + scrollBuffer) {
+            if (resultsNumber !== appsSearched.length) {
+                setResultsNumber((old: number) => Math.min(old + resultsIncrease, appsSearched.length))
+            }
+        }
+    })
     return (
         <>
             <Head pageTitle={t("title.games")} />
@@ -62,11 +74,11 @@ function Games() {
                     </button>
                 </div>
             </div>
-            <p class={"text-center" + (!appsSearched.length ? "" : " hidden")}>No results found.</p>
+            <p class={"text-center" + (!appsTrimmed.length ? "" : " hidden")}>No results found.</p>
             <div
                 class="grid justify-evenly gap-8 grid-cols-1 sm:grid-cols-[repeat(auto-fill,minmax(auto,16rem))]"
             >
-                {appsSearched.map((app: any) => (
+                {appsTrimmed.map((app: any) => (
                     <button
                         onClick={async () => await openApp(app.url)}
                         class="rounded-3xl h-72 bg-secondary flex flex-col p-4 cursor-pointer w-full sm:w-64 text-left"
