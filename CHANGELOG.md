@@ -108,11 +108,11 @@
 - [x] Custom search engine
 - [x] Use Radon Games
 - [x] Games load on scroll
+- [x] Add missing game assets
 
 # Todo
 - [ ] Change transport (Eproxy, Libcurl, Bare)
 - [ ] Change Wisp URL and Bare URL
-- [ ] Add missing game assets
 
 ### Roadmap
 The roadmap has moved [here](https://github.com/orgs/cognetwork-dev/projects/1/views/1).

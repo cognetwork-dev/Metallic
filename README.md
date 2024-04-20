@@ -34,7 +34,7 @@ Run `npm run build` to build app for production into the `build` folder.
 
 **Development**
 
-Run `npm run dev` to run the app in development mode. Rammerhead will not work in this mode.
+Run `npm run dev` to run the app in development mode. Rammerhead will not work in dev mode.
 
 ## Configuration
 
