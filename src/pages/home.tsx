@@ -8,11 +8,12 @@ import { createBareClient } from "@tomphttp/bare-client";
 import { bare } from "../settings";
 import { Obfuscated } from "../util/obfuscate";
 import { searchURL } from "../util/searchURL";
+import searchEngineData from "../assets/searchEngineData.json";
 
 function Home() {
     const [service] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
     const [theme] = useGlobalState<string>("theme", localStorage.getItem("metallic/theme") || "default");
-    const [searchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || "google");
+    const [searchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || searchEngineData.google);
     const [openUsing] = useGlobalState<string>("open", localStorage.getItem("metallic/open") || "default");
     const [webOpen, setWebOpen] = useState(false);
     const search = useRef<HTMLInputElement>();
