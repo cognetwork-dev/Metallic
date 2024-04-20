@@ -1778,35 +1778,35 @@
         "name": "Pokémon SoulSilver"
     },
     {
-        "author": "",
+        "author": "Madpuffers",
         "description": "Basketball Stars is a 2-player basketball game created by Madpuffers. You can play solo or with a friend as a variety of legendary basketball players. Shoot basketball with the likes of LeBron James, James Harden, and Stephen Curry in Basketball Stars!",
         "url": "/cdn/html.html?id=basketball-stars",
         "icon": "/cdn/images/basketball-stars.png?h=180&w=320",
         "name": "Basketball Stars"
     },
     {
-        "author": "",
+        "author": "Curt Johnson",
         "description": "Minesweeper is a single-player puzzle video game. The objective of the game is to clear a rectangular board containing hidden 'mines' or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field.",
         "url": "/cdn/html.html?id=minesweeper",
         "icon": "/cdn/images/minesweeper.png?h=180&w=320",
         "name": "Minesweeper"
     },
     {
-        "author": "",
+        "author": "Unknown",
         "description": "Undertale Sans Fight Clone; 'do you wanna have a bad time? 'cause if you visit this page... you are REALLY not going to like what happens next.'",
         "url": "/cdn/html.html?id=sans-fight",
         "icon": "/cdn/images/sans-fight.png?h=180&w=320",
         "name": "Sans Fight"
     },
     {
-        "author": "",
+        "author": "Draw Me A Pixel",
         "description": "There is no game. There is nothing to do. Do not click or tap anywhere. Really. DO NOT CLICK OR TAP ANYWHERE. Do not laugh as there is nothing to laugh about.",
         "url": "/cdn/html.html?id=there-is-no-game",
         "icon": "/cdn/images/there-is-no-game.png?h=180&w=320",
         "name": "There is no Game"
     },
     {
-        "author": "",
+        "author": "Unknown",
         "description": "Break the word in half and add 'UN' to each part. Undyne fight, but harder.",
         "url": "/cdn/html.html?id=unfair-dyne",
         "icon": "/cdn/images/unfair-dyne.png?h=180&w=320",
@@ -1820,140 +1820,140 @@
         "name": "Volley Gosh"
     },
     {
-        "author": "",
+        "author": "Iguana Entertainment Inc.",
         "description": "NBA Jam is a classic arcade basketball game developed and published back in 1993 and is the first entry to the NBA Jam series. The game features 2 on 2 basketball match off and is one of the first sports games to feature real and digitized NBA-licensed teams and players!",
         "url": "/cdn/emulator.html?id=nba-jam&emu=snes",
         "icon": "/cdn/images/nba-jam.png?h=180&w=320",
         "name": "NBA Jam"
     },
     {
-        "author": "",
+        "author": "Iguana Entertainment Inc.",
         "description": "NBA Jam Tournament Edition is the second game in the basketball arcade series created by Midway. The game features two-on-two fast paced matches with real life NBA players from the 1993-1994 seasons. The game has over 120 NBA athletes plus more than 40 hidden characters to unlock.",
         "url": "/cdn/emulator.html?id=nba-jam-tournament-edition&emu=snes",
         "icon": "/cdn/images/nba-jam-tournament-edition.png?h=180&w=320",
         "name": "NBA Jam Tournament Edition"
     },
     {
-        "author": "",
+        "author": "Iguana Entertainment Inc.",
         "description": "NBA Jam 2K20: Tournament Edition is a ROM hack of the game NBA Jam: Tournament Edition for the Super Nintendo Entertainment System (SNES). This hack did not change the core aspects, as well as most game mechanics, of the game, and instead worked on updating its player and team roster to match the 2019-2020 NBA season.",
         "url": "/cdn/emulator.html?id=nba-jam-2k20&emu=snes",
         "icon": "/cdn/images/nba-jam-2k20.png?h=180&w=320",
         "name": "NBA Jam 2K20"
     },
     {
-        "author": "",
+        "author": "Nintendo",
         "description": "Donkey Kong Country is a side-scrolling platform game in which the player must complete 40 levels to recover the Kongs' banana hoard, which has been stolen by the crocodilian Kremlings.",
         "url": "/cdn/emulator.html?id=donkey-kong-country&emu=snes",
         "icon": "/cdn/images/donkey-kong-country.png?h=180&w=320",
         "name": "Donkey Kong Country"
     },
     {
-        "author": "",
+        "author": "Nintendo",
         "description": "Super Mario All-Stars + Super Mario World is a compilation title for the Super Nintendo Entertainment System. It includes all the games from Super Mario All-Stars, as well as Super Mario World. It was released in December 1994 in North America, 1995 in Europe, and was never released in Japan.",
         "url": "/cdn/emulator.html?id=super-mario-allstars--super-mario-world&emu=snes",
         "icon": "/cdn/images/super-mario-allstars--super-mario-world.png?h=180&w=320",
         "name": "Super Mario Allstars + Super Mario World"
     },
     {
-        "author": "",
+        "author": "Capcom",
         "description": "Street Fighter II: The World Warrior is a competitive fighting game originally released for the arcades in 1991. It is the second entry in the Street Fighter series and the arcade sequel to the original Street Fighter released in 1987. It was Capcom's fourteenth title that ran on the CP System arcade hardware. Street Fighter II improved upon the many concepts introduced in the first game, including the use of command-based special moves and a six-button configuration, while offering players a selection of multiple playable characters, each with their own unique fighting style.",
         "url": "/cdn/emulator.html?id=street-fighter-2&emu=snes",
         "icon": "/cdn/images/street-fighter-2.png?h=180&w=320",
-        "name": "Street Fighter 2"
+        "name": "Street Fighter II"
     },
     {
-        "author": "",
+        "author": "Sega",
         "description": "Sonic the Hedgehog is a Japanese video game series and media franchise created and owned by Sega. The franchise follows Sonic, an anthropomorphic blue hedgehog who battles the evil Doctor Eggman, a mad scientist.",
         "url": "/cdn/emulator.html?id=sonic-1&emu=segaMD",
         "icon": "/cdn/images/sonic-1.png?h=180&w=320",
         "name": "Sonic 1"
     },
     {
-        "author": "",
+        "author": "Sega",
         "description": "Sonic the Hedgehog 2 is a 1992 platform game developed and published by Sega for the Sega Genesis. It follows Sonic as he attempts to stop Doctor Robotnik from stealing the Chaos Emeralds to power his space station, the Death Egg.",
         "url": "/cdn/emulator.html?id=sonic-2&emu=segaMD",
         "icon": "/cdn/images/sonic-2.png?h=180&w=320",
         "name": "Sonic 2"
     },
     {
-        "author": "",
+        "author": "Sega",
         "description": "Dr. Eggman's (AKA Dr. Robotnik's) Death Egg was once again blasted by Sonic, crash-landing on the peak of a volcano on the Floating Island. Dr. Eggman is still at large, and Sonic can't allow him to get his hands on the Master Emerald and repair the Death Egg.",
         "url": "/cdn/emulator.html?id=sonic-3&emu=segaMD",
         "icon": "/cdn/images/sonic-3.png?h=180&w=320",
         "name": "Sonic 3 & Knuckles"
     },
     {
-        "author": "",
+        "author": "McMillen and Jonathan McEntee",
         "description": "This is NOT Super Meat Boy! Its simply the flash prototype that Super Meat Boy was based off of. SMB, will play very differently and is 100% new.. what im saying is if you even slightly enjoy the prototype, you will LOVE SMB! For more info on Super Meat Boy check out supermeatboy.com",
         "url": "/cdn/flash.html?id=meat-boy",
         "icon": "/cdn/images/meat-boy.png?h=180&w=320",
         "name": "Meat Boy"
     },
     {
-        "author": "",
+        "author": "Antony Lavelle",
         "description": "Is the floor the roof? Is the roof the floor? And whats with that in game timer? Find the answers to all the above questions and more in this original puzzle platformer!",
         "url": "/cdn/flash.html?id=shift",
         "icon": "/cdn/images/shift.png?h=180&w=320",
         "name": "Shift"
     },
     {
-        "author": "",
+        "author": "Antony Lavelle",
         "description": "The sequel to The Shift! Is the floor the roof? Is the roof the floor? And whats with that in game timer? Find the answers to all the above questions and more in this original puzzle platformer, part 2!",
         "url": "/cdn/flash.html?id=shift-2",
         "icon": "/cdn/images/shift-2.png?h=180&w=320",
         "name": "Shift 2"
     },
     {
-        "author": "",
+        "author": "Unknown",
         "description": "It is Super Mario, again. Our beloved little fellow is inviting you to travel alongside him throughout the Unfair Mario game. You will find yourself in the classic arcade game, but this time, with a little twist. Some traps will be trickier, and some obstacles harder to overcome. But you will survive it, will you not?",
         "url": "/cdn/flash.html?id=unfair-mario",
         "icon": "/cdn/images/unfair-mario.png?h=180&w=320",
         "name": "Unfair Mario"
     },
     {
-        "author": "",
+        "author": "RHM Interactive",
         "description": "Soccer Random is one of the most fun sports games. The game's objective is to score a goal using only one key with different variations!",
         "url": "/cdn/html.html?id=soccer-random",
         "icon": "/cdn/images/soccer-random.png?h=180&w=320",
         "name": "Soccer Random"
     },
     {
-        "author": "",
+        "author": "RHM Interactive",
         "description": "The fun random game series continues with Volley Random. There is a Volleyball experience unlike any before. With fun ragdoll physics and a variety of variations, each match will be different. The playing court, ball and players may change. The important thing is to be able to get score under all conditions. ",
         "url": "/cdn/html.html?id=volley-random",
         "icon": "/cdn/images/volley-random.png?h=180&w=320",
         "name": "Volley Random"
     },
     {
-        "author": "",
+        "author": "RHM Interactive",
         "description": "The new version of the random game series that you love to play continues with Boxing Random. Again, changing conditions occur in every round. Sometimes the boxing field changes and sometimes the boxers. Adapt to every random feature and hit accurately. When you get the rocket punch, balance and send it to the opponent's head. This way you can knock out the opponent without getting close! The one who reaches 5 score first, wins the game!",
         "url": "/cdn/html.html?id=boxing-random",
         "icon": "/cdn/images/boxing-random.png?h=180&w=320",
         "name": "Boxing Random"
     },
     {
-        "author": "",
+        "author": "Tom Fulp",
         "description": "Madness Accelerant is a fast-paced action game to beat the enemies and escape the beast monster. This game is a playable remake of Krinkel's Madness Consternation.",
         "url": "/cdn/flash.html?id=madness-accelerant",
         "icon": "/cdn/images/madness-accelerant.png?h=180&w=320",
         "name": "Madness Accelerant"
     },
     {
-        "author": "",
+        "author": "Gamepix",
         "description": "We collected some brain and board games that you can play as two player in a single game. We are presenting you eight brain / table game which are played by everyone fondly. You can play Chess, Tic Tac Toe, Checkers, Ludo, Connect 4, Snake and Ladders, Mancala and Math games in game box for free! If you cannot decide on which game you want to play, you can give a chance to spin the “Spin” to let it pick a game for you.",
         "url": "/cdn/unity.html?id=mind-games-for-2-player",
         "icon": "/cdn/images/mind-games-for-2-player.png?h=180&w=320",
         "name": "Mind Games for 2 Player"
     },
     {
-        "author": "",
+        "author": "Ubisoft",
         "description": "The classic popular game UNO can be played online in the browser. You can play the game locally or online multiplayer. You can enter the lobbies in the online section. Face up to 3 CPU-controlled opponents. Match cards by color or number, play action cards to mix the game up and be the first to get rid of all cards. Also, do not forget to press the 1 button when you have only one card left!",
         "url": "/cdn/html.html?id=uno",
         "icon": "/cdn/images/uno.png?h=180&w=320",
         "name": "Uno"
     },
     {
-        "author": "",
+        "author": "Spil Games",
         "description": "Wanna try out some awesome new weapons? Of course you do. Get blastin'!",
         "url": "/cdn/html.html?id=flakboy",
         "icon": "/cdn/images/flakboy.png?h=180&w=320",
@@ -1975,7 +1975,7 @@
     },
     {
         "author": "GoGoMan",
-        "description": "",
+        "description": "Time Shooter 2 is a first-person shooter where time stands still until you move.",
         "url": "/cdn/unity.html?id=time-shooter-2",
         "icon": "/cdn/images/time-shooter-2.png?h=180&w=320",
         "name": "Time Shooter 2"
@@ -1988,11 +1988,11 @@
         "name": "Celeste"
     },
     {
-        "author": "",
-        "description": "",
+        "author": "greatcargames",
+        "description": "In this game you can enjoy playing this game by trying out ten awesome fire trucks and completing twelve intense levels.",
         "url": "/cdn/html.html?id=fire-truck-dash",
         "icon": "/cdn/images/fire-truck-dash.png?h=180&w=320",
-        "name": "Fire Truck Dash"
+        "name": "Fire Truck Dash: 3D Parking"
     },
     {
         "author": "Google",
