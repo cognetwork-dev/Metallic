@@ -648,8 +648,8 @@
             "secondary": "#232323",
             "primary": "#d1adee",
             "text": "#fff",
-            "textInverse": "#000",
-            "font": "JetBrains Mono",
+            "textInverse": "#fff",
+            "font": "JetBrains Mono"
         }
         
     }
