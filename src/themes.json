@@ -639,5 +639,18 @@
             "textInverse": "#636363",
             "font": "Roboto"
         }
+    },
+    {
+        "name": "shxrk",
+        "id": "shxrk",
+        "theme": {
+            "background": "#161616",
+            "secondary": "#232323",
+            "primary": "#d1adee",
+            "text": "#fff",
+            "textInverse": "#fff",
+            "font": "JetBrains Mono"
+        }
+        
     }
 ]
