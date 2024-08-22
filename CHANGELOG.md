@@ -110,6 +110,13 @@
 - [x] Games load on scroll
 - [x] Add missing game assets
 
+# Version 2.1
+- [x] Update to the latest proxy technology.
+- [x] Use Chemical.
+- [x] Remove Dynamic.
+- [x] Add Scramjet.
+- [x] Change license.
+
 # Todo
 - [ ] Change transport (Eproxy, Libcurl, Bare)
 - [ ] Change Wisp URL and Bare URL

@@ -32,9 +32,13 @@ Run `npm start` to start the server. If no build folder if found, Metallic will 
 
 Run `npm run build` to build app for production into the `build` folder.
 
+**Build Static**
+
+Run `npm run build-static` to build the app for production into the dist folder. This is for static hosting on Github Pages etc. Make sure to change the Wisp server in `/index.html` to an external one and turn off Rammerhead in `/src/settings.ts`.
+
 **Development**
 
-Run `npm run dev` to run the app in development mode. Rammerhead will not work in dev mode.
+Run `npm run dev` to run the app in development mode.
 
 ## Configuration
 
@@ -66,10 +70,10 @@ Themes can be configured from the [/src/themes.json](https://github.com/cognetwo
 ```
 
 ## Issues
-Using older versions of Node.js will cause Metallic to crash. Upgrade to the latest version using `nvm install --lts`.
+Using older versions of Node.js will cause Metallic not work. Upgrade to the latest version using `nvm install --lts`.
 
 ## Changelog/Roadmap
 Check out the [changelog and roadmap](https://github.com/cognetwork-dev/Metallic/blob/main/CHANGELOG.md)
 
 ## License
-Metallic uses the MIT license.
+Metallic uses the AGPL-3.0 license.

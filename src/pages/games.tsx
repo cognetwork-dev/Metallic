@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import { useState, useRef } from "preact/hooks";
 import { Web, setWeb } from "../components/web";
 import { useGlobalState } from "@ekwoka/preact-global-state";
-import { encodeURL } from "../util/searchURL";
 import { gamesCdn } from "../settings";
 import { SearchIcon } from "../assets/searchIcon";
 import { CloseIcon } from "../assets/closeIcon";
@@ -11,7 +10,7 @@ import apps from "../assets/games.json";
 
 function Games() {
     const { t } = useTranslation();
-    const [service] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
+    const [service] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "uv");
     const [webOpen, setWebOpen] = useState(false);
     const search = useRef<HTMLInputElement>();
     const [searchValue, setSearchValue] = useState("");
@@ -21,7 +20,8 @@ function Games() {
     const [resultsNumber, setResultsNumber] = useState(resultsIncrease);
 
     async function openApp(url: string) {
-        setWeb(await encodeURL(new URL(url, gamesCdn).toString(), service), webOpen, setWebOpen)
+        //@ts-ignore
+        setWeb(await chemicalEncode(new URL(url, gamesCdn).toString(), service), webOpen, setWebOpen)
     }
 
     const handleChange = async (e: any) => {

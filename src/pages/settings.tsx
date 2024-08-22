@@ -7,7 +7,6 @@ import { TabIcon } from "../assets/tabIcon";
 import { AppearanceIcon } from "../assets/appearanceIcon";
 import { LocaleIcon } from "../assets/localeIcon";
 import { Obfuscated } from "../util/obfuscate";
-
 import { AppearanceSettings } from "./settings/appearance";
 import { SearchSettings } from "./settings/search";
 import { TabSettings } from "./settings/tab";

@@ -5,7 +5,7 @@ import searchEngineData from "../assets/searchEngineData.json";
 
 function Head({ pageTitle }: HeadTypes) {
     const [theme, setTheme] = useGlobalState<string>("theme", localStorage.getItem("metallic/theme") || "default");
-    const [service, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
+    const [service, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "uv");
     const [searchEngine, setSearchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || searchEngineData.google);
     const [title, setTitle] = useGlobalState<string>("title", localStorage.getItem("metallic/title") || "");
     const [icon, setIcon] = useGlobalState<string>("icon", localStorage.getItem("metallic/icon") || "");

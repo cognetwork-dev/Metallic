@@ -5,7 +5,7 @@ import { SquareInput } from "../../interface/input";
 import { rammerhead } from "../../settings";
 import { Obfuscated } from "../../util/obfuscate";
 import ultravioletLogo from "../../assets/services/ultravioletLogo.png";
-import dynamicLogo from "../../assets/services/dynamicLogo.png";
+import scramjetLogo from "../../assets/services/scramjetLogo.png";
 import rammerheadLogo from "../../assets/services/rammerheadLogo.png";
 import { GoogleLogo } from "../../assets/searchEngines/googleLogo";
 import { DuckDuckGoLogo } from "../../assets/searchEngines/duckDuckGoLogo";
@@ -19,7 +19,7 @@ import searchEngineData from "../../assets/searchEngineData.json";
 
 function SearchSettings() {
     const { t } = useTranslation();
-    const [service, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "ultraviolet");
+    const [service, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "uv");
     const [searchEngine, setSearchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || searchEngineData.google);
     const [openUsing, setOpenUsing] = useGlobalState<string>("open", localStorage.getItem("metallic/open") || "default");
 
@@ -27,13 +27,13 @@ function SearchSettings() {
         <>
             <h1 class="text-4xl font-bold mb-8">{t("settings.search.service.title")}</h1>
             <section class="flex flex-wrap items-center gap-3">
-                <SquareButton active={service == "ultraviolet"} onClick={() => setService("ultraviolet")}>
+                <SquareButton active={service == "uv"} onClick={() => setService("uv")}>
                     <img draggable={false} height="24" width="24" src={ultravioletLogo} loading="lazy" />
                     <span class="font-bold"><Obfuscated>Ultraviolet</Obfuscated></span>
                 </SquareButton>
-                <SquareButton active={service == "dynamic"} onClick={() => setService("dynamic")}>
-                    <img draggable={false} height="24" width="24" src={dynamicLogo} loading="lazy" />
-                    <span class="font-bold"><Obfuscated>Dynamic</Obfuscated></span>
+                <SquareButton active={service == "scramjet"} onClick={() => setService("scramjet")}>
+                    <img draggable={false} height="24" width="24" src={scramjetLogo} loading="lazy" />
+                    <span class="font-bold"><Obfuscated>Scramjet</Obfuscated></span>
                 </SquareButton>
                 {rammerhead ? (
                     <SquareButton active={service == "rammerhead"} onClick={() => setService("rammerhead")}>
