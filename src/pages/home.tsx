@@ -59,7 +59,7 @@ function Home() {
 				const results = await site.json();
 				setSuggestions(results[1].slice(0, 9));
 			} catch (err) {
-                console.error(err);
+				console.error(err);
 				setSuggestions([]);
 			}
 		} else {
