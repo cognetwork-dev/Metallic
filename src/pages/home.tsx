@@ -6,8 +6,15 @@ import { Web, searchWeb } from "../components/web";
 import { SearchIcon } from "../assets/searchIcon";
 import { CloseIcon } from "../assets/closeIcon";
 import { Obfuscated } from "../util/obfuscate";
-import { searchURL } from "../util/searchURL";
 import searchEngineData from "../assets/searchEngineData.json";
+
+declare global {
+  interface Window {
+      chemical: {
+        encode: Function
+      };
+  }
+}
 
 function Home() {
 	const [service] = useGlobalState<string>(
@@ -83,7 +90,11 @@ function Home() {
 						);
 						break;
 					case "direct":
-						window.open(await searchURL(e.target.value, service, searchEngine));
+						window.open(await window.chemical.encode(e.target.value, {
+              service,
+              autoHttps: true,
+              searchEngine
+            }));
 						if (search && search.current) {
 							search.current.value = "";
 						}
@@ -94,7 +105,11 @@ function Home() {
 						if (blank) {
 							blank.document.body.innerHTML =
 								`<iframe style="height:100%; width: 100%; border: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; border: none" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="` +
-								(await searchURL(e.target.value, service, searchEngine)) +
+								(await window.chemical.encode(e.target.value, {
+                  service,
+                  autoHttps: true,
+                  searchEngine
+                })) +
 								`"></iframe>`;
 						}
 						if (search && search.current) {
@@ -129,7 +144,11 @@ function Home() {
 				);
 				break;
 			case "direct":
-				window.open(await searchURL(suggestion, service, searchEngine));
+				window.open(await window.chemical.encode(suggestion, {
+          service,
+          autoHttps: true,
+          searchEngine
+        }));
 				if (search && search.current) {
 					search.current.value = "";
 				}
@@ -140,7 +159,11 @@ function Home() {
 				if (blank) {
 					blank.document.body.innerHTML =
 						`<iframe style="height:100%; width: 100%; border: none; position: fixed; top: 0; right: 0; left: 0; bottom: 0; border: none" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="` +
-						(await searchURL(suggestion, service, searchEngine)) +
+						(await window.chemical.encode(suggestion, {
+              service,
+              autoHttps: true,
+              searchEngine
+            })) +
 						`"></iframe>`;
 				}
 				if (search && search.current) {

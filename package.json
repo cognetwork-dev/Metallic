@@ -7,11 +7,11 @@
   "author": "Nebelung",
   "type": "module",
   "scripts": {
-    "start": "npm run test && tsx index.ts",
-    "dev": "npm run test && vite",
-    "build": "npm run test && tsc && vite build",
-    "build-static": "npm run test && vite build && tsx build.ts",
-    "preview": "npm run test && vite preview",
+    "start": "pnpm run test && tsx index.ts",
+    "dev": "pnpm run test && vite",
+    "build": "pnpm run test && tsc && vite build",
+    "build-static": "pnpm run test && vite build && tsx build.ts",
+    "preview": "pnpm run test && vite preview",
     "test": "ava"
   },
   "dependencies": {
@@ -19,7 +19,7 @@
     "@mercuryworkshop/bare-mux": "^2.0.4",
     "@types/express": "^4.17.21",
     "chalk": "^5.3.0",
-    "chemicaljs": "^1.6.5",
+    "chemicaljs": "^1.7.5",
     "clsx": "^2.1.1",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
@@ -48,7 +48,6 @@
     "vite": "^5.4.2"
   },
   "engines": {
-    "npm": ">=10.2.4",
-    "node": ">=20.11.1"
+    "node": ">=20.11.0"
   }
 }

@@ -7,6 +7,14 @@ import { SearchIcon } from "../assets/searchIcon";
 import { CloseIcon } from "../assets/closeIcon";
 import apps from "../assets/apps.json";
 
+declare global {
+  interface Window {
+      chemical: {
+        encode: Function
+      };
+  }
+}
+
 function Apps() {
     const { t } = useTranslation();
     const [service] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "uv");
@@ -17,7 +25,7 @@ function Apps() {
 
     async function openApp(url: string) {
         //@ts-ignore
-        setWeb(await chemicalEncode(url, service), webOpen, setWebOpen)
+        setWeb(await window.chemical.encode(url, { service }), webOpen, setWebOpen)
     }
 
     const handleChange = async (e: any) => {

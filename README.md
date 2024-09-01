@@ -21,20 +21,22 @@
 
 ## Setup
 
+Metallic uses pnpm. Install it using `npm install -g pnpm`.
+
 > [!TIP]
-> Run `npm install` to install the required dependencies.
+> Run `pnpm install` to install the required dependencies.
 
 **Run**
 
-Run `npm start` to start the server. If no build folder if found, Metallic will attempt to build.
+Run `pnpm start` to start the server. If no build folder if found, Metallic will attempt to build.
 
 **Build**
 
-Run `npm run build` to build app for production into the `build` folder.
+Run `pnpm run build` to build app for production into the `build` folder.
 
 **Build Static**
 
-Run `npm run build-static` to build the app for production into the dist folder. This is for static hosting on Github Pages etc. Make sure to change the Wisp server in `/index.html` to an external one and turn off Rammerhead in `/src/settings.ts`.
+Run `pnpm run build-static` to build the app for production into the dist folder. This is for static hosting on Github Pages etc. Make sure to change the Wisp server in `/index.html` to an external one and turn off Rammerhead in `/src/settings.ts`.
 
 **Development**
 

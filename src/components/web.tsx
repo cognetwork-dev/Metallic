@@ -1,11 +1,18 @@
 import { useEffect, useState } from "preact/hooks";
 import { useRef } from "preact/hooks";
-import { searchURL } from "../util/searchURL";
 import { RoundButton } from "../interface/button";
 import { CloseIcon } from "../assets/closeIcon";
 import { RefreshIcon } from "../assets/refreshIcon";
 import { FullscreenIcon } from "../assets/fullscreenIcon";
 import { GlobeIcon } from "../assets/globeIcon";
+
+declare global {
+  interface Window {
+      chemical: {
+        encode: Function
+      };
+  }
+}
 
 let web: any = null;
 let search: any = null;
@@ -99,7 +106,11 @@ async function searchWeb(input: string, service: string, searchEngine: string, o
     if (!open) {
         setOpen(true)
         if (web && web.current) {
-            web.current.src = await searchURL(input, service, searchEngine)
+            web.current.src = await window.chemical.encode(input, {
+              service,
+              autoHttps: true,
+              searchEngine
+            })
             web.current.focus()
             search = searchRef;
             clearInput = clearInputFunction
