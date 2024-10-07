@@ -5,7 +5,7 @@ import { seti18Locale } from "../../util/locale";
 
 function LocaleSettings() {
     const { t } = useTranslation();
-    const [locale, setLocale] = useGlobalState<string>("locale", localStorage.getItem("metallic/locale") || "en");
+    const [locale, setLocale] = useGlobalState<string>("locale", localStorage.getItem("metallic/locale") || "en") as [string, (value: string) => void];
 
     function setNewLocale(locale: string) {
         localStorage.setItem("metallic/locale", locale)

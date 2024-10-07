@@ -19,9 +19,9 @@ import searchEngineData from "../../assets/searchEngineData.json";
 
 function SearchSettings() {
     const { t } = useTranslation();
-    const [service, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "uv");
-    const [searchEngine, setSearchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || searchEngineData.google);
-    const [openUsing, setOpenUsing] = useGlobalState<string>("open", localStorage.getItem("metallic/open") || "default");
+    const [service, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "uv") as [string, (value: string) => void];
+    const [searchEngine, setSearchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || searchEngineData.google) as [string, (value: string) => void];
+    const [openUsing, setOpenUsing] = useGlobalState<string>("open", localStorage.getItem("metallic/open") || "default") as [string, (value: string) => void];
 
     return (
         <>

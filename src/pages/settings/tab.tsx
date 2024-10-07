@@ -14,8 +14,8 @@ import { Obfuscated } from "../../util/obfuscate";
 
 function TabSettings() {
     const { t } = useTranslation();
-    const [title, setTitle] = useGlobalState<string>("title", localStorage.getItem("metallic/title") || "");
-    const [icon, setIcon] = useGlobalState<string>("icon", localStorage.getItem("metallic/icon") || "");
+    const [title, setTitle] = useGlobalState<string>("title", localStorage.getItem("metallic/title") || "") as [string, (value: string) => void];
+    const [icon, setIcon] = useGlobalState<string>("icon", localStorage.getItem("metallic/icon") || "") as [string, (value: string) => void];
 
     function setPreset(title: string, icon: string) {
         setTitle(title);

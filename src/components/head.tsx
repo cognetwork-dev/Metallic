@@ -4,13 +4,13 @@ import { seti18Locale } from "../util/locale";
 import searchEngineData from "../assets/searchEngineData.json";
 
 function Head({ pageTitle }: HeadTypes) {
-    const [theme, setTheme] = useGlobalState<string>("theme", localStorage.getItem("metallic/theme") || "default");
-    const [service, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "uv");
-    const [searchEngine, setSearchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || searchEngineData.google);
-    const [title, setTitle] = useGlobalState<string>("title", localStorage.getItem("metallic/title") || "");
-    const [icon, setIcon] = useGlobalState<string>("icon", localStorage.getItem("metallic/icon") || "");
-    const [locale, setLocale] = useGlobalState<string>("locale", localStorage.getItem("metallic/locale") || "en");
-    const [openUsing, setOpenUsing] = useGlobalState<string>("open", localStorage.getItem("metallic/open") || "default");
+    const [theme, setTheme] = useGlobalState<string>("theme", localStorage.getItem("metallic/theme") || "default") as [string, (value: string) => void];
+    const [service, setService] = useGlobalState<string>("service", localStorage.getItem("metallic/service") || "uv") as [string, (value: string) => void];
+    const [searchEngine, setSearchEngine] = useGlobalState<string>("engine", localStorage.getItem("metallic/engine") || searchEngineData.google) as [string, (value: string) => void];
+    const [title, setTitle] = useGlobalState<string>("title", localStorage.getItem("metallic/title") || "") as [string, (value: string) => void];
+    const [icon, setIcon] = useGlobalState<string>("icon", localStorage.getItem("metallic/icon") || "") as [string, (value: string) => void];
+    const [locale, setLocale] = useGlobalState<string>("locale", localStorage.getItem("metallic/locale") || "en") as [string, (value: string) => void];
+    const [openUsing, setOpenUsing] = useGlobalState<string>("open", localStorage.getItem("metallic/open") || "default") as [string, (value: string) => void];
 
     useEffect(() => {
         if (title) {
