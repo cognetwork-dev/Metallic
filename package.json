@@ -7,12 +7,11 @@
   "author": "Nebelung",
   "type": "module",
   "scripts": {
-    "start": "bun run test && bunx tsx index.ts",
-    "dev": "bun run test && bunx vite",
-    "build": "bun run test && tsc && bunx vite build",
-    "build-static": "bun run test && bunx vite build && bunx tsx build.ts",
-    "preview": "bun run test && bunx vite preview",
-    "test": "ava"
+    "start": "bun test && bunx tsx index.ts",
+    "dev": "bun test && bunx vite",
+    "build": "bun test && tsc && bunx vite build",
+    "build-static": "bun test && bunx vite build && bunx tsx build.ts",
+    "preview": "bun test && bunx vite preview"
   },
   "dependencies": {
     "@ekwoka/preact-global-state": "^2.0.0",
@@ -42,7 +41,6 @@
   "devDependencies": {
     "@preact/preset-vite": "^2.9.0",
     "autoprefixer": "^10.4.20",
-    "ava": "^6.1.3",
     "postcss": "^8.4.41",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.5.4",
