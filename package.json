@@ -7,11 +7,11 @@
   "author": "Nebelung",
   "type": "module",
   "scripts": {
-    "start": "pnpm run test && tsx index.ts",
-    "dev": "pnpm run test && vite",
-    "build": "pnpm run test && tsc && vite build",
-    "build-static": "pnpm run test && vite build && tsx build.ts",
-    "preview": "pnpm run test && vite preview",
+    "start": "bun run test && bunx tsx index.ts",
+    "dev": "bun run test && bunx vite",
+    "build": "bun run test && tsc && bunx vite build",
+    "build-static": "bun run test && bunx vite build && bunx tsx build.ts",
+    "preview": "bun run test && bunx vite preview",
     "test": "ava"
   },
   "dependencies": {
@@ -49,5 +49,8 @@
   },
   "engines": {
     "node": ">=20.11.0"
-  }
+  },
+  "trustedDependencies": [
+    "@rubynetwork/rh"
+  ]
 }
