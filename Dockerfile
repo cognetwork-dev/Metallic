@@ -1,17 +1,17 @@
-FROM node:latest
+FROM oven/bun:latest
 
 WORKDIR /app
 
 COPY . /app/
 
-COPY package*.json /app/
+COPY package.json /app/
 
-RUN npm install -g pnpm
+COPY bun.lockb /app/
 
-RUN pnpm install
+RUN bun install
 
-RUN pnpm run build
+RUN bun run build
 
 EXPOSE 8080
 
-CMD ["pnpm", "start"]
+CMD ["bun", "run", "start"]

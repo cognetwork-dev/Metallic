@@ -7,10 +7,11 @@
   "author": "Nebelung",
   "type": "module",
   "scripts": {
-    "start": "bun test && bunx tsx index.ts",
+    "start": "bun test && bun index.ts",
+    "start-docker": "bun index.ts",
     "dev": "bun test && bunx vite",
     "build": "bun test && tsc && bunx vite build",
-    "build-static": "bun test && bunx vite build && bunx tsx build.ts",
+    "build-static": "bun test && bunx vite build && bun build.ts",
     "preview": "bun test && bunx vite preview"
   },
   "dependencies": {
@@ -34,7 +35,6 @@
     "random-seed": "^0.3.0",
     "react": "^18.3.1",
     "react-i18next": "^15.0.2",
-    "tsx": "^4.19.1",
     "vite-plugin-minify": "^2.0.0",
     "zod": "^3.23.8"
   },
