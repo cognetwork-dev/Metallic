@@ -1,6 +1,8 @@
 version: '3'
 services:
   web:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "8088:3000" # Set first port to whatever you want, linking it with your discord
+      - "8088:3000" # First port is exposed port. Don't change second port unless you know what you're doing
