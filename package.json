@@ -49,6 +49,8 @@
     "node": ">=20.11.0"
   },
   "trustedDependencies": [
-    "@rubynetwork/rh"
+    "@rubynetwork/rh",
+    "esbuild",
+    "bufferutil"
   ]
 }
