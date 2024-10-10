@@ -6,7 +6,7 @@ import { Obfuscated } from "../../util/obfuscate";
 
 function AppearanceSettings() {
     const { t } = useTranslation();
-    const [theme, setTheme] = useGlobalState<string>("theme", localStorage.getItem("metallic/theme") || "default");
+    const [theme, setTheme] = useGlobalState<string>("theme", localStorage.getItem("metallic/theme") || "default") as [string, (value: string) => void];
 
     return (
         <>

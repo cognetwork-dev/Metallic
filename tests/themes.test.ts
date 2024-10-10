@@ -1,24 +1,26 @@
-import test from 'ava';
+import { expect, test } from 'bun:test';
 import { z } from "zod";
 import fs from 'fs';
 
-test('Themes file exists', (t) => {
-    t.true(fs.existsSync('src/themes.json'), "The file /src/themes.json file does not exist.");
+test('Sanity Check', () => {
+    expect(1).toBe(1);
+    expect(1+1).toBe(2)
+})
+
+test('Themes file exists', async () => {
+    const exists = await Bun.file('src/themes.json').exists()
+    expect(exists).toBe(true);
 });
 
-let themes = fs.readFileSync("src/themes.json", "utf-8");
+let themes = await Bun.file("src/themes.json").text();
+let themesJson = JSON.parse(themes);
 
-test('Themes file contains JSON', (t) => {
-    try {
-        themes = JSON.parse(themes)
-        t.pass();
-    } catch {
-        t.fail("The themes file does not contain valid JSON.");
-    }
+test('Themes file contains JSON', () => {
+    themes = JSON.parse(themes);
 });
 
-test('Themes file contains an array', (t) => {
-    t.true(Array.isArray(themes), "The themes file does not contain a valid array.");
+test('Themes file contains an array', () => {
+    expect((Array.isArray(themes))).toBe(true);
 });
 
 const ThemeProperties = z.object({
@@ -72,22 +74,23 @@ const Theme = z.object({
     custom: CustomThemes
 })
 
-test('Themes are valid', (t) => {
-    for (let theme of themes) {
-        if (Theme.safeParse(theme).success) {
-            t.pass();
-        } else {
-            console.log("Failed theme: ")
-            console.log(theme)
-            t.fail("A theme is missing a property or a property is an incorrect type.");
+test('Themes are valid', () => {
+    for (const theme of themes) {
+        const result = Theme.safeParse(theme);
+        if (!result.success) {
+            console.log("Failed theme:", theme);
+            console.log("Validation errors:", result.error.errors);
+            //@ts-expect-error testing sequence
+            expect(result.success).toBe(true);
         }
     }
+    expect(1).toBe(1);
 });
 
-test('Default theme exists', (t) => {
-    t.true(themes.filter((theme) => theme.id == "default").length > 0, "No default theme was found")
+test('Default theme exists', () => {
+    expect(themesJson.filter(theme => theme.id === "default").length > 0).toBe(true);
 });
 
-test('No duplicate themes exist', (t) => {
-    t.true(themes.filter((theme) => themes.filter((x) => x.id == theme.id).length > 1).length == 0, "Duplicate themes exist with the same ID.")
+test('No duplicate themes exist', () => {
+    expect(themesJson.filter((theme) => themesJson.filter((x) => x.id == theme.id).length > 1).length == 0).toBe(true);
 });
