@@ -21,22 +21,22 @@
 
 ## Setup
 
-Metallic uses pnpm. Install it using `npm install -g pnpm`.
+Metallic uses bun. Install it using `npm install -g bun`.
 
 > [!TIP]
-> Run `pnpm install` to install the required dependencies.
+> Run `bun install` to install the required dependencies.
 
 **Run**
 
-Run `pnpm start` to start the server. If no build folder if found, Metallic will attempt to build.
+Run `bun start` to start the server. If no build folder if found, Metallic will attempt to build.
 
 **Build**
 
-Run `pnpm run build` to build app for production into the `build` folder.
+Run `bun run build` to build app for production into the `build` folder.
 
 **Build Static**
 
-Run `pnpm run build-static` to build the app for production into the dist folder. This is for static hosting on Github Pages etc. Make sure to change the Wisp server in `/index.html` to an external one and turn off Rammerhead in `/src/settings.ts`.
+Run `bun run build-static` to build the app for production into the dist folder. This is for static hosting on Github Pages etc. Make sure to change the Wisp server in `/index.html` to an external one and turn off Rammerhead in `/src/settings.ts`.
 
 **Development**
 
